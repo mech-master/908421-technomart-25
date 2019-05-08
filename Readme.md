@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Евгений Ли](https://up.htmlacademy.ru/htmlcss/25/user/908421).
-* Наставник: `Неизвестно`.
+* Наставник: [Ксюша Щанникова](https://htmlacademy.ru/profile/ksenia-ok).
 
 ---
 
