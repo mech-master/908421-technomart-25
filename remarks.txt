@@ -1,0 +1,10 @@
+1. | mech-master | index.html | Отсутствует тег nav вокруг ul меню
+2. | mech-master | index.html | В слайдере не отмечена радио-кнопка checked и не установлена в ассортименте пункт как новый
+3. | kasenia-ok | index.html | span теги, тегов spin нет
+4. | kasenia-ok | index.html | span теги, тегов spin нет
+5. | kasenia-ok | index.html | span теги, тегов spin нет
+6. | kasenia-ok | index.html | Есть класс у первого элемента списка, для показа текущей страницы, можно использовать класс короче и более читаемый класс к примеру active. У ссылки отсутствует href
+7. | kasenia-ok | index.html | Вот тут закрытый тег div, портит структуру
+8. | kasenia-ok | catalog.html | Сейчас форма не пройдет валидность так как в теги section необходимо нахождения одного из заголовков, я бы не рекомендовала использовать тег section для модального окна Так как тег section предназначен для
+9. | kasenia-ok | catalog.html | Пустой тег на на странице
+10. | kasenia-ok | index.html | Не закрыт тег ul
