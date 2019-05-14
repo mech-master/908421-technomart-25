@@ -32,12 +32,12 @@
 					<input type="text" class="serching-string" placeholder="Поиск:">
 				</p>
 				<p class="toolbare-bookmarks">
-					<spin class="bookmarks-title">Закладки:</spin>
-					<spin class="bookmarks-count">0</spin>
+					<span class="bookmarks-title">Закладки:</span>
+					<span class="bookmarks-count">0</span>
 				</p>
 				<p class="toolbar-cart">
-					<spin class="cart-title">Корзина:</spin>
-					<spin class="cart-count">0</spin>
+					<span class="cart-title">Корзина:</span>
+					<span class="cart-count">0</span>
 				</p>
 				<a href="#" class="deal-button">Оформить заказ</a>
 			</div>
@@ -72,14 +72,14 @@
 			</section>
 
 			<section class="sorting">
-				<h3></h3>
+				<h3>Сортировка</h3>
 				<ul class="sort-list">
 					<li class="current-item"><a>По цене</a></li>
 					<li><a href="#">По типу</a></li>
 					<li><a href="#">По функционалу</a></li>
 				</ul>
-				<a href="#" class="sort-direction sort-asc">По возрастанию</a>
-				<a href="#" class="sort-direction sort-desc">По убыванию</a>
+				<span class="sort-direction sort-asc">По возрастанию</span>
+				<span class="sort-direction sort-desc">По убыванию</span>
 			</section>
 
 			<section class="catalog">
@@ -248,14 +248,15 @@
 			</div>
 		</footer>
 
-		<section class="modal modal-cart_add">
+		<div class="modal modal-cart_add">
+			<h2 class="visually-hidden">Вы добавили товар в корзину</h2>
 			<b>Товар добавлен в корзину!</b>
 			<p>
 				<a href="#" class="deal">Оформить заказ</a>
 				<span class="continue">Продолжить покупки</span>
 			</p>
 			<span class="modal-close">x</span>
-		</section>
+		</div>
 
 	</body>
 </html>
