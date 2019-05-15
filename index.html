@@ -10,7 +10,7 @@
 			
 			<h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
 			<a class="header-logo">
-				<img src="img/logo.png" width="220" height="47" alt="Логотип магазина Техномарт">
+				<img src="img/logo.jpg" width="220" height="47" alt="Логотип магазина Техномарт">
 			</a>
 
 			<div class="header-contacts">
@@ -29,19 +29,19 @@
 					<input type="text" class="serching-string" placeholder="Поиск:">
 				</p>
 				<p class="toolbare-bookmarks">
-					<spin class="bookmarks-title">Закладки:</spin>
-					<spin class="bookmarks-count">0</spin>
+					<span class="bookmarks-title">Закладки:</span>
+					<span class="bookmarks-count">0</span>
 				</p>
 				<p class="toolbar-cart">
-					<spin class="cart-title">Корзина:</spin>
-					<spin class="cart-count">0</spin>
+					<span class="cart-title">Корзина:</span>
+					<span class="cart-count">0</span>
 				</p>
 				<a href="#" class="deal-button">Оформить заказ</a>
 			</div>
 
 			<nav class="site-navigation">
 				<ul class="page-menu">
-					<li class="page-menu-current"><a>Главная</a></li>
+					<li class="active"><a href="index.html">Главная</a></li>
 					<li><a href="about.html">Компания</a></li>
 					<li><a href="catalog.html">Каталог</a></li>
 					<li><a href="news.html">Новости</a></li>
@@ -54,6 +54,7 @@
 		</header>
 
 		<main class="container">
+			<!--Начало бонусного блока-->
 			<section class="promo">
 				<h2 class="visually-hidden">Ассортимент и услуги</h2>
 				<ul class="assortment">
@@ -70,26 +71,31 @@
 						<a href="#">Для стройки</a>
 					</li>
 				</ul>
-				<div class="slider">
-					<input type="radio" name="toggle" id="slider-item-1" checked>
-					<input type="radio" name="toggle" id="slider-item-2">
+				<div class="promo-slider">
+					
+					<span id="promo-slider-item1">Переключатель1</span>
+					<span id="promo-slider-item2">Переключатель2</span>
+					
 					<div class="slider-control">
-						<label for="slider-item-1" class="slider-item-label">Слайд #1</label>
-						<label for="slider-item-2" class="slider-item-label">Слайд #2</label>
+						<span class="promo-slider-label">Метка переключателя1 Слайд #1</span>
+						<span class="promo-slider-label">Метка переключателя2 Слайд #2</span>
 					</div>
-					<div class="slider-container"></div>
-						<div class="slider-slides">
-							<div class="slide slide-1">
+
+					<div class="promo-slider-container">
+						<div class="promo-slider-slides">
+							<div class="promo-slide promo-slide1">
 								<div class="slide-title">
 									<h3>Перфораторы</h3>
 									<p>Настоящие мужские игрушки</p>
 								</div>
+								<img src="img/promo-slide-1.jpg" width="620" height="266" alt="Перфораторы для бетона и стен">
 							</div>
-							<div class="slide slide-2">
+							<div class="promo-slide promo-slide2">
 								<div class="slide-title">
 									<h3>Дрели</h3>
 									<p>Соседям на радость!</p>
 								</div>
+								<img src="img/promo-slide-2.jpg" width="620" height="266" alt="Дрели для металла, дерева и стен">
 							</div>
 						</div>
 					</div>
@@ -105,6 +111,7 @@
 						<h3>Доставка</h3>
 						<a href="#">Бесплатно</a>
 					</li>
+				</ul>
 			</section>
 
 			<section class="popular_product">
@@ -115,25 +122,25 @@
 				<ul class="popular_product-list">
 					<li class="popular_product-item">
 						<h3>Перфоратор Bosh BFG 9000</h3>
-						<img src="catalog.html" width="218" height="170" alt="Перфоратор Bosh BFG 9000">
+						<img src="img/bosch_bfg_9000.jpg" width="218" height="170" alt="Перфоратор Bosh BFG 9000">
 						<b class="special_price">25500 р</b>
 						<b class="price">32500 р</b>
 					</li>
 					<li class="popular_product-item">
 						<h3>Перфоратор Bosh BFG 3000</h3>
-						<img src="catalog.html" width="218" height="170" alt="Перфоратор Bosh BFG 3000">
+						<img src="img/bosch_bfg_3000.jpg" width="218" height="170" alt="Перфоратор Bosh BFG 3000">
 						<b class="special_price">15500 р</b>
 						<b class="price">22500 р</b>
 					</li>
 					<li class="popular_product-item">
 						<h3>Перфоратор Bosh BFG 6000</h3>
-						<img src="catalog.html" width="218" height="170" alt="Перфоратор Bosh BFG 6000">
+						<img src="img/bosch_bfg_6000.jpg" width="218" height="170" alt="Перфоратор Bosh BFG 6000">
 						<b class="special_price">25500 р</b>
 						<b class="price">30500 р</b>
 					</li>
 					<li class="popular_product-item new">
 						<h3>Перфоратор Bosh BFG 2000</h3>
-						<img src="catalog.html" width="218" height="170" alt="Перфоратор Bosh BFG 2000">
+						<img src="img/bosch_bfg_2000.jpg" width="218" height="170" alt="Перфоратор Bosh BFG 2000">
 						<b class="special_price">12500 р</b>
 					</li>
 				</ul>
@@ -185,20 +192,21 @@
 				<p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
 				<p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 				<div class="services-slider">
-					<input type="radio" id="services-slider-item-1" name="services-toggle" checked>
-					<input type="radio" id="services-slider-item-2" name="services-toggle">
-					<input type="radio" id="services-slider-item-3" name="services-toggle">
 
+					<span id="services-slider-item-1">Переключатель1</span>
+					<span id="services-slider-item-2">Переключатель2</span>
+					<span id="services-slider-item-3">Переключатель3</span>
+					
 					<div class="services-slider-control">
 						<ul class="services-slider-list">
 							<li class="services-slider-item">
-								<label for="services-slider-item-1">Доставка</label>
+								<span>Метка переключателя1 Доставка</span>
 							</li>
 							<li class="services-slider-item">
-								<label for="services-slider-item-2">Гарантия</label>
+								<span>Метка переключателя2 Гарантия</span>
 							</li>
 							<li class="services-slider-item">
-								<label for="services-slider-item-3">Кредит</label>
+								<span>Метка переключателя2 Кредит</span>
 							</li>
 						</ul>
 					</div>
@@ -233,7 +241,7 @@
 					</div>
 				</div>
 			</section>
-
+			<!-- Конец бонусного блока-->
 			<section class="about">
 				<h2>Компания «Техномарт»</h2>
 				<b>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</b>
@@ -251,7 +259,7 @@
 			<section class="section-contacts">
 				<h2>Контакты</h2>
 				<p>Вы можете забрать товар сами, заехав в наш офис:</p>
-				<img src="map.png" width="300" height="160" alt="Как нас найти">
+				<img src="img/map-small.png" width="300" height="160" alt="Офис по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
 				<a href="contacts.html">Заблудились? Напишите нам!</a>
 			</section>
 
@@ -260,7 +268,7 @@
 		<footer class="page-footer">
 			<div class="footer-navigation">
 				<h2 class="visually-hidden">Управление в подвале</h2>
-				<a class="footer-logo"><img src="footer-logo.png" width="220" height="69" alt="Логотип Техномарт"></a>
+				<a class="footer-logo"><img src="img/footer-logo.jpg" width="220" height="69" alt="Логотип Техномарт"></a>
 				<p class="footer-contacts">
 					<span class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
 					<span class="footer-phone">+7 (812) 555-05-55</span>
@@ -299,17 +307,17 @@
 			</div>
 		</footer>
 
-		<section class="modal modal-write_us">
+		<div class="modal modal-write_us">
 			<h2 class="visual-hidden">Форма отправки сообщения</h2>
 			<!--Здесь долджна быть форма-->
 			<span class="modal-close">x</span>
-		</section>
+		</div>
 
-		<section class="modal modal-map">
+		<div class="modal modal-map">
 			<h2 class="visual-hidden">Карта как нас найти</h2>
 			<!--Здесь будет подключение к сервису yandex.map-->
 			<span class="modal-close">x</span>
-		</section>
+		</div>
 
 	</body>
 </html>
