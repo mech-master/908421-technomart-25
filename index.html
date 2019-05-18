@@ -7,49 +7,56 @@
 	<body>
 		
 		<header class="page-header">
-			
 			<h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-			<a class="header-logo">
-				<img src="img/logo.jpg" width="220" height="47" alt="Логотип магазина Техномарт">
-			</a>
-
-			<div class="header-contacts">
-				<p class="phone">+7 (812) 555-05-55</p>
-				<p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+			<div class="toolbar-background">
+				<div class="toolbar">
+					<a class="header-logo">
+						<img src="img/logo.jpg" width="220" height="47" alt="Логотип магазина Техномарт">
+					</a>
+					<div class="toolbar-searching">
+						<form class="serching-form" action="https://echo.htmlacademy.ru" method="get">
+							<button class="searching-button" type="submit">Поиск по сайту</button>
+							<input type="text" class="serching-string" name="serching-string" placeholder="Поиск:">
+						</form>
+					</div>
+					<!--
+					<p class="toolbare-bookmarks">
+						<span class="bookmarks-title">Закладки:</span>
+						<span class="bookmarks-count">0</span>
+					</p>
+					-->
+					<a href="#" class="toolbare-bookmarks" data-bookmark-count="0">Закладки:</a>
+					<p class="toolbar-cart">
+						<span class="cart-title">Корзина:</span>
+						<span class="cart-count">0</span>
+					</p>
+					<a href="#" class="deal-button">Оформить заказ</a>
+				</div>
 			</div>
 
-			<div class="header-account">
-				<a href="sign_in.html" class="sign_in">Войти</a>
-				<a href="sign_up.html" class="sign_up">Регистрация</a>
-			</div>
+			<div class="header-background">
+				<div class="header-contacts">
+					<p class="phone">+7 (812) 555-05-55</p>
+					<p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+				</div>
 
-			<div class="toolbar">
-				<p class="toolbar-searching">
-					<a href="serching-result.html" class="searching-button">Поиск по сайту</a>
-					<input type="text" class="serching-string" placeholder="Поиск:">
-				</p>
-				<p class="toolbare-bookmarks">
-					<span class="bookmarks-title">Закладки:</span>
-					<span class="bookmarks-count">0</span>
-				</p>
-				<p class="toolbar-cart">
-					<span class="cart-title">Корзина:</span>
-					<span class="cart-count">0</span>
-				</p>
-				<a href="#" class="deal-button">Оформить заказ</a>
-			</div>
+				<div class="header-account">
+					<a href="sign_in.html" class="sign_in">Войти</a>
+					<a href="sign_up.html" class="sign_up">Регистрация</a>
+				</div>
 
-			<nav class="site-navigation">
-				<ul class="page-menu">
-					<li class="active"><a href="index.html">Главная</a></li>
-					<li><a href="about.html">Компания</a></li>
-					<li><a href="catalog.html">Каталог</a></li>
-					<li><a href="news.html">Новости</a></li>
-					<li><a href="special.html">Спецпредложения</a></li>
-					<li><a href="delivery.html">Доставка</a></li>
-					<li><a href="contacts.html">Контакты</a></li>
-				</ul>
-			</nav>
+				<nav class="site-navigation">
+					<ul class="page-menu">
+						<li class="active"><a href="index.html">Главная</a></li>
+						<li><a href="about.html">Компания</a></li>
+						<li><a href="catalog.html">Каталог</a></li>
+						<li><a href="news.html">Новости</a></li>
+						<li><a href="special.html">Спецпредложения</a></li>
+						<li><a href="delivery.html">Доставка</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
 			
 		</header>
 
@@ -295,17 +302,20 @@
 				Все права защищены</b>
 				<ul class="social">
 					<li class="social-button social-button-vk">
-						<a href="#" title="Мы в ВКонтакте">
-							<img src="img/vk-icon.svg" width="26" height="15" alt="Мы в ВКонтакте">
+						<a href="#" class="social-icon icon-vk">
+							Мы в ВКонтакте
+							<!--<img src="img/vk-icon.svg" width="26" height="15" alt="Мы в ВКонтакте">-->
 						</a>
 					</li>
 					<li class="social-button social-button-fb">
-						<a href="#" title="Мы в Фейсбуке">
-							<img src="img/fb-icon.svg" width="12" height="22" alt="Мы в Фейсбуке">
+						<a href="#" class="social-icon icon-fb">
+							Мы в Фейсбуке
+							<!--<img src="img/fb-icon.svg" width="12" height="22" alt="Мы в Фейсбуке">-->
 						</a></li>
 					<li class="social-button social-button-insta">
-						<a href="#" title="Мы в Инстаграм">
-							<img src="img/insta-icon.svg" width="21" height="21" alt="Мы в Инстаграм">
+						<a href="#" class="social-icon icon-insta">
+							Мы в Инстаграм
+							<!--<img src="img/insta-icon.svg" width="21" height="21" alt="Мы в Инстаграм">-->
 						</a>
 					</li>
 				</ul>
@@ -322,14 +332,38 @@
 
 		<section class="modal modal-write_us">
 			<h2 class="visual-hidden">Форма отправки сообщения</h2>
-			<!--Здесь долджна быть форма-->
-			<span class="modal-close">x</span>
+			<form class="write_us-form" action="https://echo.htmlacademy.ru" method="post">
+				<p>
+					<label class="write_us-label author-name" for="author-name-input">
+						Ваше имя:
+					</label>
+					<input type="text" name="message-author-name" id="author-name-input" placeholder="Имя Фамилия">
+				</p>
+				<p>
+					<label class="write_us-label author-email" for="author-email-input">
+						Ваш e-mail:
+					</label>
+					<input type="text" name="message-author-email" id="author-email-input" placeholder="email@example.com">
+				</p>
+				<p>
+					<label class="write_us-label message" for="message-content-input">
+						Текст письма:
+					</label>
+					<textarea name="message-content" id="message-content-input" cols="30" rows="5" placeholder="В свободной форме">
+						
+					</textarea>
+				</p>
+				<button class="button send-message" type="submit">Отправить</button>
+			</form>
+			<button class="modal-close" type="button">Закрыть</button>
 		</section>
 
 		<section class="modal modal-map">
 			<h2 class="visual-hidden">Карта как нас найти</h2>
-			<!--Здесь будет подключение к сервису yandex.map-->
-			<span class="modal-close">x</span>
+			<p>
+				<img src="img/map.jpg" width="900" height="446" alt="Офис компании по адресу: город Санкт-Петербург, улица Большая Конюшенная, д. 19/8">
+			</p>
+			<button class="modal-close" type="button">Закрыть</button>
 		</section>
 
 	</body>
