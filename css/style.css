@@ -104,6 +104,7 @@ h1 {
 	left: 52px;
 	width: 197px;
 	height: 64px;
+	display: none;
 }
 
 .toolbar-background {
@@ -120,7 +121,8 @@ h1 {
 	margin: 0 auto;
 	padding: 0;
 	background-color: #293449;
-	font-size: 0;
+	/*font-size: 0;/**/
+	line-height: 42px;
 	outline: 1px solid lightgray; /*убрать после оформления toolbar*/
 }
 
@@ -132,7 +134,7 @@ h1 {
 	width: 220px;
 	height: 42px;
 	box-shadow: 0 5px 0 0 #b52933;
-
+	vertical-align: middle;
 }
 
 .header-logo:hover {
@@ -157,6 +159,7 @@ h1 {
 	padding: 0;
 	font-size: 17px;
 	line-height: 18px;
+	float: left;
 }
 
 .serching-form {
@@ -264,10 +267,6 @@ h1 {
 	top: 12px;
 	left: 17px;
 	opacity: 0.3;
-}
-
-a[data-bookmark-count!="0"] {
-	background-color: lightblue;
 }
 
 .visually-hidden {
