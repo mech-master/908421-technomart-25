@@ -67,6 +67,7 @@ body {
 	margin:0;
 	width: 100%;
 	font-family: Cuprum, "Verdana", "Arial", sans-serif;
+	min-width: 1200px;
 }
 
 .header-container {
@@ -214,7 +215,7 @@ h1 {
 	margin: 0;
 }
 
-.toolbare-bookmarks {
+.toolbar-bookmarks {
 	color: #fff;
 	vertical-align: middle;
 	text-decoration: none;
@@ -226,28 +227,28 @@ h1 {
 }
 
 
-.toolbare-bookmarks::after {
+.toolbar-bookmarks::after {
 	content: attr(data-bookmark-count);
 	margin-left: 5px;
 }
 
-.toolbare-bookmarks:hover {
+.toolbar-bookmarks:hover {
 	background-color: #212a3a;
 }
 
-.toolbare-bookmarks:active {
+.toolbar-bookmarks:active {
 	background-color: #161d29;
 }
 
-.toolbare-bookmarks:not([data-bookmark-count="0"]) {
+.toolbar-bookmarks:not([data-bookmark-count="0"]) {
 	background-color: #ee3643;
 }
 
-.toolbare-bookmarks:hover + .icon-bookmarks {
+.toolbar-bookmarks:hover + .icon-bookmarks {
 	opacity: 1;
 }
 
-.toolbare-bookmarks:active + .icon-bookmarks {
+.toolbar-bookmarks:active + .icon-bookmarks {
 	opacity: 0.5;
 }
 
