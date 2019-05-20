@@ -7,55 +7,60 @@
 	<body>
 		
 		<header class="page-header">
-			
 			<h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-			<a class="header-logo" href="index.html">
-				<img src="img/logo.jpg" width="220" height="47" alt="Логотип магазина Техномарт">
-			</a>
-
-			<div class="header-contacts">
-				<p class="phone">+7 (812) 555-05-55</p>
-				<p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+			<div class="toolbar-background">
+				<div class="toolbar">
+					<a class="header-logo">
+						<img src="img/logo.jpg" width="220" height="47" alt="Логотип магазина Техномарт">
+					</a>
+					<div class="toolbar-searching">
+						<form class="serching-form" action="https://echo.htmlacademy.ru" method="get">
+							<button class="searching-button" type="submit">Поиск по сайту</button>
+							<input type="text" class="serching-string" name="serching-string" placeholder="Поиск:">
+						</form>
+					</div>
+					<!--
+					<p class="toolbare-bookmarks">
+						<span class="bookmarks-title">Закладки:</span>
+						<span class="bookmarks-count">0</span>
+					</p>
+					-->
+					<a href="#" class="toolbare-bookmarks" data-bookmark-count="0">Закладки:</a>
+					<p class="toolbar-cart">
+						<span class="cart-title">Корзина:</span>
+						<span class="cart-count">0</span>
+					</p>
+					<a href="#" class="deal-button">Оформить заказ</a>
+				</div>
 			</div>
 
-			<div class="header-account">
-				<p class="user_name">
-					<a href="profile.html" title="На страницу профиля">Равшан Джамшутович</a>
-					<a href="exit.html" title="Выход из профиля">Выход</a>
-				</p>
-				<p class="actions">
-					<a href="#">Мои заказы</a>
-					<a href="#">Личный кабинет</a>
-				</p>
-			</div>
+			<div class="header-background">
+				<div class="header-contacts">
+					<p class="phone">+7 (812) 555-05-55</p>
+					<p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+				</div>
 
-			<div class="toolbar">
-				<p class="toolbar-searching">
-					<a href="serching-result.html" class="searching-button">Поиск по сайту</a>
-					<input type="text" class="serching-string" placeholder="Поиск:">
-				</p>
-				<p class="toolbare-bookmarks">
-					<span class="bookmarks-title">Закладки:</span>
-					<span class="bookmarks-count">0</span>
-				</p>
-				<p class="toolbar-cart">
-					<span class="cart-title">Корзина:</span>
-					<span class="cart-count">0</span>
-				</p>
-				<a href="#" class="deal-button">Оформить заказ</a>
-			</div>
+				<div class="header-account">
+					<p class="user_name">Равшан Джамшутович <span>Выход</span></p>
+					<p class="actions">
+						<a href="#">Мои заказы</a>
+						<span class="separator">x</span>
+						<a href="#">Личный кабинет</a>
+					</p>
+				</div>
 
-			<nav class="site-navigation">
-				<ul class="page-menu">
-					<li class="page-menu-current"><a>Главная</a></li>
-					<li><a href="about.html">Компания</a></li>
-					<li><a href="catalog.html">Каталог</a></li>
-					<li><a href="news.html">Новости</a></li>
-					<li><a href="special.html">Спецпредложения</a></li>
-					<li><a href="delivery.html">Доставка</a></li>
-					<li><a href="contacts.html">Контакты</a></li>
-				</ul>
-			</nav>
+				<nav class="site-navigation">
+					<ul class="page-menu">
+						<li class="active"><a href="index.html">Главная</a></li>
+						<li><a href="about.html">Компания</a></li>
+						<li><a href="catalog.html">Каталог</a></li>
+						<li><a href="news.html">Новости</a></li>
+						<li><a href="special.html">Спецпредложения</a></li>
+						<li><a href="delivery.html">Доставка</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
 			
 		</header>
 
@@ -71,29 +76,50 @@
 
 			<section class="filters">
 				<h3>Фильтр:</h3>
-				<!--Здесь будет форма фильтров-->
-				<div class="filtered-price">
-					<h4>Цена:</h4>
-					<!--Форма ползунка фильтра цены-->
-				</div>
-				<div class="filtered-brand">
-					<h4>Производители:</h4>
-					<!--Форма checkbox'ов брендов-->
-				</div>
-				<div class="filtered-source">
-					<h4>Питание:</h4>
-					<!--Форма radio источников питания-->
-				</div>
+				<form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
+					<fieldset class="filter-price">
+						<legend>Цена:</legend>
+						<p class="price-slider">
+							<span class="left-slider">Левый ползунок</span>
+							<span class="right-slider">Правый ползунок</span>
+						</p>
+						<p class="price-range">
+							<input class="range-value min-value" type="number" value="0" min="0" max="29999">
+							<span class="seporator">-</span>
+							<input class="range-value max-value" type="number" min="0" max="30000" value="30000">
+						</p>
+					</fieldset>
+					
+					<fieldset class="filter-brands">
+						<legend>Производители:</legend>
+						<ul>
+							<li class="filter-item"><label><input type="checkbox" name="filter-bosch" class="filter-item-checkbox" checked>Bosch</label></li>
+							<li class="filter-item"><label><input type="checkbox" name="filter-interskol" class="filter-item-checkbox">Интерскол</label></li>
+							<li class="filter-item"><label><input type="checkbox" name="filter-makita" class="filter-item-checkbox" checked>Makita</label></li>
+							<li class="filter-item"><label><input type="checkbox" name="filter-dewalt" class="filter-item-checkbox">Dewalt</label></li>
+							<li class="filter-item"><label><input type="checkbox" name="filter-hitachi" class="filter-item-checkbox">Hitachi</label></li>
+						</ul>
+					</fieldset>
+
+					<fieldset class="filter-source">
+						<legend>Питание:</legend>
+						<ul>
+							<li class="filter-item"><label><input type="radio" name="source-type" class="filter-item-radio" checked>Аккумулфторные</label></li>
+							<li class="filter-item"><label><input type="radio" name="source-type" class="filter-item-radio">Сетевые</label></li>
+						</ul>
+					</fieldset>
+					<button type="submit" class="button button-filters-send">Показать</button>
+				</form>
 			</section>
 
 			<section class="sorting">
 				<h3>Сортировка</h3>
 				<ul class="sort-list">
-					<li class="current-item"><a>По цене</a></li>
+					<li class="active"><a>По цене</a></li>
 					<li><a href="#">По типу</a></li>
 					<li><a href="#">По функционалу</a></li>
 				</ul>
-				<span class="sort-direction sort-asc">По возрастанию</span>
+				<span class="sort-direction sort-asc active">По возрастанию</span>
 				<span class="sort-direction sort-desc">По убыванию</span>
 			</section>
 
@@ -104,7 +130,7 @@
 						<h4>Перфоратор BOSCH BFG 3000</h4>
 						<div class="vision">
 							<img src="img/bosch_bfg_3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-							<div class="actions" style>
+							<div class="actions">
 								<a href="#">
 									<img class="cart-icon" src="img/cart-icon.svg" width="15" height="15" alt="Купить">Купить
 								</a>
@@ -225,7 +251,6 @@
 					</li>
 				</ul>
 				<ul class="pagination-list">
-					<li class="pagination-item prev"><a href="#">Предыдущая</a></li>
 					<li class="pagination-item pagination-current"><a>1</a></li>
 					<li class="pagination-item"><a href="#">2</a></li>
 					<li class="pagination-item"><a href="#">3</a></li>
@@ -270,16 +295,16 @@
 				<ul class="social">
 					<li class="social-button social-button-vk">
 						<a href="#" title="Мы в ВКонтакте">
-							<img src="img/vk-icon.svg" width="26" height="15" alt="Мы в ВКонтакте">
+							<img src="img/vk-icon.svg" width="26" height="15" alt="Мы в ВКонтакте">Мы в ВКонтакте
 						</a>
 					</li>
 					<li class="social-button social-button-fb">
 						<a href="#" title="Мы в Фейсбуке">
-							<img src="img/fb-icon.svg" width="12" height="22" alt="Мы в Фейсбуке">
+							<img src="img/fb-icon.svg" width="12" height="22" alt="Мы в Фейсбуке">Мы в Фейсбуке
 						</a></li>
 					<li class="social-button social-button-insta">
 						<a href="#" title="Мы в Инстаграм">
-							<img src="img/insta-icon.svg" width="21" height="21" alt="Мы в Инстаграм">
+							<img src="img/insta-icon.svg" width="21" height="21" alt="Мы в Инстаграм">Мы в Инстаграм
 						</a>
 					</li>
 				</ul>
@@ -299,9 +324,9 @@
 			<b>Товар добавлен в корзину!</b>
 			<p>
 				<a href="#" class="deal">Оформить заказ</a>
-				<span class="continue">Продолжить покупки</span>
+				<button type="button" class="continue">Продолжить покупки</button>
 			</p>
-			<span class="modal-close">x</span>
+			<button type="button" class="modal-close">Закрыть</button>
 		</section>
 
 	</body>
