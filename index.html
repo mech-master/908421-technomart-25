@@ -26,13 +26,13 @@
 					</form>
 					<div class="toolbar-item bookmarks-container">
 						<a href="#" class="toolbar-item toolbar-bookmarks" data-bookmark-count="0">Закладки:</a>
-						<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 width="14px" height="16px" viewBox="0 0 14 16" enable-background="new 0 0 14 16" xml:space="preserve" class="icon-bookmarks">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 width="14px" height="16px" viewBox="0 0 14 16" enable-background="new 0 0 14 16" xml:space="preserve" class="icon-bookmarks">
 							<path d="M14,15c0,0.55-0.368,0.741-0.818,0.426l-5.363-3.765c-0.45-0.315-1.187-0.315-1.637,0l-5.364,3.765	C0.368,15.741,0,15.55,0,15V1c0-0.55,0.45-1,1-1h12c0.55,0,1,0.45,1,1V15z"/>
 						</svg>
 					</div>
 					<div class="toolbar-item cart-container">
 						<a href="#" class="toolbar-item toolbar-cart" data-good-count="0">Корзина:</a>
-						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve" class="icon-cart">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"	 width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve" class="icon-cart">
 							<g>
 								<circle cx="4.5" cy="13.5" r="1.5" />
 								<circle cx="12.5" cy="13.5" r="1.5" />
@@ -109,13 +109,17 @@
 				</ul>
 				<div class="promo-slider">
 					
-					<span id="promo-slider-item1">Переключатель1</span>
-					<span id="promo-slider-item2">Переключатель2</span>
-					
-					<div class="slider-control">
-						<span class="promo-slider-label">Метка переключателя1 Слайд #1</span>
-						<span class="promo-slider-label">Метка переключателя2 Слайд #2</span>
-					</div>
+					<button type="button" class="promo-button-prev">Предыдущий слайд</button>
+					<button type="button" class="promo-button-next">Следующий слайд</button>
+
+					<ul class="promo-slide-list">
+						<li>
+							<button type="button" class="slider-turn button-slide-1">Первый слайд</button>
+						</li>
+						<li>
+							<button type="button" class="slider-turn button-slide-2">Второй слайд</button>
+						</li>
+					</ul>
 
 					<div class="promo-slider-container">
 						<div class="promo-slider-slides">
@@ -158,25 +162,57 @@
 				<ul class="popular_product-list">
 					<li class="popular_product-item">
 						<h3>Перфоратор Bosh BFG 9000</h3>
-						<img src="img/bosch_bfg_9000.jpg" width="218" height="170" alt="Перфоратор Bosh BFG 9000">
+						<div class="vision">
+							<img src="img/bosch_bfg_9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
+							<div class="catalog-actions">
+								<a href="#">
+									<img class="cart-icon" src="img/cart-icon.svg" width="15" height="15" alt="Купить">Купить
+								</a>
+								<a href="#">В закладки</a>
+							</div>
+						</div>
 						<b class="special_price">25500 р</b>
 						<b class="price">32500 р</b>
 					</li>
 					<li class="popular_product-item">
 						<h3>Перфоратор Bosh BFG 3000</h3>
-						<img src="img/bosch_bfg_3000.jpg" width="218" height="170" alt="Перфоратор Bosh BFG 3000">
+						<div class="vision">
+							<img src="img/bosch_bfg_3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+							<div class="catalog-actions">
+								<a href="#">
+									<img class="cart-icon" src="img/cart-icon.svg" width="15" height="15" alt="Купить">Купить
+								</a>
+								<a href="#">В закладки</a>
+							</div>
+						</div>
 						<b class="special_price">15500 р</b>
 						<b class="price">22500 р</b>
 					</li>
 					<li class="popular_product-item">
 						<h3>Перфоратор Bosh BFG 6000</h3>
-						<img src="img/bosch_bfg_6000.jpg" width="218" height="170" alt="Перфоратор Bosh BFG 6000">
+						<div class="vision">
+							<img src="img/bosch_bfg_6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+							<div class="catalog-actions">
+								<a href="#">
+									<img class="cart-icon" src="img/cart-icon.svg" width="15" height="15" alt="Купить">Купить
+								</a>
+								<a href="#">В закладки</a>
+							</div>
+						</div>
 						<b class="special_price">25500 р</b>
 						<b class="price">30500 р</b>
 					</li>
 					<li class="popular_product-item new">
 						<h3>Перфоратор Bosh BFG 2000</h3>
-						<img src="img/bosch_bfg_2000.jpg" width="218" height="170" alt="Перфоратор Bosh BFG 2000">
+						<div class="vision">
+							<img src="img/bosch_bfg_2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+							<div class="catalog-actions">
+								<a href="#">
+									<img class="cart-icon" src="img/cart-icon.svg" width="15" height="15" alt="Купить">Купить
+								</a>
+								<a href="#">В закладки</a>
+							</div>
+						</div>
 						<b class="special_price">12500 р</b>
 					</li>
 				</ul>
@@ -190,35 +226,35 @@
 				<ul class="popular_brands-list">
 					<li class="popular_brands-item">
 						<h3 class="visually-hidden">Bosch</h3>
-						<a href="#"><img src="img/bosch.png" width="126" height="37" alt="Логотип BOSCH"></a>
+						<a href="#" class="brand-card"><img src="img/bosch.png" width="126" height="37" alt="Логотип BOSCH"></a>
 					</li>
 					<li class="popular_brands-item">
 						<h3 class="visually-hidden">Makita</h3>
-						<a href="#"><img src="img/makita.png" width="123" height="40" alt="Логотип Makita"></a>
+						<a href="#" class="brand-card"><img src="img/makita.png" width="123" height="40" alt="Логотип Makita"></a>
 					</li>
 					<li class="popular_brands-item">
 						<h3 class="visually-hidden">DeWALT</h3>
-						<a href="#"><img src="img/dewalt.png" width="146" height="44" alt="Логотип DeWALT"></a>
+						<a href="#" class="brand-card"><img src="img/dewalt.png" width="146" height="44" alt="Логотип DeWALT"></a>
 					</li>
 					<li class="popular_brands-item">
 						<h3 class="visually-hidden">Интерскол</h3>
-						<a href="#"><img src="img/interscol.png" width="200" height="88" alt="Логотип Интерскол"></a>
+						<a href="#" class="brand-card"><img src="img/interscol.png" width="200" height="88" alt="Логотип Интерскол"></a>
 					</li>
 					<li class="popular_brands-item">
 						<h3 class="visually-hidden">Hitachi</h3>
-						<a href="#"><img src="img/hitachi.png" width="169" height="31" alt="Логотип Hitachi"></a>
+						<a href="#" class="brand-card"><img src="img/hitachi.png" width="169" height="31" alt="Логотип Hitachi"></a>
 					</li>
 					<li class="popular_brands-item">
 						<h3 class="visually-hidden">LG</h3>
-						<a href="#"><img src="img/lg.png" width="121" height="73" alt="Логотип LG"></a>
+						<a href="#" class="brand-card"><img src="img/lg.png" width="121" height="73" alt="Логотип LG"></a>
 					</li>
 					<li class="popular_brands-item">
 						<h3 class="visually-hidden">AEG</h3>
-						<a href="#"><img src="img/aeg.png" width="151" height="96" alt="Логотип AEG"></a>
+						<a href="#" class="brand-card"><img src="img/aeg.png" width="151" height="96" alt="Логотип AEG"></a>
 					</li>
 					<li class="popular_brands-item">
 						<h3 class="visually-hidden">Metabo</h3>
-						<a href="#"><img src="img/metabo.png" width="204" height="69" alt="Логотип Metabo"></a>
+						<a href="#" class="brand-card"><img src="img/metabo.png" width="204" height="69" alt="Логотип Metabo"></a>
 					</li>
 				</ul>
 			</section>
@@ -275,7 +311,8 @@
 			<section class="about">
 				<h2>Компания «Техномарт»</h2>
 				<b>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</b>
-				<p>Мы можем доставить ваш товар в самые отдаленные точки России!
+				<p>
+					Мы можем доставить ваш товар в самые отдаленные точки России!
 					Техномарт работает со многими транспортными компаниями: 
 				</p>
 				<ul class="partner-list">
