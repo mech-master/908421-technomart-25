@@ -49,8 +49,14 @@
 						<a class="address" href="#">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</a>
 					</div>
 					<div class="header-account">
-						<div class="user-data user-unregistered">
+						<div class="user-data user-unregistered ">
 							<a href="sign_in.html" class="sign_in">Войти</a>
+							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"width="20px" height="17px" viewBox="0 0 20 17" enable-background="new 0 0 20 17" xml:space="preserve" class="icon-sign_in">
+								<g>
+									<polygon points="14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17 	"/>
+								</g>
+								<path d="M16.986,15.01h-5.027V17h5.027c2.178,0,3.004-1.81,3.029-3.026V3.028C19.99,1.811,19.164,0,16.986,0h-5.027	v1.99h5.027c0.839,0,0.992,0.681,1.01,1.057v10.904C17.979,14.327,17.825,15.01,16.986,15.01z"/>
+							</svg>
 							<a href="sign_up.html" class="sign_up">Регистрация</a>
 						</div>
 						<div class="user-data user-registered hidden">
@@ -222,36 +228,30 @@
 				<p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
 				<p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 				<div class="services-slider">
-
-					<span id="services-slider-item-1">Переключатель1</span>
-					<span id="services-slider-item-2">Переключатель2</span>
-					<span id="services-slider-item-3">Переключатель3</span>
+					<ul>
+						<li>
+							<button type="button" class="slider-button services-delivery">Доставка</button>
+						</li>
+						<li>
+							<button type="button" class="slider-button services-warranty">Гарантия</button>
+						</li>
+						<li>
+							<button type="button" class="slider-button services-credit">Кредит</button>
+						</li>
+					</ul>
 					
-					<div class="services-slider-control">
-						<ul class="services-slider-list">
-							<li class="services-slider-item">
-								<span>Метка переключателя1 Доставка</span>
-							</li>
-							<li class="services-slider-item">
-								<span>Метка переключателя2 Гарантия</span>
-							</li>
-							<li class="services-slider-item">
-								<span>Метка переключателя2 Кредит</span>
-							</li>
-						</ul>
-					</div>
-
 					<div class="services-slider-container">
 						<div class="services-slides">
-							<div class="services-slide services-slide-1">
+							<div class="services-slide services-delivery">
 								<h3>Доставка</h3>
-								<p>Мы с удовольствием доставим ваш товар прямо
+								<p>
+									Мы с удовольствием доставим ваш товар прямо
 									к вашему подъезду совершенно бесплатно!
 									Ведь мы неплохо заработаем,
 									поднимая его на ваш этаж!
 								</p>
 							</div>
-							<div class="services-slide services-slide-2">
+							<div class="services-slide services-warranty">
 								<h3>Гарантия</h3>
 								<p>Если купленный у нас товар поломается или заискрит,
 									а также в случае пожара, спровоцированного его возгаранием,
@@ -260,7 +260,7 @@
 									Дом уж восстановите как-нибудь сами.
 								</p>
 							</div>
-							<div class="services-slide services-slide-3">
+							<div class="services-slide services-credit">
 								<h3>Кредит</h3>
 								<p>Залезть в долговую яму стало проще! 
 									Кредитные консультанты придут вам на помощь.
@@ -289,7 +289,9 @@
 			<section class="section-contacts">
 				<h2>Контакты</h2>
 				<p>Вы можете забрать товар сами, заехав в наш офис:</p>
-				<img src="img/map-small.png" width="300" height="160" alt="Офис по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+				<a href="map.html">
+					<img src="img/map-small.png" width="300" height="160" alt="Офис по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+				</a>
 				<a href="contacts.html">Заблудились? Напишите нам!</a>
 			</section>
 
@@ -302,8 +304,8 @@
 					<img src="img/footer-logo.jpg" width="220" height="69" alt="Логотип Техномарт">
 				</a>
 				<p class="footer-contacts">
-					<span class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-					<span class="footer-phone">+7 (812) 555-05-55</span>
+					<a href="map.html" class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</a>
+					<a href="tel:+78125550555" class="footer-phone">+7 (812) 555-05-55</a>
 				</p>
 				<ul class="footer-navigation">
 					<li><a href="about.html">Компания</a></li>
@@ -383,9 +385,9 @@
 
 		<section class="modal modal-map">
 			<h2 class="visual-hidden">Карта как нас найти</h2>
-			<p>
+			<a href="map.html" class="modal-map-image">
 				<img src="img/map.jpg" width="900" height="446" alt="Офис компании по адресу: город Санкт-Петербург, улица Большая Конюшенная, д. 19/8">
-			</p>
+			</a>
 			<button class="modal-close" type="button">Закрыть</button>
 		</section>
 
