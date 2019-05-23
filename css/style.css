@@ -144,6 +144,8 @@ h1 {
 	background-color: #ee3643;
 	width: 220px;
 	height: 42px;
+	margin: 0;
+	padding: 0;
 	box-shadow: 0 5px 0 0 #b52933;
 	vertical-align: middle;
 	font-size: 0;
@@ -465,7 +467,6 @@ h1 {
 	width: 254px;
 	height: 21px;
 	padding: 11px 0 13px 46px;
-	outline: 1px solid lightgray;
 	text-decoration: none;
 	font-size: 21px;
 	color: #000;
@@ -611,7 +612,6 @@ h1 {
 	margin: 0;
 	/* Типографика */
 	/* Оформление */
-	outline: 1px solid red;
 	/* Анимация */
 	/* Разное */
 }
@@ -951,7 +951,6 @@ h1 {
 	/* Типографика */
 	/* Оформление */
 	background-color: #ffffff;
-	outline: 1px solid green;
 	/* Анимация */
 	/* Разное */
 }
@@ -1040,7 +1039,6 @@ h1 {
 	width: 700px;
 	/* Типографика */
 	/* Оформление */
-	outline: 1px solid blue;
 	/* Анимация */
 	/* Разное */
 }
@@ -1142,6 +1140,7 @@ h1 {
 
 .catalog-list li {
 	/* Позиционирование */
+	position: relative;
 	/* Блочная модель */
 	padding: 0;
 	margin: 0;
@@ -1167,11 +1166,12 @@ h1 {
 	/* Разное */
 }
 
-.catalog-list h4 {
+.catalog-list h4,
+.catalog-list h3 {
 	/* Позиционирование */
 	/* Блочная модель */
 	padding: 0;
-	margin: 0;
+	margin: 0 auto;
 	width: 180px;
 	/* Типографика */
 	font-size: 18px;
@@ -1302,11 +1302,11 @@ h1 {
 	display: block;
 }
 
-.catalog-item:hover img {
+.catalog-item:hover>.vision>img {
 	display: none;
 }
 
-.price{
+.catalog-item .price{
 	/* Позиционирование */
 	display: block;
 	/* Блочная модель */
@@ -1337,6 +1337,23 @@ h1 {
 	/* Оформление */
 	/* Анимация */
 	/* Разное */
+}
+
+.catalog-item.new::after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 10;
+
+	display: block;
+	width: 60px;
+	height: 59px;
+
+	content: "";
+	background-image: url("../img/new_flag.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+
 }
 
 
@@ -1684,6 +1701,16 @@ h1 {
 	border: 2px solid #dee3e4;
 	/* Анимация */
 	/* Разное */
+}
+
+.write_us-form input:hover,
+.write_us-form textarea:hover {
+	border: 2px solid #b5b5b5;
+}
+
+.write_us-form input:focus,
+.write_us-form textarea:focus {
+	border: 2px solid #ee3744;
 }
 
 .write_us-form .send-message {
