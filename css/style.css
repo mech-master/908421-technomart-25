@@ -66,7 +66,7 @@ body {
 	padding: 0;
 	margin:0;
 	width: 100%;
-	font-family: Cuprum, "Verdana", "Arial", sans-serif;
+	font-family: "Cuprum", "Verdana", "Arial", sans-serif;
 	min-width: 1200px;
 }
 
@@ -88,13 +88,13 @@ body {
 }
 
 .header-container {
-	/*background-color: #f3f7f8;/**/
-	background-color: yellow;/*рабочий цвет. удалить после формирования головы*/
+	background-color: #f4f7f9;/**/
 	width:100%;
 	height: 320px;
 	margin: 0;
 	padding: 0;
 	position: relative;
+	background-image: url("../img/bg-header.jpg");
 }
 
 .page-header {
@@ -146,6 +146,7 @@ h1 {
 	height: 42px;
 	box-shadow: 0 5px 0 0 #b52933;
 	vertical-align: middle;
+	font-size: 0;
 }
 
 .header-logo:hover {
@@ -247,12 +248,12 @@ h1 {
 
 .toolbar-bookmarks::after {
 	content: attr(data-bookmark-count);
-	margin-left: 5px;
+
 }
 
 .toolbar-cart::after {
 	content: attr(data-good-count);
-	margin-left: 5px;
+
 }
 
 .toolbar-bookmarks:hover,
@@ -301,14 +302,14 @@ h1 {
 	opacity: 0.3;
 }
 
-.toolbar-bookmarks:hover + .icon-bookmarks,
-.toolbar-cart:hover + .icon-cart
+.toolbar-bookmarks:hover .icon-bookmarks,
+.toolbar-cart:hover .icon-cart
 {
 	opacity: 1;
 }
 
-.toolbar-bookmarks:active + .icon-bookmarks,
-.toolbar-cart:active + .icon-cart
+.toolbar-bookmarks:active .icon-bookmarks,
+.toolbar-cart:active .icon-cart
 {
 	opacity: 0.5;
 }
@@ -337,7 +338,6 @@ h1 {
 .header-content {
 	width: 100%;
 	height: 111px;
-	outline: 1px solid darkgray;
 	padding: 0;
 	margin: 0;
 	padding-top: 47px;
@@ -347,7 +347,6 @@ h1 {
 	margin-left: 320px;
 	width: 300px;
 	float: left;
-	outline: 1px solid lightgray;
 }
 
 .header-contacts .phone {
@@ -384,7 +383,6 @@ h1 {
 
 .header-account {
 	float: left;
-	outline: 1px solid lightgray;
 	margin-left: 20px;
 	width: 300px;
 	padding: 0;
@@ -398,13 +396,15 @@ h1 {
 	position: relative;
 }
 
-.user-registered.hidden,
-.user-unregistered.hidden
+.user-unregistered.hidden,
+.user-registered.hidden
 {
 	display: none;
 }
 
-.user-unregistered a {
+.sign_in, 
+.sign_up 
+{
 	display: inline-block;
 	vertical-align: top;
 	background-color: white;
@@ -446,29 +446,1274 @@ h1 {
 	left: 34px;
 }
 
+.sign_in:hover .icon-sign_in {
+	fill: #32425C;
+}
+
+.sign_in:active,
+.sign_up:active
+{
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.sign_in:active .icon-sign_in {
+	fill: #c5c5c5;
+}
+
+.user_name {
+	display: block;
+	width: 254px;
+	height: 21px;
+	padding: 11px 0 13px 46px;
+	outline: 1px solid lightgray;
+	text-decoration: none;
+	font-size: 21px;
+	color: #000;
+	background-color: #fff;
+}
+
 .icon-user {
 	width: 20;
 	height: 18px;
 	fill: white;
+	position: absolute;
+	top: 13px;
+	left: 13px;
+	fill: #c5c5c5;
+}
+
+.user-registered .logout {
+	font-size: 0;
+	display: block;
+	width: 21px;
+	height: 17px;
+	position: absolute;
+	top: 14px;
+	right: 10px;
+}
+
+.user_name:hover .icon-user {
+	fill: #32425c;
+}
+
+.user_name:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.user_name:active .icon-user {
+	fill: #c5c5c5;
+}
+
+.user-registered .icon-logout {
+	fill: #c5c5c5;
+}
+
+.logout:hover .icon-logout {
+	fill: #32425c;
+}
+
+.logout:active .icon-logout {
+	fill: #c5c5c5;
+}
+
+.profile-actions {
+	padding-top: 10px;
+	padding-left: 17px;
+	position: relative;
+}
+.profile-actions a {
+	font-size: 16px;
+	color: #32425c;
+}
+
+.profile-actions a:first-child {
+	margin-right: 32px;
+	position: relative;
+}
+
+.profile-actions::before {
+	display: block;
+	content:"";
+	width: 4px;
+	height: 5px;
+	position: absolute;
+	top: 17px;
+	left: 108px;
+	background-image: url("../img/profile-separator.png");
+	background-repeat: no-repeat;
+	background-size: 4px 5px;
+	background-position: 50% 50%;
+}
+
+.profile-actions a:hover {
+	color: #000;
+}
+
+.profile-actions a:active {
+	color: rgba(50, 66, 92, 0.3);
 }
 
 .site-navigation {
-	outline: 1px solid lightblue;
 	padding: 0;
 	margin: 0;
 }
 
 .page-menu {
 	list-style: none;
-	height: 60px;
+	height: 55px;
 	width: 100%;
 	margin: 0;
 	padding: 0;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	font-size: 17px;
 }
 
 .page-menu li {
 	margin: 0;
 	padding: 0;
 	display: inline-block;
+	width: 100%;
 }
 
+.page-menu a {
+	display: block;
+	vertical-align: middle;
+	
+	height: 55px;
+	width: 100%;
+	
+	background-color: #32425c;
+	border-bottom: 5px solid #293449;
+
+	color: #fff;
+	line-height: 55px;
+	text-decoration: none;
+}
+
+.page-menu a:hover {
+	background-color: #293449;
+}
+
+.page-menu a:active {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+/*----- Окончание стилизации header -----*/
+
+/*----- Стилизация блока main.container -----*/
+.container {
+	/* Позиционирование */
+	/* Блочная модель */
+	width: 100%;
+	margin: 0;
+	/* Типографика */
+	/* Оформление */
+	outline: 1px solid red;
+	/* Анимация */
+	/* Разное */
+}
+
+/*----- Стилизация блока company-info index.html -----*/
+
+.company-info {
+	/* Позиционирование */
+	/* Блочная модель */
+	width: 940px;
+	margin: 0 auto;
+	height: 458px;
+	padding-top: 78px;
+	/* Типографика */
+	/* Оформление */
+	background-color: #ffffff;
+	/* Анимация */
+	/* Разное */
+}
+
+/*----- Стилизация блока about_us index.html -----*/
+
+.about_us {
+	/* Позиционирование */
+	float: left;
+	/* Блочная модель */
+	width: 525px;
+	margin-right: 104px;
+	/* Типографика */
+	/* Оформление */
+	/* Анимация */
+	/* Разное */
+}
+
+.about_us h2 {
+	/* Позиционирование */
+	/* Блочная модель */
+	margin: 0 0 26px 0;
+	/* Типографика */
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	/* Оформление */
+	/* Анимация */
+	/* Разное */
+}
+
+.about_us b, p {
+	/* Позиционирование */
+	/* Блочная модель */
+	margin: 0;
+	padding: 0;
+	/* Типографика */
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: normal;
+	/* Оформление */
+	/* Анимация */
+	/* Разное */
+}
+
+.about_us p {
+	margin-top: 24px;
+
+}
+
+.partner-list {
+	/* Позиционирование */
+	/* Блочная модель */
+	margin: 0;
+	padding: 0 0 0 35px;
+	/* Типографика */
+	
+	/* Оформление */
+	list-style: none;
+	/* Анимация */
+	/* Разное */
+}
+
+.partner-list li {
+	/* Позиционирование */
+	position: relative;
+	/* Блочная модель */
+	margin: 0;
+	padding-top: 20px;
+	/* Типографика */
+	/* Оформление */
+	/* Анимация */
+	/* Разное */
+}
+
+.partner-list li::before {
+	/* Позиционирование */
+	position: absolute;
+	left: -35px;
+	top: 28px;
+	/* Блочная модель */
+	width: 25px;
+	height: 2px;
+	/* Типографика */
+	content: "";
+	/* Оформление */
+	background-color: red;
+	background-image: url("../img/list-pointer.png");
+	background-repeat: no-repeat;
+	/* Анимация */
+	/* Разное */
+}
+
+.partner-list a {
+	/* Позиционирование */
+	/* Блочная модель */
+	/* Типографика */
+	font-size: 18px;
+	line-height: 20px;
+	text-decoration: none;
+	color: #000000;
+	/* Оформление */
+	/* Анимация */
+	/* Разное */
+}
+
+.button-full-info {
+	/* Позиционирование */
+	/* Блочная модель */
+	display: block;
+	width: 220px;
+	height: 27px;
+	padding-top: 11px;
+	margin-top: 36px;
+	/* Типографика */
+	font-size: 14px;
+	line-height: 18px;
+	text-decoration: none;
+	color: #ffffff;
+	text-align: center;
+	text-transform: uppercase;
+	/* Оформление */
+	background-color: #ee3643;
+	border-radius: 3px;
+	/* Анимация */
+	/* Разное */
+}
+
+
+
+/*----- Окончание блока about_us index.html -----*/
+
+/*----- Стилизация блока company-contacts index.html -----*/
+
+.company-contacts {
+	/* Позиционирование */
+	float: right;
+	/* Блочная модель */
+	/* Типографика */
+	/* Оформление */
+	/* Анимация */
+	/* Разное */
+}
+
+.company-contacts h2 {
+	/* Позиционирование */
+	/* Блочная модель */
+	margin: 0 0 26px 0;
+	padding: 0;
+	/* Типографика */
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	/* Оформление */
+	/* Анимация */
+	/* Разное */
+}
+
+.company-contacts p {
+	/* Позиционирование */
+	/* Блочная модель */
+	margin: 0 0 31px 0;
+	padding: 0;
+	/* Типографика */
+	font-size: 13px;
+	line-height: 24px;
+	/* Оформление */
+	/* Анимация */
+	/* Разное */
+}
+
+.location-map {
+	/* Позиционирование */
+	display: block;
+	/* Блочная модель */
+	margin: 0;
+	padding: 0;
+	width: 300px;
+	height: 158px;
+	/* Типографика */
+	/* Оформление */
+	/* Анимация */
+	/* Разное */
+}
+
+.button-write_us {
+	/* Позиционирование */
+	/* Блочная модель */
+	display: block;
+	width: 300px;
+	height: 27px;
+	padding-top: 11px;
+	margin-top: 39px;
+	/* Типографика */
+	font-size: 14px;
+	line-height: 18px;
+	text-decoration: none;
+	color: #ffffff;
+	text-align: center;
+	text-transform: uppercase;
+	/* Оформление */
+	background-color: #ee3643;
+	border-radius: 3px;
+	/* Анимация */
+	/* Разное */
+}
+
+/*----- Окончание блока company-contacts index.html -----*/
+
+/*----- Окончание блока company-info index.html -----*/
+
+/*----- Стилизация блока page-title catalog.html -----*/
+
+.catalog-title, 
+.catalog-content {
+	font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+}
+
+.catalog-title {
+	/* Позиционирование */
+	/* Блочная модель */
+	margin: 0 auto;
+	padding: 0;
+	width: 940px;
+	/* Типографика */
+	/* Оформление */
+	background-color: #ffffff;
+	/* Анимация */
+	/* Разное */
+}
+
+.catalog-title h2 {
+	/* Позиционирование */
+	/* Блочная модель */
+	margin: 0;
+	padding: 0;
+	/* Типографика */
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: #32425c;
+	font-weight: normal;
+	font-family: "Cuprum", "Verdana", "Arial", sans-serif;
+	/* Оформление */
+	background-color: #f2f6f8;
+
+	/* Анимация */
+	/* Разное */
+	
+}
+
+.breadcrumbs {
+	/* Позиционирование */
+	/* Блочная модель */
+	margin: 0;
+	padding: 0;
+	/* Типографика */
+	/* Оформление */
+	list-style: none;
+	background-color: #ffffff;
+	/* Анимация */
+	/* Разное */
+}
+
+.breadcrumbs li {
+	/* Позиционирование */
+	display: inline-block;
+	/* Блочная модель */
+	/* Типографика */
+	/* Оформление */
+	/* Анимация */
+	/* Разное */
+}
+
+.breadcrumbs a {
+	/* Позиционирование */
+	/* Блочная модель */
+	margin: 0;
+	padding: 0;
+	/* Типографика */
+	font-size: 13px;
+	line-height: 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000000;
+	/* Оформление */
+
+	/* Анимация */
+	/* Разное */
+}
+
+/*----- Окончание блока page-title catalog.html -----*/
+
+/*----- Стилизация блока catalog-content catalog.html -----*/
+
+.catalog-content {
+	/* Позиционирование */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	/* Блочная модель */
+	margin: 0;
+	padding: 0;
+	width: 940px;
+	margin: 0 auto;
+	/* Типографика */
+	/* Оформление */
+	/* Анимация */
+	/* Разное */
+}
+
+/*----- Стилизация блока filters catalog.html -----*/
+
+.filters {
+	/* Позиционирование */
+	/* Блочная модель */
+	margin: 0;
+	padding: 0;
+	width: 220px;
+	/* Типографика */
+	/* Оформление */
+	background-color: #ffffff;
+	outline: 1px solid green;
+	/* Анимация */
+	/* Разное */
+}
+
+.filters h3 {
+	/* Позиционирование */
+	/* Блочная модель */
+	margin: 0;
+	padding: 0;
+	/* Типографика */
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+	font-weight: normal;
+	/* Оформление */
+	background-color: #f7f3ec;
+	/* Анимация */
+	/* Разное */
+}
+
+.filter-type {
+	/* Позиционирование */
+	/* Блочная модель */
+	/* Типографика */
+	/* Оформление */
+	border: none;
+	/* Анимация */
+	/* Разное */
+}
+
+.filter-type legend {
+	/* Позиционирование */
+	/* Блочная модель */
+	/* Типографика */
+	font-size: 17px;
+	line-height: 30px;
+	text-transform: uppercase;
+	/* Оформление */
+	background-color: #ffffff;
+	/* Анимация */
+	/* Разное */
+}
+
+.filter-type ul {
+	/* Позиционирование */
+	/* Блочная модель */
+	padding-left: 34px;
+	/* Типографика */
+	/* Оформление */
+	list-style: none;
+	/* Анимация */
+	/* Разное */
+}
+
+.filter-type label {
+	/* Позиционирование */
+	/* Блочная модель */
+	/* Типографика */
+	font-size: 15px;
+	line-height: 20px;
+	text-transform: uppercase;
+	/* Оформление */
+	/* Анимация */
+	/* Разное */
+}
+
+.button-filters-send {
+	/* Позиционирование */
+	/* Блочная модель */
+	/* Типографика */
+	font-family: inherit;
+	font-size: 13px;
+	line-height: 18px;
+	/* Оформление */
+	/* Анимация */
+	/* Разное */
+}
+
+/*----- Окончание блока filters catalog.html -----*/
+
+/*----- Стилизация блока catalog catalog.html -----*/
+
+.catalog {
+	/* Позиционирование */
+	/* Блочная модель */
+	width: 700px;
+	/* Типографика */
+	/* Оформление */
+	outline: 1px solid blue;
+	/* Анимация */
+	/* Разное */
+}
+
+.sorting {
+	/* Позиционирование */
+	/* Блочная модель */
+	padding: 0;
+	margin: 0;
+	/* Типографика */
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+	/* Оформление */
+	background-color: #f7f3ec;
+	/* Анимация */
+	/* Разное */
+}
+
+.sorting h3 {
+	/* Позиционирование */
+	display: inline-block;
+	/* Блочная модель */
+	padding: 0;
+	margin: 0;
+	/* Типографика */
+	/* Оформление */
+	/* Анимация */
+	/* Разное */
+}
+
+.sort-list {
+	/* Позиционирование */
+	display: inline-block;
+	/* Блочная модель */
+	padding: 0;
+	margin: 0;
+	/* Типографика */
+	/* Оформление */
+	list-style: none;
+	/* Анимация */
+	/* Разное */
+}
+
+.sort-list li {
+	/* Позиционирование */
+	display: inline-block;
+	/* Блочная модель */
+	padding: 0;
+	margin: 0;
+	/* Типографика */
+	/* Оформление */
+	/* Анимация */
+	/* Разное */
+}
+
+.sort-list a {
+	/* Позиционирование */
+	/* Блочная модель */
+	padding: 0;
+	margin: 0;
+	/* Типографика */
+	text-decoration-color: #ee3643;
+	text-decoration-style: dotted;
+	color: rgba (0, 0, 0, 0.3);
+	/* Оформление */
+	/* Анимация */
+	/* Разное */
+}
+
+.sort-list .active {
+	/* Позиционирование */
+	/* Блочная модель */
+	/* Типографика */
+	text-decoration: none;
+	color: #ee3643;
+	/* Оформление */
+	/* Анимация */
+	/* Разное */
+}
+
+/*----- Стилизация блока .catalog-list catalog.html -----*/
+
+.catalog-list {
+	/* Позиционирование */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	/* Блочная модель */
+	padding: 0;
+	margin: 0;
+	/* Типографика */
+	/* Оформление */
+	list-style: none;
+	/* Анимация */
+	/* Разное */
+}
+
+.catalog-list li {
+	/* Позиционирование */
+	/* Блочная модель */
+	padding: 0;
+	margin: 0;
+	margin-bottom: 20px;
+	width: 220px;
+	height: 318px;
+	/* Типографика */
+	/* Оформление */
+	background-color: #ffffff;
+	outline: 1px solid #e5e5e5;
+	/* Анимация */
+	/* Разное */
+}
+
+.catalog-list li:hover, 
+.catalog-list li:focus {
+	/* Позиционирование */
+	/* Блочная модель */
+	/* Типографика */
+	/* Оформление */
+	box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+	/* Анимация */
+	/* Разное */
+}
+
+.catalog-list h4 {
+	/* Позиционирование */
+	/* Блочная модель */
+	padding: 0;
+	margin: 0;
+	width: 180px;
+	/* Типографика */
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: bold;
+	color: #000000;
+	text-align: center;
+	/* Оформление */
+
+	/* Анимация */
+	/* Разное */
+}
+
+.catalog-item img {
+	margin: 0;
+	padding: 0;
+}
+
+.catalog-item .catalog-actions {
+	/* Позиционирование */
+	display: none;/**/
+	/* Блочная модель */
+	width: 218px;
+	height: 174px;
+	/* Типографика */
+	/* Оформление */
+	/* Анимация */
+	/* Разное */
+}
+
+.catalog-actions .add-cart {
+	/* Позиционирование */
+	display: block;
+	/* Блочная модель */
+	padding: 0;
+	margin: 0 auto;
+	width: 135px;
+	height: 38px;
+	/* Типографика */
+	font-family: "Cuprum", "Verdana", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	/* Оформление */
+	background-color: #63a63e;
+	box-shadow: inset 0 -3px 0 0 #367315;
+	border-radius: 3px;
+	/* Анимация */
+	/* Разное */
+}
+
+.add-cart .cart-icon {
+	opacity: 0.3;
+}
+
+.add-cart:hover {
+	background-color: #5fbb2d;
+}
+
+.add-cart:hover .cart-icon {
+	opacity: 1;
+}
+
+.add-cart:active {
+	background-color: #518534;
+	box-shadow: none;
+}
+
+.catalog-actions .add-bookmarks {
+	/* Позиционирование */
+	display: block;
+	/* Блочная модель */
+	padding: 0;
+	margin: 0 auto;
+	width: 135px;
+	height: 38px;
+	box-sizing: border-box;
+	/* Типографика */
+	font-family: "Cuprum", "Verdana", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #32425c;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	/* Оформление */
+	background-color: #ffffff;
+	border-radius: 3px;
+	border: 3px solid #63a63e;
+	/* Анимация */
+	/* Разное */
+}
+
+.add-bookmarks:hover {
+	border-color: #33435d;
+}
+
+.add-bookmarks:active {
+	color: rgba(50, 66, 92, 0.3);
+	border-color: #c1c6ce;
+}
+
+.special-price {
+	/* Позиционирование */
+	display: block;
+	/* Блочная модель */
+	width: 125px;
+	height: 38px;
+	padding: 0;
+	margin: 0;
+	/* Типографика */
+	font-size: 17px;
+	line-height: 28px;
+	font-weight: bold;
+	color: #ffffff;
+	/* Оформление */
+	background-color: #ee3643;
+	/* Анимация */
+	/* Разное */
+}
+
+.catalog-item:hover .catalog-actions{
+	display: block;
+}
+
+.catalog-item:hover img {
+	display: none;
+}
+
+.price{
+	/* Позиционирование */
+	display: block;
+	/* Блочная модель */
+	padding: 0;
+	margin: 0;
+	/* Типографика */
+	font-size: 17px;
+	line-height: 28px;
+	font-weight: bold;
+	color: #000000;
+	/* Оформление */
+	/* Анимация */
+	/* Разное */
+}
+
+.special-price + .price{
+	/* Позиционирование */
+	display: block;
+	/* Блочная модель */
+	padding: 0;
+	margin: 0;
+	/* Типографика */
+	font-size: 17px;
+	line-height: 28px;
+	font-weight: bold;
+	color: #999999;
+	text-decoration: line-through;
+	/* Оформление */
+	/* Анимация */
+	/* Разное */
+}
+
+
+/*----- Окончание блока .catalog-list catalog.html -----*/
+
+/*----- Окончание блока catalog catalog.html -----*/
+
+/*----- Окончание блока catalog-content catalog.html -----*/
+
+/*----- Стилизация footer -----*/
+
+.page-footer {
+	width: 100%;
+	height: 298px;
+
+	background-color: #32425c;
+
+	padding: 0;
+	margin: 0;
+}
+
+.footer-navigation-container {
+	width: 940px;
+	height: 193px;
+
+	margin: 0 auto;
+}
+
+.footer-logo {
+	display: inline-block;
+	
+	width: 220px;
+	height: 63px;
+
+	font-size: 0;
+	text-align: center;
+	line-height: 63px;
+
+	background-color: #ee3643;
+
+	box-shadow: 0 5px 0 0 #b52933;
+
+	float: left;
+}
+
+.footer-logo img {
+	vertical-align: middle
+
+}
+
+.footer-navigation-list
+ {
+	display: inline-block;
+
+	width: 560px;
+	height: 21px;
+
+	padding: 42px 0 0 0;
+	margin: 0;
+
+	list-style: none;
+
+	float: right;
+
+	text-align: right;
+	font-size: 0;
+}
+
+.footer-navigation-list li
+{
+	display: inline;
+
+	margin: 0 60px 0 0;
+	padding: 0;
+}
+
+.footer-navigation-list li:last-child
+{
+	margin: 0;
+}
+
+.footer-navigation-item {
+	font-size: 18px;
+	line-height: 18px;
+	text-decoration: none;
+	color: #f1f5f7;
+}
+
+.footer-navigation-item:hover {
+	text-decoration: underline;/**/
+}
+
+.footer-navigation-item:active {
+	text-decoration: none;
+	opacity: 0.5;
+}
+
+.footer-contacts {
+	float: left;
+}
+
+.footer-contacts {
+	margin: 0;
+	padding: 32px 0 0 3px;
+}
+
+.footer-contacts a {
+	font-size: 18px;
+	line-height: 24px;
+	text-decoration: none;
+
+	color: #fff;
+}
+
+.footer-assortment {
+	display: inline-block;
+
+	width: 560px;
+	height: 21px;
+
+	padding: 32px 0 0 0;
+	margin: 0;
+
+	list-style: none;
+
+	float: right;
+
+	text-align: right;
+	font-size: 0;
+}
+
+.footer-assortment li
+{
+	display: inline;
+
+	margin: 0 60px 0 0;
+	padding: 0;
+}
+
+.footer-assortment li:last-child
+{
+	margin: 0;
+}
+
+.footer-assortment-item {
+	font-size: 18px;
+	line-height: 24px;
+	text-decoration: none;
+	color: #ffd180;
+}
+
+.footer-assortment-item:hover {
+	text-decoration: underline;/**/
+}
+
+.footer-assortment-item:active {
+	text-decoration: none;
+	opacity: 0.5;
+}
+
+.footer-copy_right {
+	width: 100%;
+	height: 105px;
+
+	background-color: #293449;
+}
+
+.copy_right-container {
+	width: 940px;
+
+	margin: 0 auto;
+	padding: 30px 0 0 0;
+}
+
+.copy_right-container b {
+	width: 240px;
+
+	font-size: 16px;
+	line-height:  18px;
+	color: #fff;
+	font-weight: normal;
+
+	float: left;
+
+	margin-top: 7px;
+}
+
+.social {
+	list-style: none;
+
+	float: left;
+
+	padding: 0;
+	margin: 0 0 0 150px;
+
+	line-height: 0;
+
+	width: 150px;
+}
+
+.social-button {
+	display: inline-block;
+
+	width: 42px;
+	height: 42px;
+
+	padding: 0;
+	margin: 0;
+}
+
+.social-icon {
+	display: block;
+
+	width: 42px;
+	height: 42px;
+
+	font-size: 0;
+
+	padding: 0;
+	margin: 0;
+
+	background-color: #212a3a;
+
+	border-radius: 50%;
+}
+
+.icon-vk {
+	background-image: url("../img/vk-icon.svg");
+	background-size: 26px 15px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.icon-fb {
+	background-image: url("../img/fb-icon.svg");
+	background-size: 12px 23px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.icon-insta {
+	background-image: url("../img/insta-icon.svg");
+	background-size: 21px 21px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.social-icon:hover,
+.social-icon:active
+{
+	background-color: #ee3643;
+}
+
+.callback {
+	display: inline-block;
+	
+	width: 160px;
+
+	margin: 7px 0 0 100px;
+
+	font-size: 16px;
+	line-height: 18px;
+	color: #fff;
+
+}
+
+.developer {
+	display: inline-block;
+
+	margin: 7px 0 0 30px;
+
+	font-size: 16px;
+	line-height: 18px;
+	color: #fff;
+}
+
+.callback a,
+.developer a
+{
+	text-decoration: none;
+	color: #ffd180;
+}
+
+.callback a:hover,
+.developer a:hover
+{
+	text-decoration: underline;
+}
+
+.callback a:active,
+.developer a:active
+{
+	text-decoration: none;
+	color: #ee3643
+}
+
+/*----- Стилизация блока modal index.html -----*/
+
+.modal {
+	/* Позиционирование */
+	/* Блочная модель */
+	padding: 0;
+	margin: 0;
+	/* Типографика */
+	font-size: 18px;
+	line-height: 18px;
+	/* Оформление */
+	background-color: #ffffff;
+	/* Анимация */
+	/* Разное */
+}
+
+.modal-write_us {
+	/* Позиционирование */
+	/* Блочная модель */
+	height: 423px;
+	width: 620px;
+	/* Типографика */
+	/* Оформление */
+	border-top: 7px solid #ff5357;
+	/* Анимация */
+	/* Разное */
+}
+
+.write_us-form label {
+	/* Позиционирование */
+	/* Блочная модель */
+	/* Типографика */
+	font-family: "Cuprum", "Verdana", "Arial", sans-serif;
+	/* Оформление */
+	/* Анимация */
+	/* Разное */
+}
+
+.write_us-form input[type="text"],
+.write_us-form input[type="email"],
+.write_us-form textarea {
+	/* Позиционирование */
+	/* Блочная модель */
+	/* Типографика */
+	font-family: "PT Sans", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	/* Оформление */
+	border: 2px solid #dee3e4;
+	/* Анимация */
+	/* Разное */
+}
+
+.write_us-form .send-message {
+	/* Позиционирование */
+	/* Блочная модель */
+	width: 460px;
+	height: 38px;
+	/* Типографика */
+	font-family: "Cuprum", "Verdana", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+	/* Оформление */
+	border: none;
+	border-radius: 3px;
+	background-color: #ee3643;
+	/* Анимация */
+	/* Разное */
+}
+
+.send-background {
+	/* Позиционирование */
+	/* Блочная модель */
+	width: 100%;
+	height: 112px;
+	/* Типографика */
+	/* Оформление */
+	background-color: #f4f4f4;
+	/* Анимация */
+	/* Разное */
+}
+
+/*----- Окончание блока modal index.html -----*/
