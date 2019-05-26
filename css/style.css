@@ -95,7 +95,7 @@
 
 	.visually-hidden {
 		/* Позиционирование */
-		position: absolute;
+		/*position: absolute;/**/
 		/* Блочная модель */
 		width: 1px;
 		height: 1px;
@@ -216,7 +216,7 @@
 		.header-contacts .phone::before {
 			/* Позиционирование */
 			display: block;
-			position: absolute;
+			/*position: absolute;/**/
 			left: 11px;
 			/* Блочная модель */
 			width: 19px;
@@ -348,7 +348,7 @@
 
 			.icon-sign_in {
 				/* Позиционирование */
-				position: absolute;
+				/*position: absolute;/**/
 				top: 14px;
 				left: 33px;
 				/* Блочная модель */
@@ -440,7 +440,7 @@
 
 			.icon-user {
 				/* Позиционирование */
-				position: absolute;
+				/*position: absolute;/**/
 				top: 13px;
 				left: 13px;
 				/* Блочная модель */
@@ -458,7 +458,7 @@
 				display: block;
 				width: 21px;
 				height: 17px;
-				position: absolute;
+				/*position: absolute;/**/
 				top: 14px;
 				right: 10px;
 			}
@@ -563,7 +563,7 @@
 			.profile-actions::before {
 				/* Позиционирование */
 				display: block;
-				position: absolute;
+				/*position: absolute;/**/
 				top: 17px;
 				left: 108px;
 				/* Блочная модель */
@@ -733,7 +733,7 @@
 		.icon-search {
 			/* Позиционирование */
 			display: block;
-			position: absolute;
+			/*position: absolute;/**/
 			top: 12px;
 			left: 17px;
 			/* Блочная модель */
@@ -891,7 +891,7 @@
 		.icon-bookmarks {
 			/* Позиционирование */
 			display: block;
-			position: absolute;
+			/*position: absolute;/**/
 			top: 12px;
 			left: 17px;
 			/* Блочная модель */
@@ -910,7 +910,7 @@
 		.icon-cart {
 			/* Позиционирование */
 			display: block;
-			position: absolute;
+			/*position: absolute;/**/
 			top: 12px;
 			left: 17px;
 			/* Блочная модель */
@@ -1280,7 +1280,7 @@
 
 		.promo-item.new::after {
 			/* Позиционирование */
-			position: absolute;
+			/*position: absolute;/**/
 			top: 0;
 			right: 0;
 			z-index: 10;
@@ -1315,7 +1315,7 @@
 
 			.promo-slider .slider-switch {
 				/* Позиционирование */
-				position: absolute;
+				/*position: absolute;/**/
 				/* Блочная модель*/
 				width: 22px;
 				height: 40px;
@@ -1359,7 +1359,7 @@
 
 			.promo-slide-list {
 				/* Позиционирование */
-				position: absolute;
+				/*position: absolute;/**/
 				width: 30px;
 				bottom: 36px;
 				left: 295px;
@@ -1440,7 +1440,7 @@
 
 			.promo-slide .promo-slide-title {
 				/* Позиционирование */
-				position: absolute;
+				/*position: absolute;/**/
 				top: 0;
 				left: 0;
 				/* Блочная модель */
@@ -1504,7 +1504,7 @@
 
 			.promo-slider .button-to-catalog {
 				/* Позиционирование */
-				position: absolute;
+				/*position: absolute;/**/
 				display: block;
 				bottom: 22px;
 				left: 25px;
@@ -1857,7 +1857,7 @@
 
 		.services-slider-control::after {
 			/* Позиционирование */
-			position: absolute;
+			/*position: absolute;/**/
 			right: 0;
 			top: 50%;
 			/* Блочная модель */
@@ -2177,7 +2177,7 @@
 
 			.partner-list li::before {
 				/* Позиционирование */
-				position: absolute;
+				/*position: absolute;/**/
 				left: -36px;
 				top: 29px;
 				/* Блочная модель */
@@ -2349,7 +2349,7 @@
 
 		.breadcrumbs li:not(:last-child)::after {
 			/* Позиционирование */
-			position: absolute;
+			/*position: absolute;/**/
 			display: block;
 			top: 4px;
 			right: 15px;
@@ -2529,7 +2529,7 @@
 				.price-slider::before {
 					/* Позиционирование */
 					display: block;
-					position: absolute;
+					/*position: absolute;/**/
 					top: 39px;
 					left: 20px;
 					/* Блочная модель */
@@ -2546,7 +2546,7 @@
 				.price-slider::after {
 					/* Позиционирование */
 					display: block;
-					position: absolute;
+					/*position: absolute;/**/
 					top: 39px;
 					left: 20px;
 					/* Блочная модель */
@@ -2697,7 +2697,7 @@
 
 				.filter-item-checkbox + label::before {
 					/* Позиционирование */
-					position: absolute;
+					/*position: absolute;/**/
 					top: -1px;
 					left: -35px;
 					display: block;
@@ -2800,7 +2800,7 @@
 				.filter-item-radio + label::before {
 					/* Позиционирование */
 					display: block;
-					position: absolute;
+					/*position: absolute;/**/
 					top: -2px;
 					left: -36px;
 					/* Блочная модель */
@@ -3179,7 +3179,7 @@
 
 				.add-cart .cart-icon {
 					/* Позиционирование */
-					position: absolute;
+					/*position: absolute;/**/
 					top: 11px;
 					left: 14px;
 					/* Блочная модель */
@@ -3299,7 +3299,7 @@
 
 				.special-price::after {
 					/* Позиционирование */
-					position: absolute;
+					/*position: absolute;/**/
 					top: 0;
 					right: -18px;
 					/* Блочная модель */
@@ -3374,7 +3374,7 @@
 
 				.catalog-item.new::after {
 					/* Позиционирование */
-					position: absolute;
+					/*position: absolute;/**/
 					top: -1px;
 					right: -1px;
 					z-index: 10;
@@ -3998,7 +3998,7 @@
 
 		.modal-close {
 		/* Позиционирование */
-		position: absolute;
+		/*position: absolute;/**/
 		top: 9px;
 		right: 9px;
 		/* Блочная модель */
