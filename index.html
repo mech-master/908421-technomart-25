@@ -9,7 +9,7 @@
 		
 		<div class="page-container">
 			<header class="page-header-index">
-				<div class="header-content">
+				<div class="alignment-container header-content">
 					<h1 class="slogan">
 						Интернет-магазин строительных материалов <br>
 						и инструментов для ремонта
@@ -34,7 +34,7 @@
 					</div>
 				</div>
 				<div class="toolbar-background">
-					<div class="toolbar">
+					<div class="alignment-container toolbar">
 						<a class="header-logo" href="index.html">Логотип Техномарт
 							<img src="img/logo.png" width="220" height="42" class="page-logo" alt="Логотип магазина Техномарт">
 						</a>
@@ -69,8 +69,8 @@
 					</div>
 				</div>
 
-				<nav class="site-navigation">
-					<ul class="page-menu">
+				<nav class="alignment-container site-navigation">
+					<ul class="alignment-container page-menu">
 						<li class="page-menu-item active"><a href="index.html" class="button-page-menu">Главная</a></li>
 						<li class="page-menu-item"><a href="about.html" class="button-page-menu">Компания</a></li>
 						<li class="page-menu-item"><a href="catalog.html" class="button-page-menu">Каталог</a></li>
@@ -85,7 +85,7 @@
 
 			<main class="container">
 
-				<section class="promo">
+				<section class="alignment-container promo">
 					<h2 class="visually-hidden">Ассортимент и услуги</h2>
 					<ul class="assortment">
 						<li class="promo-item materials new">
@@ -149,7 +149,7 @@
 					</ul>
 				</section>
 
-				<section class="popular_product">
+				<section class="alignment-container popular_product">
 					<div class="section-title">
 						<h2>Популярные товары:</h2>
 						<a href="catalog.html">Все популярные товары</a>
@@ -214,7 +214,7 @@
 					</ul>
 				</section>
 
-				<section class="popular_brands">
+				<section class="alignment-container popular_brands">
 					<div class="section-title">
 						<h2>Популярные производители:</h2>
 						<a href="catalog.html">Все производители</a>
@@ -256,7 +256,7 @@
 				</section>
 				
 				<div class="services-background">
-					<section class="services">
+					<section class="alignment-container services">
 						<h2>Сервисы</h2>
 						<p>Хороший интернет-магазин отличается от плохого не только ценами!
 						Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
@@ -306,7 +306,7 @@
 					</section>
 				</div>
 
-				<div class="company-info">
+				<div class="alignment-container company-info">
 					<section class="about_us">
 						<h2>Компания «Техномарт»</h2>
 						<b>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</b>
@@ -335,7 +335,7 @@
 			</main>
 
 			<footer class="page-footer">
-				<div class="footer-navigation-container">
+				<div class="alignment-container footer-navigation-container">
 					<div class="footer-navigation">
 						<h2 class="visually-hidden">Управление в подвале</h2>
 						<a class="footer-logo" href="index.html">Логотип Техномарт
@@ -363,7 +363,7 @@
 					</div>
 				</div>
 				<div class="footer-copyright">
-					<div class="copyright-container">
+					<div class="alignment-container copyright-container">
 						<h2 class="visually-hidden">Данные о разработчиках</h2>
 						<b>© 2010-2019 Компания «Техномарт» <br>
 						Все права защищены</b>
@@ -398,49 +398,51 @@
 				</div>
 			</footer>
 		</div>
-
-		<section class="modal modal-write_us">
-			<h2 class="visually-hidden">Форма отправки сообщения</h2>
-			<form class="write_us-form" action="https://echo.htmlacademy.ru" method="post">
-				<div class="message-content">
-					<div class="user-info">
-						<p>
-							<label class="write_us-label author-name" for="author-name-input">
-								Ваше имя:
-							</label>
-							<input type="text" name="message-author-name" id="author-name-input" placeholder="Имя Фамилия">
-						</p>
-						<p>
-							<label class="write_us-label author-email" for="author-email-input">
-								Ваш e-mail:
-							</label>
-							<input type="email" name="message-author-email" id="author-email-input" placeholder="email@example.com">
-						</p>
-					</div>
-					<p>
-						<label class="write_us-label message" for="message-content-input">
-							Текст письма:
-						</label>
-						<textarea name="message-content" id="message-content-input" cols="30" rows="5" placeholder="В свободной форме"></textarea>
-					</p>
-				</div>
-					<div class="send-background">
-						<button class="button send-message" type="submit">Отправить</button>
-					</div>
-
-			</form>
-			<button class="modal-close" type="button">Закрыть</button>
-		</section>
-
-		<section class="modal modal-map">
-			<h2 class="visually-hidden">Карта как нас найти</h2>
-			<a href="map.html" class="modal-map-image">
-				<img src="img/map.jpg" width="900" height="446" alt="Офис компании по адресу: город Санкт-Петербург, улица Большая Конюшенная, д. 19/8">
-			</a>
-			<button class="modal-close" type="button">Закрыть</button>
-		</section>
-
 		
+		<div class="view-port-write_us">
+			<section class="modal modal-write_us">
+				<h2 class="visually-hidden">Форма отправки сообщения</h2>
+				<form class="write_us-form" action="https://echo.htmlacademy.ru" method="post">
+					<div class="message-content">
+						<div class="user-info">
+							<p>
+								<label class="write_us-label author-name" for="author-name-input">
+									Ваше имя:
+								</label>
+								<input type="text" name="message-author-name" id="author-name-input" placeholder="Имя Фамилия">
+							</p>
+							<p>
+								<label class="write_us-label author-email" for="author-email-input">
+									Ваш e-mail:
+								</label>
+								<input type="email" name="message-author-email" id="author-email-input" placeholder="email@example.com">
+							</p>
+						</div>
+						<p>
+							<label class="write_us-label message" for="message-content-input">
+								Текст письма:
+							</label>
+							<textarea name="message-content" id="message-content-input" cols="30" rows="5" placeholder="В свободной форме"></textarea>
+						</p>
+					</div>
+						<div class="send-background">
+							<button class="button send-message" type="submit">Отправить</button>
+						</div>
+
+				</form>
+				<button class="modal-close" type="button">Закрыть</button>
+			</section>
+		</div>
+
+		<div class="view-port-map">
+			<section class="modal modal-map">
+				<h2 class="visually-hidden">Карта как нас найти</h2>
+				<a href="map.html" class="modal-map-image">
+					<img src="img/map.jpg" width="900" height="446" alt="Офис компании по адресу: город Санкт-Петербург, улица Большая Конюшенная, д. 19/8">
+				</a>
+				<button class="modal-close" type="button">Закрыть</button>
+			</section>
+		</div>
 
 	</body>
 </html>
