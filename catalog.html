@@ -6,10 +6,10 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
+
 		<div class="page-container">
-			
-<header class="page-header-index">
-				<div class="header-content">
+			<header class="page-header-index">
+				<div class="alignment-container header-content">
 					<h1 class="slogan">
 						Интернет-магазин строительных материалов <br>
 						и инструментов для ремонта
@@ -42,7 +42,7 @@
 					</div>
 				</div>
 				<div class="toolbar-background">
-					<div class="toolbar">
+					<div class="alignment-container toolbar">
 						<a class="header-logo" href="index.html">Логотип Техномарт
 							<img src="img/logo.png" width="220" height="42" class="page-logo" alt="Логотип магазина Техномарт">
 						</a>
@@ -77,8 +77,8 @@
 					</div>
 				</div>
 
-				<nav class="site-navigation">
-					<ul class="page-menu">
+				<nav class="alignment-container site-navigation">
+					<ul class="alignment-container page-menu">
 						<li class="page-menu-item active"><a href="index.html" class="button-page-menu">Главная</a></li>
 						<li class="page-menu-item"><a href="about.html" class="button-page-menu">Компания</a></li>
 						<li class="page-menu-item"><a href="catalog.html" class="button-page-menu">Каталог</a></li>
@@ -92,7 +92,7 @@
 			</header>
 
 			<main class="container">
-				<div class="catalog-title">
+				<div class="alignment-container catalog-title">
 					<ul class="breadcrumbs">
 						<li><a href="index.html" class="main-page">Главная</a></li>
 						<li><a href="catalog.html">Каталог</a></li>
@@ -103,7 +103,7 @@
 					<h2>Перфораторы</h2>
 				</div>
 
-				<div class="catalog-content">
+				<div class="alignment-container catalog-content">
 					<section class="filters">
 						<h3>Фильтр:</h3>
 						<form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
@@ -312,7 +312,7 @@
 					</section>
 				</div>
 				<div class="description-container">
-					<section class="equipment_description">
+					<section class="alignment-container equipment_description">
 						<h3>Пара слов о перфораторах</h3>
 						<p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. <br>
 						Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
@@ -321,7 +321,7 @@
 			</main>
 
 			<footer class="page-footer">
-				<div class="footer-navigation-container">
+				<div class="alignment-container footer-navigation-container">
 					<div class="footer-navigation">
 						<h2 class="visually-hidden">Управление в подвале</h2>
 						<a class="footer-logo" href="index.html">Логотип Техномарт
@@ -349,7 +349,7 @@
 					</div>
 				</div>
 				<div class="footer-copyright">
-					<div class="copyright-container">
+					<div class="alignment-container copyright-container">
 						<h2 class="visually-hidden">Данные о разработчиках</h2>
 						<b>© 2010-2019 Компания «Техномарт» <br>
 						Все права защищены</b>
@@ -386,18 +386,20 @@
 
 		</div>
 
-		<section class="modal modal-cart_add">
-			<h2 class="visually-hidden">Вы добавили товар в корзину</h2>
-			<p class="message-succesfully">
-				<img src="img/icon-successfully.svg" width="66" height="66" alt="Иконка удачного добавления в корзину">
-				<b>Товар добавлен в корзину!</b>
-			</p>
-			<p class="message-actions">
-				<a href="#" class="message-offer">Оформить заказ</a>
-				<a href="#" class="message-continue">Продолжить покупки</a>
-			</p>
-			<button type="button" class="modal-close">Закрыть</button>
-		</section>
+		<div class="view-port-cart_add">
+			<section class="modal modal-cart_add">
+				<h2 class="visually-hidden">Вы добавили товар в корзину</h2>
+				<p class="message-succesfully">
+					<img src="img/icon-successfully.svg" width="66" height="66" alt="Иконка удачного добавления в корзину">
+					<b>Товар добавлен в корзину!</b>
+				</p>
+				<p class="message-actions">
+					<a href="#" class="message-offer">Оформить заказ</a>
+					<a href="#" class="message-continue">Продолжить покупки</a>
+				</p>
+				<button type="button" class="modal-close">Закрыть</button>
+			</section>
+		</div>
 
 	</body>
 </html>
