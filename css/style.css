@@ -1015,6 +1015,7 @@
 			justify-content: center;
 			flex-direction: row;
 			/* Блочная модель */
+			padding: 0;
 			/* Типографика */
 			text-align: center;
 			font-size: 17px;
@@ -1689,7 +1690,7 @@
 			/* Блочная модель */
 			margin: 0;
 			padding: 0;
-			padding-bottom: 60px;
+			padding-bottom: 69px;
 			/* Типографика */
 			/* Оформление */
 			list-style: none;
@@ -1702,11 +1703,10 @@
 			margin: 0;
 			padding: 0;
 			width: 220px;
-			height: 143px;
-			margin-bottom: 26px;
+			margin-bottom: 20px;
+			box-sizing: border-box;
 			/* Типографика */
 			/* Оформление */
-			box-sizing: border-box;
 			list-style: none;
 			border: 1px solid #eaeaea;
 			/* Анимация */
@@ -1714,6 +1714,7 @@
 
 		.popular_brands-list img {
 				/* Позиционирование */
+				display: block;
 				/* Блочная модель */
 				margin: 0;
 				padding: 0;
@@ -1806,7 +1807,7 @@
 			padding: 0;
 			margin: 0;
 			width: 400px;
-			margin-bottom: 69px;
+			margin-bottom: 68px;
 			/* Типографика */
 			font-size: 13px;
 			line-height: 24px;
@@ -2100,6 +2101,7 @@
 				/* Блочная модель */
 				width: 525px;
 				margin-right: 104px;
+				margin-top: 1px;
 				/* Типографика */
 				/* Оформление */
 				/* Анимация */
@@ -2143,7 +2145,7 @@
 				/* Блочная модель */
 				margin: 0;
 				padding: 0 0 0 36px;
-				margin-bottom: 37px;
+				margin-bottom: 36px;
 				/* Типографика */
 				/* Оформление */
 				list-style: none;
@@ -3034,7 +3036,6 @@
 					/* Блочная модель */
 					padding: 0;
 					margin: 0;
-					margin-bottom: 32px;
 					/* Типографика */
 					/* Оформление */
 					list-style: none;
@@ -3383,6 +3384,7 @@
 					/* Блочная модель */
 					margin: : 0;
 					padding: 0;
+					margin-top: 32px;
 					margin-bottom: 60px;
 					/* Типографика */
 					/* Оформление */
@@ -3481,6 +3483,7 @@
 			width: 100%;
 			margin: 0;
 			padding: 0;
+			padding-bottom: 70px;
 			/* Типографика */
 			/* Оформление */
 			background-color: #f2f6f8;
@@ -3519,7 +3522,6 @@
 		.equipment_description p {
 			/* Позиционирование */
 			/* Блочная модель */
-			margin-bottom: 70px;
 			/* Типографика */
 			font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
 			font-size: 13px;
