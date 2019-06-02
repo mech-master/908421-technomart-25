@@ -2492,8 +2492,7 @@
 			line-height: 18px;
 		}
 
-		.write_us-form input[type="text"],
-		.write_us-form input[type="email"],
+		.write_us-form input,
 		.write_us-form textarea {
 			font-family: "PT Sans", Arial, Helvetica, sans-serif;
 			font-size: 13px;
