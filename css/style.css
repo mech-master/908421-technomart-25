@@ -66,32 +66,7 @@
 
 /***** end block [fonts] for {index.html and catalog.html} *****/
 
-/*body > * {
-	outline: 1px solid darkgray;
-}/**/
-
-/*body > * > * {
-	outline: 1px solid orange;
-}/**/
-
-/*body > * > * > * {
-	outline: 1px solid green;
-}/**/
-
 /***** begin block [aggregate] for {index.html and catalog.html} *****/
-
-	body {
-		/* Позиционирование */
-		/* Блочная модель */
-		padding: 0;
-		margin:0;
-		width: 100%;
-		min-width: 960px;
-		/* Типографика */
-		/* Оформление */
-		font-family: "Cuprum", "Verdana", "Arial", sans-serif;
-		/* Анимация */
-	}
 
 	.visually-hidden {
 		/* Позиционирование */
@@ -107,24 +82,50 @@
 		/* Оформление */
 		border: 0;
 		/* Анимация */
-		
+		/* Разное */
 	}
 
-	.alignment-container {
+	body {
 		/* Позиционирование */
 		/* Блочная модель */
-		width: 940px;
-		margin: 0 auto;
-		padding: 0 10px;
+		padding-top: 0;
+		padding-right: 0;
+		padding-bottom: 0;
+		padding-left: 0;
+
+		margin-top: 0;
+		margin-right: 0;
+		margin-bottom: 0;
+		margin-left: 0;
+
+		width: auto;
+		min-width: 960px;
 		/* Типографика */
 		/* Оформление */
+		font-family: "Cuprum", "Verdana", "Arial", sans-serif;
 		/* Анимация */
 		/* Разное */
 	}
 
-	.page-container {
-		width: auto;
-		margon: 0 auto;
+	.alignment-wrapper {
+		/* Позиционирование */
+		/* Блочная модель */
+		width: 940px;
+
+		padding-top: 0;
+		padding-right: 10px;
+		padding-bottom: 0;
+		padding-left: 10px;
+
+		margin-top: 0;
+		margin-right: auto;
+		margin-bottom: 0;
+		margin-left: auto;
+
+		/* Типографика */
+		/* Оформление */
+		/* Анимация */
+		/* Разное */
 	}
 
 /***** end block [aggregate] for {index.html and catalog.html} *****/
@@ -136,10 +137,18 @@
 		display: flex;
 		flex-direction: column;
 		/* Блочная модель */
-		width: 100%;
-		margin: 0;
-		padding: 0;
+		width: auto;
+
+		padding-top: 0;
+		padding-right: 0;
 		padding-bottom: 60px;
+		padding-left: 0;
+
+		margin-top: 0;
+		margin-right: 0;
+		margin-bottom: 0;
+		margin-left: 0;
+
 		/* Типографика */
 		/* Оформление */
 		background-color: #f4f7f9;
@@ -147,48 +156,41 @@
 		background-repeat: no-repeat;
 		background-position: center center;/**/
 		/* Анимация */
-		
+		/* Разное */
 	}
 
-	.page-header-catalog {
-		/* Позиционирование */
-		display: flex;
-		flex-direction: column;
-		/* Блочная модель */
-		width: 100%;
-		margin: 0;
-		padding: 0;
-		padding-bottom: 60px;
-		/* Типографика */
-		/* Оформление */
-		background-color: #f2f6f8;
-		/* Анимация */
-		
-	}
-	
 	/***** begin block [header-content] for {index.html} *****/
 
 		.header-content {
 			/* Позиционирование */
 			display: flex;
 			flex-direction: row;
+			justify-content: space-between;
 			/* Блочная модель */
 			padding-top: 45px;
 			padding-bottom: 39px;
 			/* Типографика */
 			/* Оформление */
 			/* Анимация */
+			/* Разное */
 		}
 
 		.header-content .slogan {
 			/* Позиционирование */
 			/* Блочная модель */
-			width: 200px;
-			margin: 0;
-			margin-left: 52px;
-			margin-right: 71px;
-			padding: 0;
-			margin-top: 4px;
+			box-sizing: border-box;
+			min-width: 32%;
+
+			margin-top: 0;
+			margin-right: 0;/*margin-right: 71px;/**/
+			margin-bottom: 0;
+			margin-left: 0;
+			
+			padding-top: 4px;
+			padding-right: 0;
+			padding-bottom: 0;
+			padding-left: 52px;
+
 			/* Типографика */
 			font-family: "Cuprum", "Verdana", "Arial", sans-serif;
 			font-style: italic;
@@ -198,21 +200,49 @@
 			font-weight: normal;
 			/* Оформление */
 			/* Анимация */
+			/* Разное */
 		}
 
 		.header-contacts {
-			width: 320px;
+			/* Позиционирование */
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			/* Блочная модель */
+			min-width: 32%;
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+			
+			padding-top: 0;
+			padding-right: 0;
+			padding-bottom: 0;
+			padding-left: 0;
+			/* Типографика */
+			/* Оформление */
+			/* Анимация */
+			/* Разное */
 		}
 
 		.header-contacts .phone {
 			/* Позиционирование */
 			position: relative;
-			/* Блочная модель */
-			padding: 10px 0 8px 70px;
-			width: 194px;
 			display: block;
-			margin: 0;
+			/* Блочная модель */
+			box-sizing: border-box;
+
+			min-width: 270px;
+
+			margin-top: 0;
+			margin-right: 0;
 			margin-bottom: 5px;
+			margin-left: 0;
+
+			padding-top: 10px;
+			padding-right: 0;
+			padding-bottom: 8px;
+			padding-left: 70px;
 			/* Типографика */
 			font-size: 21px;
 			line-height: 21px;
@@ -222,12 +252,13 @@
 			border: 3px solid white;
 			text-decoration: none;
 			/* Анимация */
+			/* Разное */
 		}
 
 		.header-contacts .phone::before {
 			/* Позиционирование */
 			display: block;
-			/*position: absolute;/**/
+			position: absolute;
 			left: 11px;
 			/* Блочная модель */
 			width: 19px;
@@ -236,12 +267,16 @@
 			/* Оформление */
 			background: url("../img/icon-phone.svg") no-repeat 50% 50%;
 			/* Анимация */
+			/* Разное */
 			content:"";
 		}
 
 		.header-contacts .address {
 			/* Позиционирование */
 			/* Блочная модель */
+			padding-top: 0;
+			padding-right: 0;
+			padding-bottom: 0;
 			padding-left: 10px;
 			/* Типографика */
 			font-size: 14px;
@@ -251,21 +286,28 @@
 			font-family: "Cuprum", "Verdana", "Arial", sans-serif;
 			/* Оформление */
 			/* Анимация */
+			/* Разное */
 		}
 
 		.header-account {
 			/* Позиционирование */
 			display: flex;
-		 	flex-direction: rox;
-		 	justify-content: space-between;
+		 	flex-direction: column;
 			/* Блочная модель */
-			width: 300px;
-			padding: 0;
-			margin: 0;
-			margin-left: auto;
+			min-width: 32%;
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+
+			padding-top: 0;
+			padding-right: 0;
+			padding-bottom: 0;
+			padding-left: 0;
 			/* Типографика */
 			/* Оформление */
 			/* Анимация */
+			/* Разное */
 		}
 
 		/***** begin block [header-content .user-unregistered] for {index.html} *****/
@@ -273,32 +315,14 @@
 			.user-unregistered {
 				/* Позиционирование */
 				position: relative;
-				/* Блочная модель */
-				width: 300px;
-				/* Типографика */
-				/* Оформление */
-				/* Анимация */
-			}
-
-			.user-unregistered {
-				/* Позиционирование */
 				display: flex;
 				flex-direction: row;
 				justify-content: space-between;
-				align-items: flex-start;
 				/* Блочная модель */
 				/* Типографика */
 				/* Оформление */
 				/* Анимация */
-			}
-
-			.user-unregistered.hidden {
-				/* Позиционирование */
-				display: none;
-				/* Блочная модель */
-				/* Типографика */
-				/* Оформление */
-				/* Анимация */
+				/* Разное */
 			}
 
 			.sign_in, 
@@ -307,6 +331,11 @@
 				/* Позиционирование */
 				display: block;
 				/* Блочная модель */
+				box-sizing: border-box;
+
+				padding-top: 13px;
+				padding-right: 0;
+				padding-bottom: 13px;
 				/* Типографика */
 				font-size: 21px;
 				line-height: 21px;
@@ -316,50 +345,38 @@
 				/* Оформление */
 				background-color: white;
 				/* Анимация */
-				
+				/* Разное */
 			}
 
 			.sign_in {
 				/* Позиционирование */
 				/* Блочная модель */
-				width: 74px;
-				margin-left: 20px;
-				padding: 13px 0 13px 47px;
+				min-width: 120px;
+
+				margin-right: 10px;
+				margin-left: 18px;
+
+				padding-left: 47px;
 				/* Типографика */
 				/* Оформление */
 				/* Анимация */
-				
+				/* Разное */
 			}
-
 
 			.sign_up {
 				/* Позиционирование */
 				/* Блочная модель */
-				width: 150px;
-				margin-left: 10px;
-				padding: 13px 0 13px 0;
+				min-width: 150px;
 				/* Типографика */
 				text-align: center;
 				/* Оформление */
 				/* Анимация */
-				
-			}
-
-			.sign_in:hover,
-			.sign_up:hover
-			{
-				/* Позиционирование */
-				/* Блочная модель */
-				/* Типографика */
-				/* Оформление */
-				color: #ee3643;
-				/* Анимация */
-				
+				/* Разное */
 			}
 
 			.icon-sign_in {
 				/* Позиционирование */
-				/*position: absolute;/**/
+				position: absolute;
 				top: 14px;
 				left: 33px;
 				/* Блочная модель */
@@ -369,7 +386,19 @@
 				/* Оформление */
 				fill: #c5c5c5;
 				/* Анимация */
-				
+				/* Разное */
+			}
+			
+			.sign_in:hover,
+			.sign_up:hover
+			{
+				/* Позиционирование */
+				/* Блочная модель */
+				/* Типографика */
+				/* Оформление */
+				color: #ee3643;
+				/* Анимация */
+				/* Разное */
 			}
 
 			.sign_in:hover .icon-sign_in {
@@ -379,8 +408,7 @@
 				/* Оформление */
 				fill: #32425C;
 				/* Анимация */
-				
-				
+				/* Разное */				
 			}
 
 			.sign_in:active,
@@ -392,7 +420,7 @@
 				/* Оформление */
 				color: rgba(0, 0, 0, 0.3);
 				/* Анимация */
-				
+				/* Разное */
 			}
 
 			.sign_in:active .icon-sign_in {
@@ -402,218 +430,12 @@
 				/* Оформление */
 				fill: #c5c5c5;
 				/* Анимация */
+				/* Разное */
 			}
 
 		/***** end block [header-content .user-unregistered] for {index.html} *****/
 
 	/***** end block [header-content] for {index.html} *****/
-
-	/***** begin block [header-content] for {catalog.html} *****/
-
-		/***** begin block [header-content .user-registered] for {catalog.html} *****/
-
-			.user-registered {
-				/* Позиционирование */
-				position: relative;
-				/* Блочная модель */
-				width: 300px;
-				/* Типографика */
-				/* Оформление */
-				/* Анимация */
-				
-			}
-
-			.user-registered.hidden	{
-				/* Позиционирование */
-				display: none;
-				/* Блочная модель */
-				/* Типографика */
-				/* Оформление */
-				/* Анимация */
-			}
-
-			.user_name {
-				/* Позиционирование */
-				display: block;
-				/* Блочная модель */
-				width: 254px;
-				min-height: 21px;
-				padding: 11px 0 8px 46px;
-				/* Типографика */
-				text-decoration: none;
-				font-size: 21px;
-				color: #000;
-				/* Оформление */
-				background-color: #fff;
-				/* Анимация */
-				
-			}
-
-			.icon-user {
-				/* Позиционирование */
-				/*position: absolute;/**/
-				top: 13px;
-				left: 13px;
-				/* Блочная модель */
-				width: 20;
-				height: 18px;
-				/* Типографика */
-				/* Оформление */
-				fill: #c5c5c5;
-				/* Анимация */
-				
-			}
-
-			.user-registered .logout {
-				font-size: 0;
-				display: block;
-				width: 21px;
-				height: 17px;
-				/*position: absolute;/**/
-				top: 14px;
-				right: 10px;
-			}
-
-			.user_name:hover .icon-user {
-				/* Позиционирование */
-				/* Блочная модель */
-				/* Типографика */
-				/* Оформление */
-				fill: #32425c;
-				/* Анимация */
-				/* Разное */
-			}
-
-			.user_name:active {
-				/* Позиционирование */
-				/* Блочная модель */
-				/* Типографика */
-				/* Оформление */
-				color: rgba(0, 0, 0, 0.3);
-				/* Анимация */
-				/* Разное */
-			}
-
-			.user_name:active .icon-user {
-				/* Позиционирование */
-				/* Блочная модель */
-				/* Типографика */
-				/* Оформление */
-				fill: #c5c5c5;
-				/* Анимация */
-				/* Разное */
-			}
-
-			.user-registered .icon-logout {
-				/* Позиционирование */
-				/* Блочная модель */
-				/* Типографика */
-				/* Оформление */
-				fill: #c5c5c5;
-				/* Анимация */
-				/* Разное */
-			}
-
-			.logout:hover .icon-logout {
-				/* Позиционирование */
-				/* Блочная модель */
-				/* Типографика */
-				/* Оформление */
-				fill: #32425c;
-				/* Анимация */
-				/* Разное */
-			}
-
-			.logout:active .icon-logout {
-				/* Позиционирование */
-				/* Блочная модель */
-				/* Типографика */
-				/* Оформление */
-				fill: #c5c5c5;
-				/* Анимация */
-				/* Разное */
-			}
-
-			.profile-actions {
-				/* Позиционирование */
-				position: relative;
-				/* Блочная модель */
-				padding-top: 10px;
-				padding-left: 17px;
-				/* Типографика */
-				/* Оформление */
-				/* Анимация */
-				/* Разное */
-			}
-
-			.profile-actions a {
-				/* Позиционирование */
-				/* Блочная модель */
-				/* Типографика */
-				/* Оформление */
-				font-size: 16px;
-				line-height: 18px;
-				color: #32425c;
-				font-family: "Cuprum", "Verdana", "Arial", sans-serif;
-				/* Анимация */
-				/* Разное */
-			}
-
-			.profile-actions a:first-child {
-				/* Позиционирование */
-				position: relative;
-				/* Блочная модель */
-				margin-left: 1px;
-				margin-right: 30px;
-				/* Типографика */
-				/* Оформление */
-				/* Анимация */
-				/* Разное */
-			}
-
-			.profile-actions::before {
-				/* Позиционирование */
-				display: block;
-				/*position: absolute;/**/
-				top: 17px;
-				left: 108px;
-				/* Блочная модель */
-				width: 4px;
-				height: 5px;
-				/* Типографика */
-				/* Оформление */
-				background-image: url("../img/profile-separator.png");
-				background-repeat: no-repeat;
-				background-size: 4px 5px;
-				background-position: 50% 50%;
-				/* Анимация */
-				/* Разное */
-				content:"";
-			}
-
-			.profile-actions a:hover {
-				/* Позиционирование */
-				/* Блочная модель */
-				/* Типографика */
-				color: #000;
-				/* Оформление */
-				/* Анимация */
-				/* Разное */
-			}
-
-			.profile-actions a:active {
-				/* Позиционирование */
-				/* Блочная модель */
-				/* Типографика */
-				color: rgba(50, 66, 92, 0.3);
-				/* Оформление */
-				/* Анимация */
-				/* Разное */
-			}
-
-		/***** end block [header-content .user-registered] for {catalog.html} *****/											
-
-	/***** end block [header-content] for {catalog.html} *****/
 
 	/***** begin block [toolbar] for {index.html and catalog.html} *****/
 
@@ -621,14 +443,22 @@
 			/* Позиционирование */
 			order: -1;
 			/* Блочная модель */
-			width: 100%;
-			margin: 0;
-			padding: 0;
+			width: auto;
+
+			margin-top: 0;	
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+
+			padding-top: 0;
+			padding-right: 0;
+			padding-bottom: 0;
+			padding-left: 0;
 			/* Типографика */
 			/* Оформление */
 			background-color: #293449;
 			/* Анимация */
-			
+			/* Разное */
 		}
 
 		.toolbar {
@@ -643,31 +473,29 @@
 			/* Анимация */
 		}
 
-
 		.header-logo {
 			/* Позиционирование */
 			display: block;
 			z-index: 1;
 			/* Блочная модель */
+			box-sizing: border-box;
 			width: 220px;
-			margin: 0;
-			padding: 0;
+
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+
+			padding-top: 0;
+			padding-right: 0;
+			padding-bottom: 0;
+			padding-left: 0;
 			/* Типографика */
 			text-align: center;
 			font-size: 0;
 			/* Оформление */
 			background-color: #ee3643;
 			box-shadow: 0 5px 0 0 #b52933;
-			/* Анимация */
-		}
-
-		.header-logo .page-logo {
-			/* Позиционирование */
-			/* Блочная модель */
-			padding: 0;
-			margin: 0;
-			/* Типографика */
-			/* Оформление */
 			/* Анимация */
 		}
 
@@ -697,8 +525,15 @@
 			/* Позиционирование */
 			display: block;
 			/* Блочная модель */
-			margin: 0;
-			padding: 0;
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+
+			padding-top: 0;
+			padding-right: 0;
+			padding-bottom: 0;
+			padding-left: 0;
 			/* Типографика */
 			font-size: 17px;
 			line-height: 18px;
@@ -708,24 +543,55 @@
 		}
 
 		.serching-form {
-			/* Позиционирование */
+			/* Позиционирование*/
 			position: relative;
-			/* Блочная модель */
+			display: block;
+			/* Блочная модель*/
 			/* Типографика */
 			/* Оформление */
 			/* Анимация */
 			/* Разное */
 		}
 
+		.serching-form button {
+			/* Позиционирование */
+			display: block;
+			/* Блочная модель */
+			width: 0;
+			height: 0;
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+
+			padding-top: 0;
+			padding-right: 0;
+			padding-bottom: 0;
+			padding-left: 0;
+			/* Типографика */
+			font-size: 0;
+			/* Оформление */
+			border: none;
+			/* Анимация */
+			/* Разное */
+		}
+
 		.serching-string {
 			/* Позиционирование */
-			position: relative;
+			display: block;
 			/* Блочная модель */
-			width: 270px;
-			min-height: 41px;
-			margin: 0;
-			padding: 12px 15px 12px 47px;
 			box-sizing: border-box;
+
+			min-width: 270px;
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+
+			padding-top: 12px;
+			padding-right: 0;
+			padding-bottom: 12px;
+			padding-left: 47px;
 			/* Типографика */
 			font-size: 17px;
 			line-height: 18px;
@@ -741,7 +607,7 @@
 		.icon-search {
 			/* Позиционирование */
 			display: block;
-			/*position: absolute;/**/
+			position: absolute;
 			top: 12px;
 			left: 17px;
 			/* Блочная модель */
@@ -799,49 +665,59 @@
 			/* Разное */
 		}
 
-		.bookmarks-container,
-		.cart-container {
+		.toolbar-bookmarks {
 			/* Позиционирование */
 			position: relative;
 			/* Блочная модель */
-			padding: 0;
-			margin: 0;
-			/* Типографика */
-			/* Оформление */
-			/* Анимация */
-			/* Разное */
-		}
+			box-sizing: border-box;
+			min-width: 150px;
+			
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
 
-		.toolbar-bookmarks,
-		.toolbar-cart {
-			/* Позиционирование */
-			position: relative;
-			/* Блочная модель */
-			width: 91px;
-			padding: 12px 15px 12px 44px;
-			color: #fff;
-			margin: 0;
+			padding-top: 12px;
+			padding-right: ;
+			padding-bottom: 12px;
+			padding-left: 44px;
 			/* Типографика */
-			vertical-align: middle;
 			text-decoration: none;
 			font-size: 17px;
 			line-height: 18px;
 			font-family: "Cuprum", "Verdana", "Arial", sans-serif;
+			color: #fff;
 			/* Оформление */
 			/* Анимация */
 		}
 
+
 		.toolbar-cart {
 			/* Позиционирование */
+			position: relative;
 			/* Блочная модель */
+			box-sizing: border-box;
+			min-width: 150px;
+
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+
+			padding-top: 12px;
+			padding-right: 0;
+			padding-bottom: 12px;
 			padding-left: 49px;
-			padding-right: 10px;
 			/* Типографика */
+			text-decoration: none;
+			font-size: 17px;
+			line-height: 18px;
+			font-family: "Cuprum", "Verdana", "Arial", sans-serif;
+			color: #fff;
 			/* Оформление */
 			/* Анимация */
 			/* Разное */
 		}
-
 
 		.toolbar-bookmarks::after {
 			/* Позиционирование */
@@ -899,7 +775,7 @@
 		.icon-bookmarks {
 			/* Позиционирование */
 			display: block;
-			/*position: absolute;/**/
+			position: absolute;
 			top: 12px;
 			left: 17px;
 			/* Блочная модель */
@@ -918,7 +794,7 @@
 		.icon-cart {
 			/* Позиционирование */
 			display: block;
-			/*position: absolute;/**/
+			position: absolute;
 			top: 12px;
 			left: 17px;
 			/* Блочная модель */
@@ -959,8 +835,11 @@
 		.deal-button {
 			/* Позиционирование */
 			/* Блочная модель */
+			box-sizing: border-box;
 			width: 150px;
-			padding: 12px 0;
+			padding-top: 12px;
+			padding-bottom: 12px;
+
 			/* Типографика */
 			color: #fff;
 			font-size: 17px;
@@ -996,18 +875,7 @@
 
 	/***** end block [toolbar] for {index.html and catalog.html} *****/
 
-
 	/***** begin block [site-navigation] for {index.html and catalog.html} *****/
-
-
-		.site-navigation {
-			/* Позиционирование */
-			/* Блочная модель */
-			/* Типографика */
-			/* Оформление */
-			/* Анимация */
-			/* Разное */
-		}
 
 		.page-menu {
 			/* Позиционирование */
@@ -1015,7 +883,15 @@
 			justify-content: center;
 			flex-direction: row;
 			/* Блочная модель */
-			padding: 0;
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+
+			padding-top: 0;
+			padding-right: 0;
+			padding-bottom: 0;
+			padding-left: 0;
 			/* Типографика */
 			text-align: center;
 			font-size: 17px;
@@ -1028,28 +904,15 @@
 			/* Разное */
 		}
 
-		.page-menu .page-menu-item {
-			/* Позиционирование */
-			/* Блочная модель */
-			margin: 0;
-			padding: 0;
-			/* Типографика */
-			/* Оформление */
-			/* Анимация */
-			/* Разное */
-		}
-
 		.page-menu .button-page-menu {
 			/* Позиционирование */
 			display: block;
 			/* Блочная модель */
-			width: 100%;
 			padding-top: 19px;
+			padding-right: 30px;
 			padding-bottom: 19px;
 			padding-left: 30px;
-			padding-right: 30px;
-			min-height: 55px;
-			box-sizing: border-box;
+			
 			/* Типографика */
 			color: #fff;
 			line-height: 17px;
@@ -1059,7 +922,7 @@
 			/* Оформление */
 			background-color: #32425c;
 			/* Анимация */
-			
+			/* Разное */
 		}
 
 		.page-menu .button-page-menu:hover {
@@ -1082,75 +945,91 @@
 			/* Разное */
 		}
 
+		
+
 	/***** end block [site-navigation] for {index.html and catalog.html} *****/
 
 /***** end block [page-header] for index.html and catalog.html *****/
+
 
 /***** begin block [main.container] for {index.html and catalog.html} *****/
 
 	.container {
 		/* Позиционирование */
 		/* Блочная модель */
-		width: 100%;
-		margin: 0;
+		width: auto;
 		/* Типографика */
 		/* Оформление */
 		/* Анимация */
-		
+		/* Разное */
 	}
 
 	/***** begin block [promo] for {index.html} *****/
 
 		.promo {
 			/* Позиционирование */
+			display: flex;
+			flex-direction: column;
+
 			/* Блочная модель */
 			padding-top: 59px;
-			padding-bottom: 53px;
+			padding-bottom: 52px;
 			/* Типографика */
 			/* Оформление */
 			/* Анимация */
-			
+			/* Разное */
 		}
 
 		.assortment {
 			/* Позиционирование */
 			display: flex;
 			flex-direction: row;
-			flex-wrap: wrap;
-			align-items: flex-start;
 			justify-content: space-between;
 			/* Блочная модель */
-			margin: 0;
-			padding: 0;
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+
+			padding-top: 0;
+			padding-right: 0;
+			padding-bottom: 20px;
+			padding-left: 0;
 			/* Типографика */
 			/* Оформление */
 			list-style: none;
 			/* Анимация */
-			
+			/* Разное */
 		}
 
 		.promo-item {
 			/* Позиционирование */
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: flex-start;
 			position: relative;
 			/* Блочная модель */
-			padding: 0;
-			margin: 0;
-			width: 300px;
-			min-height: 123px;
-			margin-bottom: 20px;
+			width: 32%;
 			/* Типографика */
 			/* Оформление */
 			/* Анимация */
-			
+			/* Разное */
 		}
-		.promo-item .promo-title {
+
+		.promo-item .promo-title,
+		.action-item .promo-title {
 			/* Позиционирование */
 			/* Блочная модель */
-			margin: 0;
-			padding: 0;
-			margin-top: 22px;
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
 			margin-left: 22px;
-			margin-bottom: 14px;
+
+			padding-top: 22px;
+			padding-right: 0;
+			padding-bottom: 15px;
+			padding-left: 0;
 			/* Типографика */
 			font-size: 24px;
 			line-height: 30 px;
@@ -1159,17 +1038,25 @@
 			font-family: "Cuprum", "Verdana", "Arial", sans-serif;
 			/* Оформление */
 			/* Анимация */
-			
+			/* Разное */
 		}
 
-		.promo-item .button-promo-item {
+		.promo-item .button-promo-item,
+		.action-item .button-promo-item {
 			/* Позиционирование */
 			display: block;
 			/* Блочная модель */
-			width: 135px;
+			min-width: 135px;
+
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 21px;
 			margin-left: 25px;
+
 			padding-top: 10px;
+			padding-right: 0;
 			padding-bottom: 10px;
+			padding-left: 0;
 			/* Типографика */
 			font-size: 14px;
 			text-transform: uppercase;
@@ -1182,10 +1069,23 @@
 			border-radius: 3px;
 			background-color: rgba(0, 0, 0, 0.1);
 			/* Анимация */
-			
+			/* Разное */
 		}
 
-		.promo-item .button-promo-item:hover {
+		.promo-inner-wrapper {
+			/* Позиционирование */
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			/* Блочная модель */
+			/* Типографика */
+			/* Оформление */
+			/* Анимация */
+			/* Разное */
+		}
+
+		.promo-item .button-promo-item:hover,
+		.action-item .button-promo-item:hover {
 			/* Позиционирование */
 			/* Блочная модель */
 			/* Типографика */
@@ -1195,7 +1095,8 @@
 			/* Разное */
 		}
 
-		.promo-item .button-promo-item:active {
+		.promo-item .button-promo-item:active, 
+		.action-item .button-promo-item:active {
 			/* Позиционирование */
 			/* Блочная модель */
 			/* Типографика */
@@ -1216,7 +1117,7 @@
 			background-repeat: no-repeat;
 			background-size: 44px 65px;
 			/* Анимация */
-			
+			/* Разное */
 		}
 
 		.promo-item.tools {
@@ -1231,9 +1132,8 @@
 			background-size: 75px 61px;
 			/* Анимация */
 			/* Анимация */
-			
+			/* Разное */
 		}
-
 
 		.promo-item.machinery {
 			/* Позиционирование */
@@ -1246,40 +1146,13 @@
 			background-repeat: no-repeat;
 			background-size: 78px 62px;
 			/* Анимация */
-			
+			/* Разное */
 		}
 
-		.promo-item.discount {
+		.promo-item.new::after,
+		.action-item.new::after {
 			/* Позиционирование */
-			/* Блочная модель */
-			/* Типографика */
-			/* Оформление */
-			background-color: #8ed78f;
-			background-image: url("../img/icon-promo-cart.svg");
-			background-position: 196px 26px;
-			background-repeat: no-repeat;
-			background-size: 59px 72px;
-			/* Анимация */
-			
-		}
-
-		.promo-item.delivery {
-			/* Позиционирование */
-			/* Блочная модель */
-			/* Типографика */
-			/* Оформление */
-			background-color: #ffc047;
-			background-image: url("../img/icon-delivery.svg");
-			background-position: 191px 32px;
-			background-repeat: no-repeat;
-			background-size: 78px 63px;
-			/* Анимация */
-			
-		}
-
-		.promo-item.new::after {
-			/* Позиционирование */
-			/*position: absolute;/**/
+			position: absolute;
 			top: 0;
 			right: 0;
 			z-index: 10;
@@ -1298,23 +1171,23 @@
 		}
 
 		/***** begin block [promo slider] for {index.html} *****/
-
+	
 			.promo-slider {
 				/* Позиционирование */
 				position: relative;
 				/* Блочная модель */
-				padding: 0;
-				width: 620px;
+				width: 66%;
 				min-height: 266px;
 				/* Типографика */
 				/* Оформление */
 				/*overflow: hidden;/**/
 				/* Анимация */
+				/* Разное */
 			}
 
 			.promo-slider .slider-switch {
 				/* Позиционирование */
-				/*position: absolute;/**/
+				position: absolute;
 				/* Блочная модель*/
 				width: 22px;
 				height: 40px;
@@ -1324,7 +1197,7 @@
 				border: none;
 				background-color: transparent;
 				/* Анимация */
-				
+				/* Разное */
 			}
 
 			.slider-switch.button-prev {
@@ -1339,6 +1212,7 @@
 				background-repeat: no-repeat;
 				background-size: 22px 40px;
 				/* Анимация */
+				/* Разное */
 			}
 
 			.slider-switch.button-next {
@@ -1354,25 +1228,33 @@
 				background-repeat: no-repeat;
 				background-size: 22px 40px;
 				/* Анимация */
+				/* Разное */
 			}
 
 			.promo-slide-list {
 				/* Позиционирование */
-				/*position: absolute;/**/
+				position: absolute;
 				width: 30px;
 				bottom: 36px;
-				left: 295px;
+				left: 50%;
 				display: flex;
 				flex-direction: row;
 				justify-content: space-between;
 				/* Блочная модель */
-				margin: 0 auto;
-				padding: 0;
+				margin-top: 0;
+				margin-right: 0;
+				margin-bottom: 0;
+				margin-left: -15px;
+
+				padding-top: 0;
+				padding-right: 0;
+				padding-bottom: 0;
+				padding-left: 0;
 				/* Типографика */
 				/* Оформление */
 				list-style: none;
 				/* Анимация */
-				
+				/* Разное */
 			}
 
 			.promo-slide-list .slider-turn {
@@ -1403,10 +1285,6 @@
 				/* Разное */
 			}
 
-			.promo-slider-container {
-				/*overflow: hidden;/**/
-			}
-
 			.promo-slider-slides {
 				/* Позиционирование */
 				display: flex;
@@ -1424,40 +1302,58 @@
 				position: relative;
 				/* Блочная модель */
 				width: 620px;
-				padding: 0;
-				margin: 0;
 				height: 266px;
 				/* Типографика */
 				/* Оформление */
+				background-color: #8e887e;
 				/* Анимация */
-				
+				/* Разное */
 			}
 
-			.promo-slide.hidden {
-				display: none;
-			}/**/
-
-			.promo-slide .promo-slide-title {
+			.promo-slide img {
 				/* Позиционирование */
-				/*position: absolute;/**/
-				top: 0;
-				left: 0;
+				display: block;
 				/* Блочная модель */
-				margin: 0;
-				padding: 0;
 				/* Типографика */
 				/* Оформление */
 				/* Анимация */
-				
+				/* Разное */
+			}
+
+			.promo-slide.hidden {
+				/* Позиционирование */
+				display: none;
+				/* Блочная модель */
+				/* Типографика */
+				/* Оформление */
+				/* Анимация */
+				/* Разное */
+			}/**/
+
+			.promo-slide .slide-title {
+				/* Позиционирование */
+				position: absolute;
+				top: 0;
+				left: 0;
+				/* Блочная модель */
+				/* Типографика */
+				/* Оформление */
+				/* Анимация */
+				/* Разное */
 			}
 
 			.promo-slide .tool-category {
 				/* Позиционирование */
 				/* Блочная модель */
-				padding: 0;
-				margin: 0;
-				margin-top: 23px;
-				margin-left: 24px;
+				margin-top: 0;
+				margin-right: 0;
+				margin-bottom: 0;
+				margin-left: 0;
+
+				padding-top: 23px;
+				padding-right: 0;
+				padding-bottom: 0;
+				padding-left: 24px;
 				/* Типографика */
 				font-size: 36px;
 				line-height: 36px;
@@ -1467,16 +1363,22 @@
 				font-family: "Cuprum", "Verdana", "Arial", sans-serif;
 				/* Оформление */
 				/* Анимация */
-				
+				/* Разное */
 			}
+
 
 			.promo-slide .tool-description {
 				/* Позиционирование */
 				/* Блочная модель */
-				padding: 0;
-				margin: 0;
-				margin-top: 2px;
-				margin-left: 24px;
+				margin-top: 0;
+				margin-right: 0;
+				margin-bottom: 0;
+				margin-left: 0;
+
+				padding-top: 2px;
+				padding-right: 0;
+				padding-bottom: 0;
+				padding-left: 24px;
 				/* Типографика */
 				font-size: 18px;
 				line-height: 24px;
@@ -1487,30 +1389,18 @@
 				
 			}
 
-			.promo-slide .promo-slide-image {
-				/* Позиционирование */
-				/* Блочная модель */
-				margin: 0;
-				padding: 0;
-				/* Типографика */
-				/* Оформление */
-				border: none;
-				outline: none;
-				border-image-width: 0; 
-				/* Анимация */
-				/* Разное */
-			}
-
 			.promo-slider .button-to-catalog {
 				/* Позиционирование */
-				/*position: absolute;/**/
+				position: absolute;
 				display: block;
 				bottom: 22px;
 				left: 25px;
 				/* Блочная модель */
-				width: 195px;
-				padding-top: 10px;
-				padding-bottom: 10px;
+				box-sizing: border-box;
+				min-width: 195px;
+				padding-left: 4px;
+				padding-top: 11px;
+				padding-bottom: 9px;
 				/* Типографика */
 				text-decoration: none;
 				color: #ffffff;
@@ -1547,26 +1437,75 @@
 
 		/***** end block [promo slider] for {index.html} *****/
 
-		.promo_actions {
+		/***** begin block [promo-action] for {index.html} *****/
+	
+			.promo_actions {
 			/* Позиционирование */
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
 			/* Блочная модель */
-			width: 300px;
-			min-height: 266px;
-			padding: 0;
-			margin: 0;
+			width: 32%;
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+
+			padding-top: 0;
+			padding-right: 0;
+			padding-bottom: 0;
+			padding-left: 0;
 			/* Типографика */
 			/* Оформление */
 			list-style: none;
 			/* Анимация */
+			/* Разное */
 		}
 
-		.promo_actions .promo-item {
-			margin: 0;
+		.action-item {
+			/* Позиционирование */
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: flex-start;
+			position: relative;
+			/* Блочная модель */
+			min-height: 123px;
+			/* Типографика */
+			/* Оформление */
+			/* Анимация */
+			/* Разное */
 		}
 
+		.action-item.discount {
+			/* Позиционирование */
+			/* Блочная модель */
+			/* Типографика */
+			/* Оформление */
+			background-color: #8ed78f;
+			background-image: url("../img/icon-promo-cart.svg");
+			background-position: 196px 26px;
+			background-repeat: no-repeat;
+			background-size: 59px 72px;
+			/* Анимация */
+			/* Разное */
+		}
+
+		.action-item.delivery {
+			/* Позиционирование */
+			/* Блочная модель */
+			/* Типографика */
+			/* Оформление */
+			background-color: #ffc047;
+			background-image: url("../img/icon-delivery.svg");
+			background-position: 191px 32px;
+			background-repeat: no-repeat;
+			background-size: 78px 63px;
+			/* Анимация */
+			/* Разное */
+		}
+
+		/***** end block [promo-action] for {index.html} *****/
 
 	/***** end block [promo] for {index.html} *****/
 
@@ -1575,12 +1514,11 @@
 		.popular_product {
 			/* Позиционирование */
 			/* Блочная модель */
-			min-height: 359px;
 			/* Типографика */
 			/* Оформление */
 			background-color: #ffffff;
 			/* Анимация */
-			
+			/* Разное */
 		}
 
 		.section-title {
@@ -1588,25 +1526,37 @@
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
-			align-items: flex-start;
 			/* Блочная модель */
-			width: 100%;
-			min-height: 89px;
+			width: auto;
+			/*margin-bottom: 21px;/**/
+			margin-top: 0;
+			margin-right: 0;
 			margin-bottom: 21px;
+			margin-left: 0;
+
+			padding-top: 27px;
+			padding-right: 24px;
+			padding-bottom: 24px;
+			padding-left: 28px;
 			/* Типографика */
 			/* Оформление */
 			background-color: #f9f5f0;
 			/* Анимация */
-			
+			/* Разное */
 		}
 
 		.section-title h2 {
 			/* Позиционирование */
 			/* Блочная модель */
-			margin: 0;
-			padding: 0;
-			margin-left: 28px;
-			margin-top: 30px;
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+
+			padding-top: 4px;
+			padding-right: 0;
+			padding-bottom: 0;
+			padding-left: 0;
 			/* Типографика */
 			font-size: 30px;
 			line-height: 30px;
@@ -1616,20 +1566,24 @@
 			font-family: "Cuprum", "Verdana", "Arial", sans-serif;
 			/* Оформление */
 			/* Анимация */
-			
+			/* Разное */
 		}
 
 		.section-title a {
 			/* Позиционирование */
 			display: block;
 			/* Блочная модель */
-			margin: 0;
-			padding: 0;
-			margin-right: 24px;
-			width: 253px;
+			min-width: 253px;
+			box-sizing: border-box;
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+
 			padding-top: 10px;
+			padding-right: 0;
 			padding-bottom: 10px;
-			margin-top: 26px;
+			padding-left: 0;
 			/* Типографика */
 			font-size: 14px;
 			line-height: 18px;
@@ -1643,7 +1597,7 @@
 			background-color: #ee3643;
 			border-radius: 3px;
 			/* Анимация */
-			
+			/* Разное */
 		}
 
 		.section-title a:hover {
@@ -1666,6 +1620,434 @@
 			/* Разное */
 		}
 
+		.catalog-list {
+			/* Позиционирование */
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			/* Блочная модель */
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+
+			padding-top: 0;
+			padding-right: 0;
+			padding-bottom: 20px;
+			padding-left: 0;
+			/* Типографика */
+			/* Оформление */
+			list-style: none;
+			/* Анимация */
+		}
+
+		.catalog-item {
+			/* Позиционирование */
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+			/* Блочная модель */
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0px;
+			margin-left: 0;
+
+			padding-top: 0;
+			padding-right: 0;
+			padding-bottom: 20px;
+			padding-left: 0;
+
+			box-sizing: border-box;
+			/* Типографика */
+			/* Оформление */
+			background-color: #ffffff;
+			border: 1px solid #e5e5e5;
+			/* Анимация */
+		}
+
+		.page-index .catalog-item {
+			/* Позиционирование */
+			/* Блочная модель */
+			width: 23.4%;
+			/* Типографика */
+			/* Оформление */
+			/* Анимация */
+			/* Разное */
+		}
+
+		.catalog-item:hover, 
+		.catalog-item:focus {
+			/* Позиционирование */
+			/* Блочная модель */
+			/* Типографика */
+			/* Оформление */
+			box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+			/* Анимация */
+		}
+
+		.catalog-list h3 {
+			/* Позиционирование */
+			order: 2;
+			/* Блочная модель */
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+
+			padding-top: 0;
+			padding-right: 30px;
+			padding-bottom: 8px;
+			padding-left: 30px;
+			/* Типографика */
+			font-size: 18px;
+			line-height: 20px;
+			font-weight: bold;
+			color: #000000;
+			text-align: center;
+			font-family: "PT Sans", Arial, Helvetica, sans-serif;
+			/* Оформление */
+			/* Анимация */
+			/* Разное */
+		}
+
+		.catalog-item .vision {
+			/* Позиционирование */
+			/* Блочная модель */
+			margin-bottom: 10px;
+			/* Типографика */
+			/* Оформление */
+			/* Анимация */
+			/* Разное */
+		}
+
+		.catalog-item .vision {
+			/* Позиционирование */
+			order: 1;
+			/* Блочная модель */
+			/* Типографика */
+			/* Оформление */
+			/* Анимация */
+		}
+
+		.catalog-item img {
+			/* Позиционирование */
+			display: block;
+			/* Блочная модель */
+			/* Типографика */
+			/* Оформление */
+			/* Анимация */
+			/* Разное */
+		}
+
+		.catalog-item:hover>.vision>img {
+			/* Позиционирование */
+			display: none;
+			/* Блочная модель */
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+
+			padding-top: 0;
+			padding-right: 0;
+			padding-bottom: 0;
+			padding-left: 0;
+			/* Типографика */
+			/* Оформление */
+			/* Анимация */
+			/* Разное */
+		}
+
+		/***** begin block [catalog-actions] for {index.html} *****/
+
+			.catalog-item .catalog-actions {
+				/* Позиционирование */
+				display: none;/**/
+				/* Блочная модель */
+				/* Типографика */
+				/* Оформление */
+				/* Анимация */
+				/* Разное */
+			}
+
+			.catalog-item .catalog-actions-wrapper {
+				/* Позиционирование */
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				/* Блочная модель */
+				margin-top: 0;
+				margin-right: 0;
+				margin-bottom: 0;
+				margin-left: 0;
+
+				padding-top: 43px;
+				padding-right: 0;
+				padding-bottom: 43px;
+				padding-left: 0;
+				/* Типографика */
+				/* Оформление */
+				/* Анимация */
+				/* Разное */
+			}
+
+			.catalog-item:hover .catalog-actions{
+				/* Позиционирование */
+				display: block;
+				/* Блочная модель */
+				/* Типографика */
+				/* Оформление */
+				/* Анимация */
+				/* Разное */
+			}
+
+			.catalog-actions .add-cart {
+				/* Позиционирование */
+				display: block;
+				position: relative;
+				/* Блочная модель */
+				margin-top: 0;
+				margin-right: 0;
+				margin-bottom: 8px;
+				margin-left: 0;
+
+				padding-top: 10px;
+				padding-right: 0;
+				padding-bottom: 10px;
+				padding-left: 0;
+
+				min-width: 135px;
+				/* Типографика */
+				font-family: "Cuprum", "Verdana", "Arial", sans-serif;
+				font-size: 14px;
+				line-height: 18px;
+				font-weight: normal;
+				color: #ffffff;
+				text-decoration: none;
+				text-transform: uppercase;
+				text-align: center;
+				/* Оформление */
+				background-color: #63a63e;
+				box-shadow: inset 0 -3px 0 0 #367315;
+				border-radius: 3px;
+				/* Анимация */
+			}
+
+			.add-cart .cart-icon {
+				/* Позиционирование */
+				position: absolute;
+				top: 11px;
+				left: 14px;
+				/* Блочная модель */
+				/* Типографика */
+				/* Оформление */
+				opacity: 0.3;
+				/* Анимация */
+			}
+
+			.add-cart:hover {
+				/* Позиционирование */
+				/* Блочная модель */
+				/* Типографика */
+				/* Оформление */
+				background-color: #5fbb2d;
+				/* Анимация */
+				/* Разное */
+			}
+
+			.add-cart:hover .cart-icon {
+				/* Позиционирование */
+				/* Блочная модель */
+				/* Типографика */
+				/* Оформление */
+				opacity: 1;
+				/* Анимация */
+				/* Разное */
+			}
+
+			.add-cart:active {
+				/* Позиционирование */
+				/* Блочная модель */
+				/* Типографика */
+				/* Оформление */
+				background-color: #518534;
+				box-shadow: none;
+				/* Анимация */
+				/* Разное */
+			}
+
+			.catalog-actions .add-bookmarks {
+				/* Позиционирование */
+				display: block;
+				/* Блочная модель */
+				margin-top: 0;
+				margin-right: 0;
+				margin-bottom: 0;
+				margin-left: 0;
+
+				padding-top: 9px;
+				padding-right: 0;
+				padding-bottom: 5px;
+				padding-left: 0;
+
+				min-width: 135px;
+				box-sizing: border-box;
+				/* Типографика */
+				font-family: "Cuprum", "Verdana", "Arial", sans-serif;
+				font-size: 14px;
+				line-height: 18px;
+				font-weight: normal;
+				color: #32425c;
+				text-decoration: none;
+				text-transform: uppercase;
+				text-align: center;
+				/* Оформление */
+				background-color: #ffffff;
+				border-radius: 3px;
+				border: 3px solid #63a63e;
+				/* Анимация */
+				/* Разное */
+			}
+
+			.add-bookmarks:hover {
+				/* Позиционирование */
+				/* Блочная модель */
+				/* Типографика */
+				/* Оформление */
+				border-color: #33435d;
+				/* Анимация */
+				/* Разное */
+			}
+
+			.add-bookmarks:active {
+				/* Позиционирование */
+				/* Блочная модель */
+				/* Типографика */
+				color: rgba(50, 66, 92, 0.3);
+				/* Оформление */
+				border-color: #c1c6ce;
+				/* Анимация */
+				/* Разное */
+			}
+
+		/***** end block [catalog-actions] for {index.html} *****/
+
+		.special-price {
+			/* Позиционирование */
+			display: block;
+			position: relative;
+			order: 4;
+			align-self: flex-start;
+			/* Блочная модель */
+			min-width: 85px;
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 43px;
+
+			padding-top: 9px;
+			padding-right: 0;
+			padding-bottom: 9px;
+			padding-left: 35px;
+			/* Типографика */
+			font-size: 17px;
+			line-height: 18px;
+			font-weight: bold;
+			color: #ffffff;
+			vertical-align: middle;
+			text-transform: uppercase;
+			font-family: "PT Sans", Arial, Helvetica, sans-serif;
+			/* Оформление */
+			background-color: #ee3643;
+			border-radius: 3px;
+			/* Анимация */
+			/* Разное */
+		}
+
+		.special-price::after {
+			/* Позиционирование */
+			position: absolute;
+			top: 0;
+			right: -17px;
+			/* Блочная модель */
+			width: 0;
+			height: 0;
+			/* Типографика */
+			font-size: 0;
+			line-height: 0;
+			/* Оформление */
+			border: 18px solid #ee3643;
+			border-right-width: 0;
+			border-top-color: transparent;
+			border-bottom-color: transparent;
+			/* Анимация */
+			/* Разное */
+			content: "";
+		}
+
+		.catalog-item .price{
+			/* Позиционирование */
+			order: 3;
+			display: block;
+			/* Блочная модель */
+			min-height: 18px;
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+
+			padding-top: 3px;
+			padding-right: 0;
+			padding-bottom: 11px;
+			padding-left: 0;
+			/* Типографика */
+			font-size: 17px;
+			line-height: 18px;
+			font-weight: bold;
+			color: #000000;
+			text-transform: uppercase;
+			font-family: "PT Sans", Arial, Helvetica, sans-serif;
+			/* Оформление */
+			/* Анимация */
+			/* Разное */
+		}
+
+		.special-price + .price{
+			/* Позиционирование */
+			/* Блочная модель */
+			/* Типографика */
+			color: #999999;
+			text-decoration: line-through;
+			font-size: 17px;
+			line-height: 18px;
+			/* Оформление */
+			/* Анимация */
+			/* Разное */
+		}
+
+		.catalog-item.new::after {
+			/* Позиционирование */
+			position: absolute;
+			top: -1px;
+			right: -1px;
+			z-index: 10;
+			display: block;
+			/* Блочная модель */
+			width: 60px;
+			height: 59px;
+			/* Типографика */
+			/* Оформление */
+			background-image: url("../img/new_flag.png");
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			/* Анимация */
+			/* Разное */
+			content: "";
+		}
+
 	/***** end block [popular-product] for {index.html} *****/
 
 	/***** begin block [popular-brands] for {index.html} *****/
@@ -1677,7 +2059,7 @@
 			/* Оформление */
 			background-color: #ffffff;
 			/* Анимация */
-			
+			/* Разное */
 		}
 
 		.popular_brands-list {
@@ -1688,42 +2070,53 @@
 			justify-content: space-between;
 			align-items: flex-start;
 			/* Блочная модель */
-			margin: 0;
-			padding: 0;
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+
+			padding-top: 2px;
+			padding-right: 0;
 			padding-bottom: 69px;
+			padding-left: 0;
 			/* Типографика */
 			/* Оформление */
 			list-style: none;
 			/* Анимация */
+			/* Разное */
 		}
 
 		.popular_brands-list li {
 			/* Позиционирование */
 			/* Блочная модель */
-			margin: 0;
-			padding: 0;
-			width: 220px;
+			width: 23.4%;
+
+			margin-top: 0;
+			margin-right: 0;
 			margin-bottom: 20px;
-			box-sizing: border-box;
+			margin-left: 0;
+
+			padding-top: 0;
+			padding-right: 0;
+			padding-bottom: 0;
+			padding-left: 0;
+
 			/* Типографика */
 			/* Оформление */
-			list-style: none;
-			border: 1px solid #eaeaea;
+			border: 1px solid #eaeaea;/**/
+			overflow: hidden;
 			/* Анимация */
 		}
 
 		.popular_brands-list img {
-				/* Позиционирование */
-				display: block;
-				/* Блочная модель */
-				margin: 0;
-				padding: 0;
-				/* Типографика */
-				/* Оформление */
-				border: none;
-				outline: none;
-				/* Анимация */
-				/* Разное */
+			/* Позиционирование */
+			display: block;
+			/* Блочная модель */
+			width: auto;
+			/* Типографика */
+			/* Оформление */
+			/* Анимация */
+			/* Разное */
 		}
 
 		.popular_brands-item:hover {
@@ -1733,6 +2126,7 @@
 			/* Оформление */
 			box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 			/* Анимация */
+			/* Разное */
 		}
 
 		.popular_brands-item:active {
@@ -1741,8 +2135,8 @@
 			/* Типографика */
 			/* Оформление */
 			box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
-
 			/* Анимация */
+			/* Разное */
 		}
 
 		.popular_brands-item:active img {
@@ -1752,6 +2146,7 @@
 			/* Оформление */
 			opacity: 0.3;
 			/* Анимация */
+			/* Разное */
 		}
 
 
@@ -1770,6 +2165,7 @@
 			background-repeat: repeat;
 			background-position: 0 0;
 			/* Анимация */
+			/* Разное */
 		}
 
 		.services {
@@ -1779,18 +2175,25 @@
 			justify-content: flex-start;
 			align-items: flex-start;
 			/* Блочная модель */
-			padding-top: 60px;
+			padding-top: 61px;
 			/* Типографика */
 			/* Оформление */
 			/* Анимация */
+			/* Разное */
 		}
 
 		.services h2 {
 			/* Позиционирование */
 			/* Блочная модель */
-			padding: 0;
-			margin: 0;
-			margin-bottom: 26px;
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 27px;
+			margin-left: 0;
+
+			padding-top: 0;
+			padding-right: 0;
+			padding-bottom: 0;
+			padding-left: 0;
 			/* Типографика */
 			font-size: 30px;
 			line-height: 30px;
@@ -1799,14 +2202,21 @@
 			font-family: "Cuprum", "Verdana", "Arial", sans-serif;
 			/* Оформление */
 			/* Анимация */
+			/* Разное */
 		}
 
 		.services > p {
 			/* Позиционирование */
 			/* Блочная модель */
-			padding: 0;
-			margin: 0;
-			width: 400px;
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+
+			padding-top: 0;
+			padding-right: 0;
+			padding-bottom: 0;
+			padding-left: 0;
 			margin-bottom: 68px;
 			/* Типографика */
 			font-size: 13px;
@@ -1814,6 +2224,7 @@
 			font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
 			/* Оформление */
 			/* Анимация */
+			/* Разное */
 		}
 
 		.services-slider {
@@ -1827,6 +2238,7 @@
 			/* Типографика */
 			/* Оформление */
 			/* Анимация */
+			/* Разное */
 		}
 
 		.services-slider-control {
@@ -1836,18 +2248,25 @@
 			justify-content: center;
 			position: relative;
 			/* Блочная модель */
-			width: 240px;
-			margin: 0;
-			padding: 0;
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+
+			padding-top: 0;
+			padding-right: 0;
+			padding-bottom: 0;
+			padding-left: 0;
 			/* Типографика */
 			/* Оформление */
 			list-style: none;
 			/* Анимация */
+			/* Разное */
 		}
 
 		.services-slider-control::after {
 			/* Позиционирование */
-			/*position: absolute;/**/
+			position: absolute;
 			right: 0;
 			top: 50%;
 			/* Блочная модель */
@@ -1861,14 +2280,14 @@
 			background-position: 50% 50%;
 			background-repeat: no-repeat;
 			/* Анимация */
-			
+			/* Разное */
 			content: "";
 		}
 
 		.slider-button {
 			/* Позиционирование */
 			/* Блочная модель */
-			width: 240px;
+			min-width: 240px;
 			padding-top: 15px;
 			padding-bottom: 15px;
 			padding-left: 23px;
@@ -1880,11 +2299,13 @@
 			font-weight: bold;
 			font-family: "Cuprum", "Verdana", "Arial", sans-serif;
 			/* Оформление */
-			border: none;
+			border-left: none;
+			border-right: none;
 			border-bottom: 1px solid #293449;
 			border-top: 1px solid #405069;
 			background-color: #32425c;
 			/* Анимация */
+			/* Разное */
 		}
 
 		.slider-button.active {
@@ -1897,6 +2318,7 @@
 			border-top: 1px solid #ffffff;
 			background-color: #ffffff;
 			/* Анимация */
+			/* Разное */
 		}
 
 		.slider-button:hover {
@@ -1907,174 +2329,205 @@
 			/* Оформление */
 			background-color: #293449;
 			/* Анимация */
+			/* Разное */
 		}
 
-		.services-slider-container {
-			/* Позиционирование */
-			/* Блочная модель */
-			width: 700px;
-			padding: 0;
-			margin: 0;
-			/* Типографика */
-			/* Оформление */
-			list-style: none;
-			/* Анимация */
-		}
+		/***** begin block [services-slider-container] for {index.html} *****/
 
-		.services-slides {
-			/* Позиционирование */
-			display: flex;
-			flex-direction: row;
-			justify-content: flex-start;
-			/* Блочная модель */
-			width: 700px;
-			padding: 0;
-			margin: 0;
-			/* Типографика */
-			/* Оформление */
-			list-style: none;
-			/* Анимация */
-		}
+			.services-slider-wrapper {
+				/* Позиционирование */
+				/* Блочная модель */
+				width: 100%;
+				/* Типографика */
+				/* Оформление */
+				/* Анимация */
+				/* Разное */
+			}
 
+			.services-slides {
+				/* Позиционирование */
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-start;
+				/* Блочная модель */
+				width: 100%;
+				margin-top: 0;
+				margin-right: 0;
+				margin-bottom: 0;
+				margin-left: 0;
 
-		.services-slide-item {
-			/* Позиционирование */
-			display: none;/*
-			/* Блочная модель */
-			padding: 0;
-			margin: 0;
-			padding-left: 80px;
-			width: 620px;
-			min-height: 285px;
-			/* Типографика */
-			/* Оформление */
-			list-style: none;
-			/* Анимация */
-		}
+				padding-top: 0;
+				padding-right: 0;
+				padding-bottom: 0;
+				padding-left: 0;
+				/* Типографика */
+				/* Оформление */
+				list-style: none;
+				/* Анимация */
+				/* Разное */
+			}
 
-		.services-slide-item h3 {
-			/* Позиционирование */
-			/* Блочная модель */
-			padding: 0;
-			margin: 0;
-			margin-bottom: 25px;
-			/* Типографика */
-			font-size: 36px;
-			line-height: 36px;
-			font-weight: normal;
-			text-transform: uppercase;
-			color: #32425c;
-			font-family: "Cuprum", "Verdana", "Arial", sans-serif;
-			/* Оформление */
-			/* Анимация */
-		}
+			.services-slide-item {
+				/* Позиционирование */
+				display: none;/**/
+				/* Блочная модель */
+				width: 100%;
+				padding-left: 80px;
+				min-height: 285px;
+				/* Типографика */
+				/* Оформление */
+				/* Анимация */
+				/* Разное */
+			}
 
-		.services-slide-item p {
-			/* Позиционирование */
-			/* Блочная модель */
-			/* Типографика */
-			font-size: 13px;
-			line-height: 24px;
-			color: #000000;
-			font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
-			/* Оформление */
-			/* Анимация */
-		}
+			.services-slide-item.active {
+				/* Позиционирование */
+				display: block;
+				/* Блочная модель */
+				/* Типографика */
+				/* Оформление */
+				/* Анимация */
+				/* Разное */
+			}
 
-		.services-delivery {
-			/* Позиционирование */
-			/* Блочная модель */
-			/* Типографика */
-			/* Оформление */
-			background-image: url("../img/bg-delivery.png");
-			background-size: 468px 261px;
-			background-repeat: no-repeat;
-			background-position: bottom right;
-			/* Анимация */
-		}
+			.services-slide-item h3 {
+				/* Позиционирование */
+				/* Блочная модель */
+				margin-top: 0;
+				margin-right: 0;
+				margin-bottom: 25px;
+				margin-left: 0;
 
-		.services-warranty {
-			/* Позиционирование */
-			/* Блочная модель */
-			/* Типографика */
-			/* Оформление */
-			background-image: url("../img/bg-warranty.png");
-			background-size: 389px 283px;
-			background-repeat: no-repeat;
-			background-position: bottom right;
-			/* Анимация */
-		}
+				padding-top: 0;
+				padding-right: 0;
+				padding-bottom: 0;
+				padding-left: 0;
+				/* Типографика */
+				font-size: 36px;
+				line-height: 36px;
+				font-weight: normal;
+				text-transform: uppercase;
+				color: #32425c;
+				font-family: "Cuprum", "Verdana", "Arial", sans-serif;
+				/* Оформление */
+				/* Анимация */
+				/* Разное */
+			}
 
-		.services-credit {
-			/* Позиционирование */
-			/* Блочная модель */
-			/* Типографика */
-			/* Оформление */
-			background-image: url("../img/bg-credit.png");
-			background-size: 465px 285px;
-			background-repeat: no-repeat;
-			background-position: bottom right;
-			/* Анимация */
-		}
+			.services-slide-item p {
+				/* Позиционирование */
+				/* Блочная модель */
+				/* Типографика */
+				font-size: 13px;
+				line-height: 24px;
+				color: #000000;
+				font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+				/* Оформление */
+				/* Анимация */
+				/* Разное */
+			}
 
-		.services-delivery p {
-			/* Позиционирование */
-			/* Блочная модель */
-			width: 275px;
-			/* Типографика */
-			/* Оформление */
-			/* Анимация */
-		}
+			.services-delivery p {
+				/* Позиционирование */
+				/* Блочная модель */
+				width: 275px;
+				/* Типографика */
+				/* Оформление */
+				/* Анимация */
+				/* Разное */
+			}
 
-		.services-warranty p {
-			/* Позиционирование */
-			/* Блочная модель */
-			width: 379px;
-			/* Типографика */
-			/* Оформление */
-			/* Анимация */
-		}
+			.services-warranty p {
+				/* Позиционирование */
+				/* Блочная модель */
+				width: 379px;
+				/* Типографика */
+				/* Оформление */
+				/* Анимация */
+				/* Разное */
+			}
 
-		.services-credit p {
-			/* Позиционирование */
-			/* Блочная модель */
-			width: 280px;
-			/* Типографика */
-			/* Оформление */
-			/* Анимация */
-		}
+			.services-credit p {
+				/* Позиционирование */
+				/* Блочная модель */
+				width: 280px;
+				margin-bottom: 31px;
+				/* Типографика */
+				/* Оформление */
+				/* Анимация */
+				/* Разное */
+			}
 
-		.services-credit a {
-			/* Позиционирование */
-			display: block;
-			/* Блочная модель */
-			margin: 0;
-			padding: 0;
-			margin-top: 31px;
-			width: 195px;
-			padding-top: 10px;
-			padding-bottom: 10px;
-			/* Типографика */
-			font-size: 14px;
-			line-height: 18px;
-			color: #ffffff;
-			text-decoration: none;
-			text-transform: uppercase;
-			text-align: center;
-			/* Оформление */
-			background-color: #ee3643;
-			border-radius: 3px;
-			/* Анимация */
-		}
+			.services-credit a {
+				/* Позиционирование */
+				display: block;
+				/* Блочная модель */
 
-		.services-slide-item.active {
-			/* Позиционирование */
-			display: block;
-			/* Блочная модель */
-			/* Типографика */
-			/* Оформление */
-			/* Анимация */
-		}
+				margin-top: 0;
+				margin-right: 0;
+				margin-bottom: 0;
+				margin-left: 0;
+
+				padding-top: 10px;
+				padding-right: 0;
+				padding-bottom: 10px;
+				padding-left: 0;
+
+				min-width: 195px;
+				/* Типографика */
+				font-size: 14px;
+				line-height: 18px;
+				color: #ffffff;
+				text-decoration: none;
+				text-transform: uppercase;
+				text-align: center;
+				/* Оформление */
+				background-color: #ee3643;
+				border-radius: 3px;
+				/* Анимация */
+				/* Разное */
+			}	
+
+			.services-delivery {
+				/* Позиционирование */
+				/* Блочная модель */
+				/* Типографика */
+				/* Оформление */
+				background-image: url("../img/bg-delivery.png");
+				background-size: 468px 261px;
+				background-repeat: no-repeat;
+				background-position: bottom right;
+				/* Анимация */
+				/* Разное */
+			}
+
+			.services-warranty {
+				/* Позиционирование */
+				/* Блочная модель */
+				/* Типографика */
+				/* Оформление */
+				background-image: url("../img/bg-warranty.png");
+				background-size: 389px 283px;
+				background-repeat: no-repeat;
+				background-position: bottom right;
+				/* Анимация */
+				/* Разное */
+			}
+
+			.services-credit {
+				/* Позиционирование */
+				/* Блочная модель */
+				/* Типографика */
+				/* Оформление */
+				background-image: url("../img/bg-credit.png");
+				background-size: 465px 285px;
+				background-repeat: no-repeat;
+				background-position: bottom right;
+				/* Анимация */
+				/* Разное */
+			}
+
+		/***** end block [services-slider-container] for {index.html} *****/
 
 	/***** end block [services] for {index.html} *****/
 
@@ -2092,25 +2545,37 @@
 			/* Оформление */
 			background-color: #ffffff;
 			/* Анимация */
+			/* Разное */
 		}
 
 		/***** begin block [about-us] for {index.html} *****/
 
 			.about_us {
 				/* Позиционирование */
+				display: flex;
+				flex-direction: column;
 				/* Блочная модель */
-				width: 525px;
-				margin-right: 104px;
-				margin-top: 1px;
+				width: 60%;
+				padding-top: 1px;
+				padding-bottom: 87px;
 				/* Типографика */
 				/* Оформление */
 				/* Анимация */
+				/* Разное */
 			}
 
 			.about_us h2 {
 				/* Позиционирование */
 				/* Блочная модель */
-				margin: 0 0 26px 0;
+				margin-top: 0;
+				margin-right: 0;
+				margin-bottom: 0;
+				margin-left: 0;
+
+				padding-top: 0;
+				padding-right: 0;
+				padding-bottom: 26px;
+				padding-left: 0;
 				/* Типографика */
 				font-size: 30px;
 				line-height: 30px;
@@ -2119,13 +2584,21 @@
 				font-family: "Cuprum", "Verdana", "Arial", sans-serif;
 				/* Оформление */
 				/* Анимация */
+				/* Разное */
 			}
 
 			.about_us b, p {
 				/* Позиционирование */
 				/* Блочная модель */
-				margin: 0;
-				padding: 0;
+				margin-top: 0;
+				margin-right: 0;
+				margin-bottom: 0;
+				margin-left: 0;
+
+				padding-top: 0;
+				padding-right: 0;
+				padding-bottom: 0;
+				padding-left: 0;
 				/* Типографика */
 				font-size: 13px;
 				line-height: 24px;
@@ -2136,28 +2609,44 @@
 			}
 
 			.about_us p {
+				/* Позиционирование */
+				/* Блочная модель */
 				margin-top: 24px;
 				margin-bottom: 1px;
+				/* Типографика */
+				/* Оформление */
+				/* Анимация */
+				/* Разное */
 			}
 
 			.partner-list {
 				/* Позиционирование */
 				/* Блочная модель */
-				margin: 0;
-				padding: 0 0 0 36px;
-				margin-bottom: 36px;
+				margin-top: 0;
+				margin-right: 0;
+				margin-bottom: 0;
+				margin-left: 0;
+
+				padding-top: 20px;
+				padding-right: 0;
+				padding-bottom: 15px;
+				padding-left: 36px;
 				/* Типографика */
 				/* Оформление */
 				list-style: none;
 				/* Анимация */
+				/* Разное */
 			}
 
 			.partner-list li {
 				/* Позиционирование */
 				position: relative;
 				/* Блочная модель */
-				margin: 0;
-				padding-top: 20px;
+				margin-top: 0;
+				margin-right: 0;
+				margin-bottom: 0;
+				margin-left: 0;
+				padding-bottom: 20px;
 				/* Типографика */
 				/* Оформление */
 				/* Анимация */
@@ -2165,9 +2654,9 @@
 
 			.partner-list li::before {
 				/* Позиционирование */
-				/*position: absolute;/**/
+				position: absolute;
 				left: -36px;
-				top: 29px;
+				top: 9px;
 				/* Блочная модель */
 				width: 25px;
 				height: 2px;
@@ -2200,7 +2689,6 @@
 				width: 220px;
 				padding-top: 11px;
 				padding-bottom: 9px;
-				margin-bottom: 86px;
 				/* Типографика */
 				font-size: 14px;
 				line-height: 18px;
@@ -2215,15 +2703,54 @@
 				/* Анимация */
 			}
 
+			.button-full-info:hover {
+				/* Позиционирование */
+				/* Блочная модель */
+				/* Типографика */
+				/* Оформление */
+				background-color: #ca2c37;
+				/* Анимация */
+				/* Разное */
+			}
+
+			.button-full-info:active {
+				/* Позиционирование */
+				/* Блочная модель */
+				/* Типографика */
+				/* Оформление */
+				background-color: #ba2732;
+				/* Анимация */
+				/* Разное */
+			}
+
 		/***** end block [about-us] for {index.html} *****/
 
-		/***** begin block [company-contacts] for {index.html} *****/
+		/***** begin block [company-contacts] for {index.html} *****/.
+
+			.company-contacts {
+				/* Позиционирование */
+				display: flex;
+				flex-direction: column;
+				/* Блочная модель */
+				width: 38%;
+				/* Типографика */
+				/* Оформление */
+				/* Анимация */
+				/* Разное */
+			}
 
 			.company-contacts h2 {
 				/* Позиционирование */
 				/* Блочная модель */
-				margin: 0 0 26px 0;
-				padding: 0;
+				margin-top: 0;
+				margin-right: 0;
+				margin-bottom: 0;
+				margin-left: 0;
+
+				padding-top: 0;
+				padding-right: 0;
+				padding-bottom: 26px;
+				padding-left: 0;
 				/* Типографика */
 				font-size: 30px;
 				line-height: 30px;
@@ -2236,8 +2763,15 @@
 			.company-contacts p {
 				/* Позиционирование */
 				/* Блочная модель */
-				margin: 0 0 31px 0;
-				padding: 0;
+				margin-top: 0;
+				margin-right: 0;
+				margin-bottom: 0;
+				margin-left: 0;
+
+				padding-top: 0;
+				padding-right: 0;
+				padding-bottom: 31px;
+				padding-left: 0;
 				/* Типографика */
 				font-size: 13px;
 				line-height: 24px;
@@ -2250,21 +2784,31 @@
 				/* Позиционирование */
 				display: block;
 				/* Блочная модель */
-				margin: 0;
-				padding: 0;
-				width: 300px;
+				width: 100%;
 				min-height: 158px;
-				margin-bottom: 37px;
+				padding-bottom: 40px;
 				/* Типографика */
 				/* Оформление */
 				/* Анимация */
 			}
 
+			.location-map img {
+				/* Позиционирование */
+				display: block;
+				/* Блочная модель */
+				/* Типографика */
+				/* Оформление */
+				/* Анимация */
+				/* Разное */
+			}
+
 			.button-write_us {
 				/* Позиционирование */
-				/* Блочная модель */
 				display: block;
-				width: 236px;
+				/* Блочная модель */
+				box-sizing: border-box;
+
+				width: 100%;
 				padding-top: 11px;
 				padding-bottom: 9px;
 				padding-left: 64px;
@@ -2281,1261 +2825,32 @@
 				border-radius: 3px;
 				/* Анимация */
 			}
-		/***** end block [company-contacts] for {index.html} *****/
 
-	/***** end block [company-info] for {index.html} *****/
-	
-/***** end block [main.container] for {index.html and catalog.html} *****/
-
-/***** begin block [page-catalog] for {catalog.html} *****/
-
-	.catalog-title, 
-	.catalog-content {
-		font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
-	}
-
-	/***** begin block [catalog-title] for {catalog.html} *****/
-
-		.catalog-title {
-			/* Позиционирование */
-			/* Блочная модель */
-			/* Типографика */
-			/* Оформление */
-			background-color: #ffffff;
-			/* Анимация */
-		}
-
-		.breadcrumbs {
-			/* Позиционирование */
-			display: flex;
-			flex-direction: row;
-			justify-content: flex-start;
-			/* Блочная модель */
-			margin: 0;
-			padding:  0;
-			margin-top: 19px;
-			margin-bottom: 19px;
-			/* Типографика */
-			/* Оформление */
-			list-style: none;
-			background-color: #ffffff;
-			/* Анимация */
-		}
-
-		.breadcrumbs li {
-			/* Позиционирование */
-			position: relative;
-			display: block;
-			/* Блочная модель */
-			/* Типографика */
-			/* Оформление */
-			/* Анимация */
-		}
-
-		.breadcrumbs li:not(:last-child)::after {
-			/* Позиционирование */
-			/*position: absolute;/**/
-			display: block;
-			top: 4px;
-			right: 15px;
-			/* Блочная модель */
-			width: 8px;
-			height: 12px;
-			/* Типографика */
-			/* Оформление */
-			background-image: url("../img/icon-right-small.svg");
-			background-position: center center;
-			background-size: 8px 12px;
-			background-repeat: no-repeat;
-			/* Анимация */
-			
-			content: "";
-		}
-
-		.breadcrumbs a {
-			/* Позиционирование */
-			/* Блочная модель */
-			margin: 0;
-			padding: 0;
-			margin-right: 40px;
-			/* Типографика */
-			font-family: "PT Sans", Arial, Helvetica, sans-serif;
-			font-size: 13px;
-			line-height: 18px;
-			text-decoration: none;
-			text-transform: uppercase;
-			color: #000000;
-			text-decoration: none;
-			/* Оформление */
-
-			/* Анимация */
-		}
-
-		.breadcrumbs .main-page {
-			/* Позиционирование */
-			display: block;
-			width: 15px;
-			height: 21px;
-			/* Блочная модель */
-			/* Типографика */
-			vertical-align: middle;
-			font-size: 0;
-			/* Оформление */
-			background-image: url("../img/icon-home.svg");
-			background-position: 50% 50%;
-			background-repeat: no-repeat;
-			background-size: 15px 12px;
-			/* Анимация */
-		}
-
-
-		.catalog-title h2 {
-			/* Позиционирование */
-			/* Блочная модель */
-			margin: 0;
-			padding: 30px 30px;
-			margin-bottom: 20px;
-			/* Типографика */
-			font-size: 30px;
-			line-height: 30px;
-			text-transform: uppercase;
-			color: #32425c;
-			font-weight: normal;
-			font-family: "Cuprum", "Verdana", "Arial", sans-serif;
-			/* Оформление */
-			background-color: #f2f6f8;
-		
-			/* Анимация */
-		}
-
-	/***** end block [catalog-title] for {catalog.html} *****/
-
-	/***** begin block [catalog-content] for {catalog.html} *****/
-
-		.catalog-content {
-			/* Позиционирование */
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			align-items: flex-start;
-			/* Блочная модель */
-			/* Типографика */
-			/* Оформление */
-			/* Анимация */
-		}
-
-		/***** begin block [filters] for {catalog.html} *****/
-
-			.filters {
-				/* Позиционирование */
-				/* Блочная модель */
-				margin: 0;
-				padding: 0;
-				width: 220px;
-				/* Типографика */
-				/* Оформление */
-				background-color: #ffffff;
-				/* Анимация */
-			}
-
-			.filters h3 {
-				/* Позиционирование */
-				/* Блочная модель */
-				margin: 0;
-				padding: 10px 19px;
-				margin-bottom: 10px;
-				/* Типографика */
-				font-size: 13px;
-				line-height: 18px;
-				text-transform: uppercase;
-				font-weight: normal;
-				font-family: "PT Sans", Arial, Helvetica, sans-serif;
-				/* Оформление */
-				background-color: #f7f3ec;
-				/* Анимация */
-			}
-
-			.filter-type {
-				/* Позиционирование */
-				/* Блочная модель */
-				margin: 0;
-				padding: 0;
-				/* Типографика */
-				/* Оформление */
-				border: none;
-				/* Анимация */
-			}
-			
-			.filter-type:not(:last-of-type) {
+			.button-write_us:hover {
 				/* Позиционирование */
 				/* Блочная модель */
 				/* Типографика */
 				/* Оформление */
-				border-bottom: 1px solid #e5e5e5;
+				background-color: #ca2c37;
 				/* Анимация */
 				/* Разное */
 			}
 
-			.filter-type legend {
+			.button-write_us:active {
 				/* Позиционирование */
 				/* Блочная модель */
-				margin: 0;
-				padding: 0;
-				margin-bottom: 13px;
-				/* Типографика */
-				font-size: 17px;
-				line-height: 30px;
-				text-transform: uppercase;
-				font-family: "PT Sans", Arial, Helvetica, sans-serif;
-				font-weight: bold;
-				/* Оформление */
-				background-color: #ffffff;
-				/* Анимация */
-			}
-
-			/***** begin block [price-slider] for {catalog.html} *****/
-
-				.price-slider {
-					/* Позиционирование */
-					position: relative;
-					/* Блочная модель */
-					width: 220px;
-					min-height: 80px;
-					margin-bottom: 9px;
-					/* Типографика */
-					/* Оформление */
-					background-color: #f7f3ec;
-					/* Анимация */
-				}
-
-				.price-slider::before {
-					/* Позиционирование */
-					display: block;
-					/*position: absolute;/**/
-					top: 39px;
-					left: 20px;
-					/* Блочная модель */
-					width: 180px;
-					height: 2px;
-					/* Типографика */
-					/* Оформление */
-					background-color: #d7dcde;
-					/* Анимация */
-					
-					content: "";
-				}
-
-				.price-slider::after {
-					/* Позиционирование */
-					display: block;
-					/*position: absolute;/**/
-					top: 39px;
-					left: 20px;
-					/* Блочная модель */
-					width: 160px;
-					height: 2px;
-					/* Типографика */
-					/* Оформление */
-					background-color: #00ca74;
-					/* Анимация */
-					
-					content: "";
-				}
-
-				.price-slider button {
-					/* Позиционирование */
-					/*display: block;/**/
-					position:absolute;
-					z-index: 1;
-					/* Блочная модель */
-					padding: 0;
-					margin: 0;
-					width: 20px;
-					height: 20px;
-					box-sizing: border-box;
-					/* Типографика */
-					font-size: 0;
-					background-color: #ababab;
-					/* Оформление */
-					border: 8px solid #ffffff;
-					border-radius: 50%;
-					/* Анимация */
-				}
-
-				.price-slider .left-slider {
-					/* Позиционирование */
-					top: 30px;
-					left: 20px;
-					/* Блочная модель */
-					/* Типографика */
-					/* Оформление */
-					/* Анимация */
-				}
-
-				.price-slider .right-slider {
-					/* Позиционирование */
-					top: 30px;
-					right: 40px;
-					/* Блочная модель */
-					/* Типографика */
-					/* Оформление */
-					/* Анимация */
-				}
-
-				.price-range {
-					/* Позиционирование */
-					display: flex;
-					flex-direction: row;
-					justify-content: space-between;
-					/* Блочная модель */
-					margin-bottom: 25px;
-					/* Типографика */
-					/* Оформление */
-					/* Анимация */
-					/* Разное */
-				}
-
-				.price-range input {
-					/* Позиционирование */
-					/* Блочная модель */
-					padding-top: 10px;
-					padding-bottom: 10px;
-					width: 95px;
-					/* Типографика */
-					font-family: "PT Sans", Arial, Helvetica, sans-serif;
-					font-size: 17px;
-					line-height: 18px;
-					text-align: center;
-					/* Оформление */
-					border: 0;
-					border-radius: 3px;
-					background-color: #f7f3ec;
-					/* Анимация */
-					/* Разное */
-				}
-				
-				.seporator {
-					/* Позиционирование */
-					/* Блочная модель */
-					/* Типографика */
-					line-height: 38px;
-					vertical-align: middle;
-					/* Оформление */
-					/* Анимация */
-					/* Разное */
-
-				}
-
-			/***** end block [price-slider] for {catalog.html} *****/
-
-			/***** begin block [filter-brands] for {catalog.html} *****/
-
-				.filter-brands {
-					/* Позиционирование */
-					/* Блочная модель */
-					margin-top: 17px;
-					/* Типографика */
-					/* Оформление */
-					/* Анимация */
-					/* Разное */
-				}
-
-				.filter-brands ul {
-					/* Позиционирование */
-					display: flex;
-					flex-direction: column;
-					justify-content: flex-start;
-					align-items: flex-start;
-					/* Блочная модель */
-					padding: 0;
-					margin: 0;
-					margin-bottom: 6px;
-					/* Типографика */
-					/* Оформление */
-					list-style: none;
-					/* Анимация */
-				}
-
-				.filter-item {
-					/* Позиционирование */
-					/* Блочная модель */
-					margin-left: 35px;
-					margin-bottom: 19px;
-					/* Типографика */
-					/* Оформление */
-					/* Анимация */
-					/* Разное */
-				}
-
-				.filter-item-checkbox + label {
-					/* Позиционирование */
-					position: relative;
-					/* Блочная модель */
-					/* Типографика */
-					/* Оформление */
-					/* Анимация */
-					/* Разное */
-				}
-
-				.filter-item-checkbox + label::before {
-					/* Позиционирование */
-					/*position: absolute;/**/
-					top: -1px;
-					left: -35px;
-					display: block;
-					/* Блочная модель */
-					width: 23px;
-					height: 23px;
-					box-sizing: border-box;
-					/* Типографика */
-					color: red;
-					/* Оформление */
-					border: 2px solid #c5c5c5;
-					border-radius: 3px;
-					/* Анимация */
-					/* Разное */
-					content: "";
-				}
-
-				.filter-item-checkbox {
-					/* Позиционирование */
-					display: none;
-				}
-
-				.filter-type label {
-					/* Позиционирование */
-					/* Блочная модель */
-					/* Типографика */
-					font-size: 15px;
-					line-height: 20px;
-					text-transform: uppercase;
-					font-family: "PT Sans", Arial, Helvetica, sans-serif;
-					/* Оформление */
-					/* Анимация */
-				}
-
-				.filter-item-checkbox:checked + label::before {
-					/* Позиционирование */
-					/* Блочная модель */
-					width: 27px;
-					height: 23px;
-					/* Типографика */
-					/* Оформление */
-					border: none;
-					background-image: url("../img/checkbox-on.svg");
-					background-position: 0 0;
-					background-repeat: no-repeat;
-					/* Анимация */
-					/* Разное */
-				}
-
-			/***** end block [filter-brands] for {catalog.html} *****/
-
-			/***** begin block [filter-source] for {catalog.html} *****/
-
-				.filter-source {
-					/* Позиционирование */
-					/* Блочная модель */
-					margin-top: 14px;
-					margin-bottom: 59px;
-					/* Типографика */
-					/* Оформление */
-					/* Анимация */
-					/* Разное */
-				}
-
-				.filter-source ul {
-					/* Позиционирование */
-					display: flex;
-					flex-direction: column;
-					justify-content: flex-start;
-					align-items: flex-start;
-					/* Блочная модель */
-					padding: 0;
-					margin: 0;
-					/* Типографика */
-					/* Оформление */
-					list-style: none;
-					/* Анимация */
-				}
-
-				.filter-item-radio {
-					/* Позиционирование */
-					display: none;
-					/* Блочная модель */
-					/* Типографика */
-					/* Оформление */
-					/* Анимация */
-					/* Разное */
-				}
-
-				.filter-item-radio + label {
-					/* Позиционирование */
-					position: relative;
-					/* Блочная модель */
-					/* Типографика */
-					/* Оформление */
-					/* Анимация */
-					/* Разное */
-				}
-
-				.filter-item-radio + label::before {
-					/* Позиционирование */
-					display: block;
-					/*position: absolute;/**/
-					top: -2px;
-					left: -36px;
-					/* Блочная модель */
-					width: 25px;
-					height: 25px;
-					/* Типографика */
-					/* Оформление */
-					border-radius: 50%;
-					background-color: #c5c5c5;/**/
-					box-shadow: inset 0 0 0 4px #c5c5c5,
-								inset 0 0 0 13px #ffffff;
-					/* Анимация */
-					/* Разное */
-					content: "";
-				}
-
-				.filter-item-radio:checked + label::before {
-					/* Позиционирование */
-					/* Блочная модель */
-					/* Типографика */
-					/* Оформление */
-					box-shadow: inset 0 0 0 4px #c5c5c5,
-								inset 0 0 0 8px #ffffff;
-					/* Анимация */
-					/* Разное */
-				}
-
-			/***** end block [filter-source] for {catalog.html} *****/
-
-			.button-filters-send {
-				/* Позиционирование */
-				display: block;
-				/* Блочная модель */
-				width: 140px;
-				padding-top: 10px;
-				padding-bottom: 7px;
-				/* Типографика */
-				font-size: 13px;
-				line-height: 18px;
-				font-family: "PT Sans", Arial, Helvetica, sans-serif;
-				text-align: center;
-				text-transform: uppercase;
-				/* Оформление */
-				border: 2px solid #e5e5e5;
-				border-radius: 3px;
-				background-color: #ffffff;
-				/* Анимация */
-			}
-
-		/***** end block [filters] for {catalog.html} *****/
-
-		/***** begin block [catalog] for {catalog.html} *****/
-
-			.catalog {
-				/* Позиционирование */
-				/* Блочная модель */
-				width: 700px;
 				/* Типографика */
 				/* Оформление */
+				background-color: #ba2732;
 				/* Анимация */
+				/* Разное */
 			}
 
-			/***** begin block [sorting] for {catalog.html} *****/
+		/***** end block [company-contacts] for {index.html} *****/
 
-				.sorting {
-					/* Позиционирование */
-					display: flex;
-					flex-direction: row;
-					justify-content: flex-start;
-					/* Блочная модель */
-					padding: 0;
-					margin: 0;
-					width: auto;
-					margin-bottom: 20px;
-					/* Типографика */
-					font-size: 13px;
-					line-height: 18px;
-					text-transform: uppercase;
-					/* Оформление */
-					background-color: #f7f3ec;
-					/* Анимация */
-				}
+	/***** end block [company-info] for {index.html} *****/
 
-				.sorting h3 {
-					/* Позиционирование */
-					display: block;
-					/* Блочная модель */
-					padding: 0;
-					margin: 0;
-					margin-left: 20px;
-					margin-right: 138px;
-					padding-top: 9px;
-					padding-bottom: 10px;
-					/* Типографика */
-					font-size: 13px;
-					line-height: 18px;
-					font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
-					text-transform: uppercase;
-					color: #000000;
-					/* Оформление */
-					/* Анимация */
-				}
-
-				.sort-list {
-					/* Позиционирование */
-					display: flex;
-					flex-direction: row;
-					justify-content: space-between;
-					/* Блочная модель */
-					width: 355px;
-					padding: 0;
-					margin: 0;
-					padding-top: 9px;
-					padding-bottom: 10px;
-					/* Типографика */
-					/* Оформление */
-					list-style: none;
-					/* Анимация */
-				}
-
-				.sort-list li {
-					/* Позиционирование */
-					display: inline-block;
-					/* Блочная модель */
-					padding: 0;
-					margin: 0;
-					/* Типографика */
-					/* Оформление */
-					/* Анимация */
-				}
-
-				.sort-criterion a {
-					/* Позиционирование */
-					/* Блочная модель */
-					padding: 0;
-					margin: 0;
-					/* Типографика */
-					/*text-decoration-color: #ee3643;
-					text-decoration-style: dotted;/**/
-					border-bottom: 1px dotted #ee3643;
-					color: rgba (0, 0, 0, 0.3);
-					font-size: 13px;
-					line-height: 18px;
-					text-decoration: none;
-					font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
-					/* Оформление */
-					/* Анимация */
-				}
-
-				.sort-criterion a:hover {
-					/* Позиционирование */
-					/* Блочная модель */
-					/* Типографика */
-					color: #000000;
-					border-bottom: 1px solid #ee3643;
-					/* Оформление */
-					/* Анимация */
-					/* Разное */
-				}
-
-				.sort-criterion.active a {
-					/* Позиционирование */
-					/* Блочная модель */
-					/* Типографика */
-					color: #ee3643;
-					/* Оформление */
-					border-width: 0;
-					/* Анимация */
-				}
-
-				.sort-direction {
-					/* Позиционирование */
-					display: block;
-					/* Блочная модель */
-					margin: 0;
-					padding: 0;
-					width: 0px;
-					height: 0px;
-					/* Типографика */
-					font-size: 0;
-					/* Оформление */
-					border: 6px solid #c5c5c5;
-					border-top: 11px solid #c5c5c5;
-					border-bottom: 11px solid #c5c5c5;
-					/* Анимация */
-					/* Разное */
-				}
-
-								.sort-asc {
-					/* Позиционирование */
-					/* Блочная модель */
-					margin-top: 12px;
-					margin-left: auto;
-					/* Типографика */
-					/* Оформление */
-					border-top-width: 0;
-					border-left-color: transparent;
-					border-right-color: transparent;
-					/* Анимация */
-					/* Разное */
-				}
-
-				.sort-desc {
-					/* Позиционирование */
-					/* Блочная модель */
-					margin-top: 12px;
-					margin-left: 20px;
-					margin-right: 17px;
-					/* Типографика */
-					/* Оформление */
-					border-bottom-width: 0;
-					border-left-color: transparent;
-					border-right-color: transparent;
-					/* Анимация */
-					/* Разное */
-				}
-
-				.sort-direction.active {
-					/* Позиционирование */
-					/* Блочная модель */
-					/* Типографика */
-					/* Оформление */
-					border-top-color: #ee3643;
-					border-bottom-color: #ee3643;
-					/* Анимация */
-					/* Разное */
-				}
-
-				.sort-direction:hover {
-					/* Позиционирование */
-					/* Блочная модель */
-					/* Типографика */
-					/* Оформление */
-					border-top-color: #000000;
-					border-bottom-color: #000000;
-					/* Анимация */
-					/* Разное */
-				}
-				
-
-			/***** end block [sorting] for {catalog.html} *****/
-
-			/***** begin block [catalog-list] for {catalog.html and index.html} *****/
-
-				.catalog-list {
-					/* Позиционирование */
-					display: flex;
-					flex-direction: row;
-					justify-content: space-between;
-					flex-wrap: wrap;
-					/* Блочная модель */
-					padding: 0;
-					margin: 0;
-					/* Типографика */
-					/* Оформление */
-					list-style: none;
-					/* Анимация */
-				}
-
-				.catalog-item {
-					/* Позиционирование */
-					position: relative;
-					display: flex;
-					flex-direction: column;
-					justify-content: flex-start;
-					align-items: center;
-					/* Блочная модель */
-					padding: 0;
-					margin: 0;
-					margin-bottom: 20px;
-					width: 220px;
-					box-sizing: border-box;
-					min-height: 316px;
-					/* Типографика */
-					/* Оформление */
-					background-color: #ffffff;
-					border: 1px solid #e5e5e5;
-					/* Анимация */
-				}
-
-				.catalog-item:hover, 
-				.catalog-item:focus {
-					/* Позиционирование */
-					/* Блочная модель */
-					/* Типографика */
-					/* Оформление */
-					box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
-					/* Анимация */
-				}
-
-				.catalog-list h4,
-				.catalog-list h3 {
-					/* Позиционирование */
-					order: 2;
-					/* Блочная модель */
-					padding: 0;
-					margin: 0;
-					width: 180px;
-					margin-bottom: 8px;
-					/* Типографика */
-					font-size: 18px;
-					line-height: 20px;
-					font-weight: bold;
-					color: #000000;
-					text-align: center;
-					font-family: "PT Sans", Arial, Helvetica, sans-serif;
-					/* Оформление */
-
-					/* Анимация */
-				}
-
-				.catalog-item .vision {
-					/* Позиционирование */
-					order: 1;
-					/* Блочная модель */
-					/* Типографика */
-					/* Оформление */
-					/* Анимация */
-				}
-
-				.catalog-item img {
-					/* Позиционирование */
-					display: block;
-					/* Блочная модель */
-					margin: 0;
-					padding: 0;
-					margin-bottom: 8px;
-					/* Типографика */
-					/* Оформление */
-					/* Анимация */
-					/* Разное */
-					
-				}
-
-				.catalog-item .catalog-actions {
-					/* Позиционирование */
-					display: none;/**/
-					/* Блочная модель */
-					width: 218px;
-					min-height: 170px;
-					/*height: 174px;/**/
-					/* Типографика */
-					/* Оформление */
-					/* Анимация */
-				}
-
-				.catalog-actions .add-cart {
-					/* Позиционирование */
-					display: block;
-					position: relative;
-					/* Блочная модель */
-					padding: 0;
-					margin: 0 auto;
-					margin-top: 43px;
-					margin-bottom: 8px;
-					width: 135px;
-					padding-top: 10px;
-					padding-bottom: 10px;
-					/* Типографика */
-					font-family: "Cuprum", "Verdana", "Arial", sans-serif;
-					font-size: 14px;
-					line-height: 18px;
-					font-weight: normal;
-					color: #ffffff;
-					text-decoration: none;
-					text-transform: uppercase;
-					text-align: center;
-					vertical-align: middle;
-					/* Оформление */
-					background-color: #63a63e;
-					box-shadow: inset 0 -3px 0 0 #367315;
-					border-radius: 3px;
-					/* Анимация */
-				}
-
-				.add-cart .cart-icon {
-					/* Позиционирование */
-					/*position: absolute;/**/
-					top: 11px;
-					left: 14px;
-					/* Блочная модель */
-					/* Типографика */
-					/* Оформление */
-					opacity: 0.3;
-					/* Анимация */
-				}
-
-				.add-cart:hover {
-					/* Позиционирование */
-					/* Блочная модель */
-					/* Типографика */
-					/* Оформление */
-					background-color: #5fbb2d;
-					/* Анимация */
-					/* Разное */
-				}
-
-				.add-cart:hover .cart-icon {
-					/* Позиционирование */
-					/* Блочная модель */
-					/* Типографика */
-					/* Оформление */
-					opacity: 1;
-					/* Анимация */
-					/* Разное */
-				}
-
-				.add-cart:active {
-					/* Позиционирование */
-					/* Блочная модель */
-					/* Типографика */
-					/* Оформление */
-					background-color: #518534;
-					box-shadow: none;
-					/* Анимация */
-					/* Разное */
-				}
-
-				.catalog-actions .add-bookmarks {
-					/* Позиционирование */
-					display: block;
-					/* Блочная модель */
-					padding: 0;
-					margin: 0 auto;
-					width: 135px;
-					box-sizing: border-box;
-					margin-bottom: 51px;
-					padding-top: 9px;
-					padding-bottom: 5px;
-					/* Типографика */
-					font-family: "Cuprum", "Verdana", "Arial", sans-serif;
-					font-size: 14px;
-					line-height: 18px;
-					font-weight: normal;
-					color: #32425c;
-					text-decoration: none;
-					text-transform: uppercase;
-					text-align: center;
-					vertical-align: middle;
-					/* Оформление */
-					background-color: #ffffff;
-					border-radius: 3px;
-					border: 3px solid #63a63e;
-					/* Анимация */
-				}
-
-				.add-bookmarks:hover {
-					/* Позиционирование */
-					/* Блочная модель */
-					/* Типографика */
-					/* Оформление */
-					border-color: #33435d;
-					/* Анимация */
-					/* Разное */
-				}
-
-				.add-bookmarks:active {
-					/* Позиционирование */
-					/* Блочная модель */
-					/* Типографика */
-					color: rgba(50, 66, 92, 0.3);
-					/* Оформление */
-					border-color: #c1c6ce;
-					/* Анимация */
-					/* Разное */
-				}
-
-				.special-price {
-					/* Позиционирование */
-					display: block;
-					position: relative;
-					order: 4;
-					/* Блочная модель */
-					width: 89px;
-					padding: 0;
-					margin: 0;
-					margin-bottom: 20px;
-					padding-top: 10px;
-					padding-bottom: 10px;
-					padding-left: 35px;
-					margin-right: 10px;
-					/* Типографика */
-					font-size: 17px;
-					line-height: 18px;
-					font-weight: bold;
-					color: #ffffff;
-					vertical-align: middle;
-					text-transform: uppercase;
-					font-family: "PT Sans", Arial, Helvetica, sans-serif;
-					/* Оформление */
-					background-color: #ee3643;
-					border-radius: 3px;
-					/* Анимация */
-				}
-
-				.special-price::after {
-					/* Позиционирование */
-					/*position: absolute;/**/
-					top: 0;
-					right: -18px;
-					/* Блочная модель */
-					width: 0;
-					height: 0;
-					/* Типографика */
-					font-size: 0;
-					line-height: 0;
-					/* Оформление */
-					border: 19px solid #ee3643;
-					border-right-width: 0;
-					border-top-color: transparent;
-					border-bottom-color: transparent;
-					/* Анимация */
-					
-					content: "";
-				}
-
-				.catalog-item:hover .catalog-actions{
-					/* Позиционирование */
-					display: flex;
-					flex-direction: column;
-					/* Блочная модель */
-					/* Типографика */
-					/* Оформление */
-					/* Анимация */
-					/* Разное */
-				}
-
-				.catalog-item:hover>.vision>img {
-					/* Позиционирование */
-					display: none;
-					/* Блочная модель */
-					/* Типографика */
-					/* Оформление */
-					/* Анимация */
-					/* Разное */
-				}
-
-				.catalog-item .price{
-					/* Позиционирование */
-					order: 3;
-					display: block;
-					/* Блочная модель */
-					padding: 0;
-					margin: 0 auto;
-					margin-top: 5px;
-					margin-bottom: 9px;
-					min-height: 18px;
-					/* Типографика */
-					font-size: 17px;
-					line-height: 18px;
-					font-weight: bold;
-					color: #000000;
-					text-transform: uppercase;
-					font-family: "PT Sans", Arial, Helvetica, sans-serif;
-					/* Оформление */
-					/* Анимация */
-				}
-
-				.special-price + .price{
-					/* Позиционирование */
-					/* Блочная модель */
-					/* Типографика */
-					color: #999999;
-					text-decoration: line-through;
-					font-size: 17px;
-					line-height: 18px;
-					/* Оформление */
-					/* Анимация */
-				}
-
-				.catalog-item.new::after {
-					/* Позиционирование */
-					/*position: absolute;/**/
-					top: -1px;
-					right: -1px;
-					z-index: 10;
-					display: block;
-					/* Блочная модель */
-					width: 60px;
-					height: 59px;
-					/* Типографика */
-					/* Оформление */
-					background-image: url("../img/new_flag.png");
-					background-repeat: no-repeat;
-					background-position: 50% 50%;
-					/* Анимация */
-					/* Разное */
-					content: "";
-				}
-			/***** end block [catalog-list] for {catalog.html} *****/
-
-			/***** begin block [pagination-list] for {catalog.html} *****/
-
-				.pagination-list {
-					/* Позиционирование */
-					display: flex;
-					flex-direction: row;
-					justify-content: flex-start;
-					/* Блочная модель */
-					margin: : 0;
-					padding: 0;
-					margin-top: 32px;
-					margin-bottom: 60px;
-					/* Типографика */
-					/* Оформление */
-					list-style: none;
-					/* Анимация */
-					/* Разное */
-				}
-
-				.pagination-item {
-					/* Позиционирование */
-					/* Блочная модель */
-					padding: 0;
-					margin: 0;
-					margin-right: 10px;
-					/* Типографика */
-					/* Оформление */
-					/* Анимация */
-					/* Разное */
-				}
-
-				.pagination-item a {
-					/* Позиционирование */
-					display: block;
-					/* Блочная модель */
-					width: 36px;
-					padding-top: 9px;
-					padding-bottom: 9px;
-					/* Типографика */
-					color: #000000;
-					font-size: 13px;
-					line-height: 18px;
-					text-align: center;
-					text-decoration: none;
-					font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
-					/* Оформление */
-					border: 1px solid #e5e5e5;
-					border-radius: 3px;
-					/* Анимация */
-					/* Разное */
-				}
-
-				.pagination-item a:hover {
-					/* Позиционирование */
-					/* Блочная модель */
-					/* Типографика */
-					/* Оформление */
-					border-color: #bdc6ca;
-					/* Анимация */
-					/* Разное */
-				}
-
-				.pagination-item a:active {
-					/* Позиционирование */
-					/* Блочная модель */
-					/* Типографика */
-					/* Оформление */
-					border-color: #f79ba1;
-					/* Анимация */
-					/* Разное */
-				}
-
-				.pagination-current a {
-					/* Позиционирование */
-					/* Блочная модель */
-					/* Типографика */
-					color: #ffffff;
-					/* Оформление */
-					background-color: #ee3643;
-					border-color: #ee3643;
-					/* Анимация */
-					/* Разное */
-				}
-
-				.pagination-item.next a {
-					/* Позиционирование */
-					/* Блочная модель */
-					width: 138px;
-					/* Типографика */
-					text-transform: uppercase;
-					/* Оформление */
-					/* Анимация */
-					/* Разное */
-				}
-
-			/***** end block [pagination-list] for {catalog.html} *****/
-
-		/***** end block [catalog] for {catalog.html} *****/
-	
-	/***** end block [catalog-content] for {catalog.html} *****/
-
-	/***** begin block [equipment_description] for {catalog.html} *****/
-
-		.description-container {
-			/* Позиционирование */
-			/* Блочная модель */
-			width: 100%;
-			margin: 0;
-			padding: 0;
-			padding-bottom: 70px;
-			/* Типографика */
-			/* Оформление */
-			background-color: #f2f6f8;
-			/* Анимация */
-			/* Разное */
-		}
-
-		.equipment_description {
-			/* Позиционирование */
-			/* Блочная модель */
-			padding-top: 65px;
-			/* Типографика */
-			/* Оформление */
-			/* Анимация */
-			/* Разное */
-		}
-
-		.equipment_description h3 {
-			/* Позиционирование */
-			/* Блочная модель */
-			margin: 0;
-			padding: 0;
-			margin-bottom: 25px;
-			/* Типографика */
-			color: #000000;
-			font-family: "Cuprum", "Verdana", "Arial", sans-serif;
-			font-size: 30px;
-			line-height: 30px;
-			text-transform: uppercase;
-			font-weight: normal;
-			/* Оформление */
-			/* Анимация */
-			/* Разное */
-		}
-
-		.equipment_description p {
-			/* Позиционирование */
-			/* Блочная модель */
-			/* Типографика */
-			font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
-			font-size: 13px;
-			line-height: 24px;
-			color: #000000;
-			/* Оформление */
-			/* Анимация */
-			/* Разное */
-		}
-
-	/***** end block [equipment_description] for {catalog.html} *****/
-
-
-/***** end block [page-catalog] for {catalog.html} *****/
+/***** end block [main.container] for {index.html and catalog.html} *****/
 
 /***** begin block [footer.page-footer] for {index.html and catalog.html} *****/
 
@@ -3543,42 +2858,42 @@
 		/* Позиционирование */
 		/* Блочная модель */
 		width: 100%;
-		padding: 0;
-		margin: 0;
+		margin-top: 0;
+		margin-right: 0;
+		margin-bottom: 0;
+		margin-left: 0;
+
+		padding-top: 1px;
+		padding-right: 0;
+		padding-bottom: 0;
+		padding-left: 0;
 		/* Типографика */
 		/* Оформление */
 		background-color: #32425c;
 		/* Анимация */
 	}
 
-	/***** begin block [footer-navigation] for {index.html and catalog.html} *****/
+	.footer-container {
+		/* Позиционирование */
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		/* Блочная модель */
+		/* Типографика */
+		/* Оформление */
+		/* Анимация */
+		/* Разное */
+	}
 
-		.footer-navigation-container {
-			/* Позиционирование */
-			/* Блочная модель */
-			/* Типографика */
-			/* Оформление */
-			/* Анимация */
-		}
-
-		.footer-navigation {
-			/* Позиционирование */
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			flex-wrap: wrap;
-			/* Блочная модель */
-			/* Типографика */
-			/* Оформление */
-			/* Анимация */
-		}
+	/***** begin block [footer-company-info] for {index.html and catalog.html} *****/
 
 		.footer-logo {
 			/* Позиционирование */
 			display: block;
 			/* Блочная модель */
+			box-sizing: border-box;
 			width: 220px;
-			min-height: 63px;
+			height: 63px;
 			margin-bottom: 32px;
 			/* Типографика */
 			font-size: 0;
@@ -3589,16 +2904,80 @@
 			/* Анимация */
 		}
 
+		.footer-logo:hover {
+			/* Позиционирование */
+			/* Блочная модель */
+			/* Типографика */
+			/* Оформление */
+			background-color: #ca2c37;
+			box-shadow: 0 5px 0 0 #9a212a;
+			/* Анимация */
+			/* Разное */
+		}
+
+		.footer-logo:active {
+			/* Позиционирование */
+			/* Блочная модель */
+			/* Типографика */
+			/* Оформление */
+			background-color: #ba2732;
+			box-shadow: 0 5px 0 0 #8e1e26;/**/
+			/* Анимация */
+			/* Разное */
+		}
+
+		.footer-contacts {
+			/* Позиционирование */
+			/* Блочная модель */
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+
+			padding-top: 0;
+			padding-right: 0;
+			padding-bottom: 0;
+			padding-left: 0;
+			padding-left: 3px;
+			margin-bottom: 48px;
+			/* Типографика */
+			/* Оформление */
+			/* Анимация */
+			/* Разное */
+		}
+
+		.footer-contacts a {
+			/* Позиционирование */
+			/* Блочная модель */
+			/* Типографика */
+			font-size: 18px;
+			line-height: 24px;
+			text-decoration: none;
+			color: #fff;
+			font-family: "Cuprum", "Verdana", "Arial", sans-serif;
+			/* Оформление */
+			/* Анимация */
+			/* Разное */
+		}
+
+	/***** end block [footer-company-info] for {index.html and catalog.html} *****/
+
+	/***** begin block [footer-navigation] for {index.html and catalog.html} *****/	
+
 		.footer-navigation-list {
 		 	/* Позиционирование */
 		 	display: flex;
 		 	justify-content: flex-end;
 			/* Блочная модель */
-			width: 560px;
-			padding: 0;
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+
 			padding-top: 40px;
-			margin: 0;
-			margin-left: auto;
+			padding-right: 0;
+			padding-bottom: 36px;
+			padding-left: 0;
 			/* Типографика */
 			/* Оформление */
 			list-style: none;
@@ -3608,9 +2987,16 @@
 		.footer-navigation-list li {
 			/* Позиционирование */
 			/* Блочная модель */
-			margin: 0;
-			padding: 0;
 			margin-left: 59px;
+			/* Типографика */
+			/* Оформление */
+			/* Анимация */
+		}
+
+		.footer-navigation-list li:first-of-type {
+			/* Позиционирование */
+			/* Блочная модель */
+			margin-left: 0;
 			/* Типографика */
 			/* Оформление */
 			/* Анимация */
@@ -3651,42 +3037,21 @@
 			/* Разное */
 		}
 
-		.footer-contacts {
-			/* Позиционирование */
-			/* Блочная модель */
-			margin: 0;
-			padding: 0;
-			padding-left: 3px;
-			margin-bottom: 48px;
-			/* Типографика */
-			/* Оформление */
-			/* Анимация */
-			/* Разное */
-		}
-
-		.footer-contacts a {
-			/* Позиционирование */
-			/* Блочная модель */
-			/* Типографика */
-			font-size: 18px;
-			line-height: 24px;
-			text-decoration: none;
-			color: #fff;
-			font-family: "Cuprum", "Verdana", "Arial", sans-serif;
-			/* Оформление */
-			/* Анимация */
-			/* Разное */
-		}
-
 		.footer-assortment {
 			/* Позиционирование */
 			display: flex;
 			flex-direction: row;
 			justify-content: flex-end;
 			/* Блочная модель */
-			width: 560px;
-			padding: 0;
-			margin: 0;
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+
+			padding-top: 0;
+			padding-right: 0;
+			padding-bottom: 0;
+			padding-left: 0;
 			/* Типографика */
 			/* Оформление */
 			list-style: none;
@@ -3696,9 +3061,16 @@
 		.footer-assortment li {
 			/* Позиционирование */
 			/* Блочная модель */
-			margin: 0;
-			padding: 0;
 			margin-left: 59px;
+			/* Типографика */
+			/* Оформление */
+			/* Анимация */
+		}
+
+		.footer-assortment li:first-of-type {
+			/* Позиционирование */
+			/* Блочная модель */
+			margin-left: 0;
 			/* Типографика */
 			/* Оформление */
 			/* Анимация */
@@ -3738,8 +3110,8 @@
 			/* Анимация */
 			/* Разное */
 		}
-	
-	/***** end block [footer-navigation] for {index.html and catalog.html} *****/
+
+	/***** end block [footer-navigation] for {index.html and catalog.html} *****/	
 
 	/***** begin block [footer-copyright] for {index.html and catalog.html} *****/
 
@@ -3757,24 +3129,49 @@
 			/* Позиционирование */
 			display: flex;
 			flex-direction: row;
-			justify-content: flex-start;
+			justify-content: space-between;
 			/* Блочная модель */
 
-			padding-top: 35px;
+			/*padding-top: 35px;/**/
 			padding-bottom: 30px;
 			/* Типографика */
 			/* Оформление */
 			/* Анимация */
 		}
-
-		.copyright-container b {
+		
+		.sign-copyright {
 			/* Позиционирование */
 			/* Блочная модель */
-			width: 240px;
-			margin: 0;
-			padding: 0;
-			margin-top: 2px;
-			margin-right: 150px;
+			box-sizing: border-box;
+			width: 32%;
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+
+			padding-top: 37px;
+			padding-right: 0;
+			padding-bottom: 0;
+			padding-left: 0;
+			/* Типографика */
+			/* Оформление */
+			/* Анимация */
+			/* Разное */
+		}
+
+
+		.sign-copyright b {
+			/* Позиционирование */
+			/* Блочная модель */
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+
+			padding-top: 0;
+			padding-right: 0;
+			padding-bottom: 0;
+			padding-left: 0;
 			/* Типографика */
 			/* Оформление */
 			font-size: 16px;
@@ -3791,10 +3188,17 @@
 			flex-direction: row;
 			justify-content: flex-start;
 			/* Блочная модель */
-			width: 150px;
-			padding: 0;
-			margin: 0;
-			margin-right: 100px;
+			box-sizing: border-box;
+			width: 32%;
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+
+			padding-top: 35px;
+			padding-right: 0;
+			padding-bottom: 0;
+			padding-left: 70px;
 			/* Типографика */
 			/* Оформление */
 			list-style: none;
@@ -3804,18 +3208,7 @@
 		.social-item {
 			/* Позиционирование */
 			/* Блочная модель */
-			padding: 0;
-			margin: 0;
 			margin-right: 3px;
-			/* Типографика */
-			/* Оформление */
-			/* Анимация */
-		}
-
-		.social-item:last-child {
-			/* Позиционирование */
-			/* Блочная модель */
-			margin-right: 0px;
 			/* Типографика */
 			/* Оформление */
 			/* Анимация */
@@ -3827,8 +3220,15 @@
 			/* Блочная модель */
 			width: 42px;
 			height: 42px;
-			padding: 0;
-			margin: 0;
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+
+			padding-top: 0;
+			padding-right: 0;
+			padding-bottom: 0;
+			padding-left: 0;
 			/* Типографика */
 			font-size: 0;
 			/* Оформление */
@@ -3885,13 +3285,32 @@
 			/* Разное */
 		}
 
+		.developers-info {
+			/* Позиционирование */
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			/* Блочная модель */
+			box-sizing: border-box;
+			width: 32%;
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+
+			padding-top: 37px;
+			padding-right: 15px;
+			padding-bottom: 0;
+			padding-left: 0;
+			/* Типографика */
+			/* Оформление */
+			/* Анимация */
+			/* Разное */
+		}
+
 		.callback {
 			/* Позиционирование */
 			/* Блочная модель */
-			width: 160px;	
-			margin: 2px 30px 0 0;
-			padding: 0;
-
 			/* Типографика */
 			font-size: 16px;
 			line-height: 18px;
@@ -3901,10 +3320,9 @@
 			/* Анимация */
 		}
 
-		.developer {
+		.developer-address {
 			/* Позиционирование */
 			/* Блочная модель */
-			margin: 2px 0 0 0px;
 			/* Типографика */
 			font-size: 16px;
 			line-height: 18px;
@@ -3915,7 +3333,7 @@
 		}
 
 		.callback a,
-		.developer a {
+		.developer-address a {
 			/* Позиционирование */
 			/* Блочная модель */
 			/* Типографика */
@@ -3928,7 +3346,7 @@
 		}
 
 		.callback a:hover,
-		.developer a:hover {
+		.developer-address a:hover {
 			/* Позиционирование */
 			/* Блочная модель */
 			/* Типографика */
@@ -3939,7 +3357,7 @@
 		}
 
 		.callback a:active,
-		.developer a:active {
+		.developer-address a:active {
 			/* Позиционирование */
 			/* Блочная модель */
 			/* Типографика */
@@ -3952,7 +3370,9 @@
 
 	/***** end block [footer-copyright] for {index.html and catalog.html} *****/
 
+
 /***** end block [footer.page-footer] for {index.html and catalog.html} *****/
+
 
 /***** begin block [modal windows] for {index.html and catalog.html} *****/
 
@@ -3960,8 +3380,15 @@
 		/* Позиционирование */
 		position: relative;
 		/* Блочная модель */
-		padding: 0;
-		margin: 0;
+		margin-top: 0;
+		margin-right: 0;
+		margin-bottom: 0;
+		margin-left: 0;
+
+		padding-top: 0;
+		padding-right: 0;
+		padding-bottom: 0;
+		padding-left: 0;
 		/* Типографика */
 		font-size: 18px;
 		line-height: 18px;
@@ -3972,14 +3399,12 @@
 
 		.modal-close {
 		/* Позиционирование */
-		/*position: absolute;/**/
+		position: absolute;
 		top: 9px;
 		right: 9px;
 		/* Блочная модель */
 		width: 21px;
 		height:  21px;
-		margin: 0;
-		padding: 0;
 		/* Типографика */
 		font-size: 0;
 		/* Оформление */
@@ -4056,9 +3481,15 @@
 			/* Позиционирование */
 			/* Блочная модель */
 			width: 220px;
-			padding: 0;
-			margin: 0;
+			margin-top: 0;
+			margin-right: 0;
 			margin-bottom: 9px;
+			margin-left: 0;
+
+			padding-top: 0;
+			padding-right: 0;
+			padding-bottom: 0;
+			padding-left: 0;
 			/* Типографика */
 			font-family: "Cuprum", "Verdana", "Arial", sans-serif;
 			font-size: 18px;
@@ -4144,11 +3575,33 @@
 			font-size: 14px;
 			line-height: 18px;
 			text-align: center;
+			color: #ffffff;
+			text-transform: uppercase;
 			/* Оформление */
 			border: none;
 			border-radius: 3px;
 			background-color: #ee3643;
 			/* Анимация */
+		}
+
+		.write_us-form .send-message:hover {
+			/* Позиционирование */
+			/* Блочная модель */
+			/* Типографика */
+			/* Оформление */
+			background-color: #ca2c37;
+			/* Анимация */
+			/* Разное */
+		}
+
+		.write_us-form .send-message:active {
+			/* Позиционирование */
+			/* Блочная модель */
+			/* Типографика */
+			/* Оформление */
+			background-color: #ba2732;
+			/* Анимация */
+			/* Разное */
 		}
 
 		.send-background {
@@ -4178,8 +3631,15 @@
 	.modal-map a {
 		/* Позиционирование */
 		/* Блочная модель */
-		margin: 0 auto;
-		padding: 0;
+		margin-top: 0;
+		margin-right: 0;
+		margin-bottom: 0;
+		margin-left: 0;
+
+		padding-top: 0;
+		padding-right: 0;
+		padding-bottom: 0;
+		padding-left: 0;
 		/* Типографика */
 		/* Оформление */
 		/* Анимация */
@@ -4187,24 +3647,1411 @@
 
 	/***** end block [modal-map] for {index.html} *****/
 
+/***** end block [modal windows] for {index.html} *****/
+
+/***** begin block [page-header-catalog] for {catalog.html} *****/
+
+	.page-header-catalog {
+		/* Позиционирование */
+		display: flex;
+		flex-direction: column;
+		/* Блочная модель */
+		width: auto;
+
+		padding-top: 0;
+		padding-right: 0;
+		padding-bottom: 60px;
+		padding-left: 0;
+
+		margin-top: 0;
+		margin-right: 0;
+		margin-bottom: 0;
+		margin-left: 0;
+
+		/* Типографика */
+		/* Оформление */
+		background-color: #f2f6f8;
+		/* Анимация */
+		/* Разное */
+	}
+
+	/***** begin block [header-content] for {catalog.html} *****/
+
+		/***** begin block [header-account] for {catalog.html} *****/
+
+			/***** begin block [user-registered] for {catalog.html} *****/
+
+				.user-registered {
+					/* Позиционирование */
+					position: relative;
+					/* Блочная модель */
+					width: 100%;
+					/* Типографика */
+					/* Оформление */
+					/* Анимация */
+					/* Разное */
+				}
+
+				.user-registered.hidden	{
+					/* Позиционирование */
+					display: none;
+					/* Блочная модель */
+					/* Типографика */
+					/* Оформление */
+					/* Анимация */
+					/* Разное */
+				}
+
+				.user_name {
+					/* Позиционирование */
+					display: block;
+					/* Блочная модель */
+					box-sizing: border-box;
+					width: 100%;
+					min-height: 45px;
+
+					padding-top: 13px;
+					padding-right: 0;
+					padding-bottom: 11px;
+					padding-left: 47px;
+
+					/* Типографика */
+					text-decoration: none;
+					font-size: 21px;
+					color: #000;
+					line-height: 21px;
+					font-family: "Cuprum", "Verdana", "Arial", sans-serif;
+					/* Оформление */
+					background-color: #fff;
+					/* Анимация */
+					/* Разное */
+				}
+
+				.icon-user {
+					/* Позиционирование */
+					position: absolute;
+					top: 13px;
+					left: 13px;
+					/* Блочная модель */
+					width: 20;
+					height: 18px;
+					/* Типографика */
+					/* Оформление */
+					fill: #c5c5c5;
+					/* Анимация */
+					/* Разное */
+				}
+				.user_name:hover .icon-user {
+					/* Позиционирование */
+					/* Блочная модель */
+					/* Типографика */
+					/* Оформление */
+					fill: #32425c;
+					/* Анимация */
+					/* Разное */
+				}
+
+				.user_name:active {
+					/* Позиционирование */
+					/* Блочная модель */
+					/* Типографика */
+					/* Оформление */
+					color: rgba(0, 0, 0, 0.3);
+					/* Анимация */
+					/* Разное */
+				}
+
+				.user_name:active .icon-user {
+					/* Позиционирование */
+					/* Блочная модель */
+					/* Типографика */
+					/* Оформление */
+					fill: #c5c5c5;
+					/* Анимация */
+					/* Разное */
+				}
+
+				.user-registered .logout {
+					/* Позиционирование */
+					display: block;
+					position: absolute;
+					top: 14px;
+					right: 10px;
+					/* Блочная модель */
+					width: 21px;
+					height: 17px;
+					/* Типографика */
+					font-size: 0;
+					/* Оформление */
+					/* Анимация */
+					/* Разное */		
+				}
+
+				.logout:hover .icon-logout {
+					/* Позиционирование */
+					/* Блочная модель */
+					/* Типографика */
+					/* Оформление */
+					fill: #32425c;
+					/* Анимация */
+					/* Разное */
+				}
+
+				.logout:active .icon-logout {
+					/* Позиционирование */
+					/* Блочная модель */
+					/* Типографика */
+					/* Оформление */
+					fill: #c5c5c5;
+					/* Анимация */
+					/* Разное */
+				}
+
+				.profile-actions {
+					/* Позиционирование */
+					position: relative;
+					/* Блочная модель */
+					padding-top: 8px;
+					padding-left: 17px;
+					/* Типографика */
+					/* Оформление */
+					/* Анимация */
+					/* Разное */
+				}
+
+				.profile-actions a {
+					/* Позиционирование */
+					/* Блочная модель */
+					/* Типографика */
+					/* Оформление */
+					font-size: 16px;
+					line-height: 18px;
+					color: #32425c;
+					font-family: "Cuprum", "Verdana", "Arial", sans-serif;
+					/* Анимация */
+					/* Разное */
+				}
+
+				.profile-actions a:first-child {
+					/* Позиционирование */
+					position: relative;
+					/* Блочная модель */
+					margin-left: 1px;
+					margin-right: 30px;
+					/* Типографика */
+					/* Оформление */
+					/* Анимация */
+					/* Разное */
+				}
+
+				.profile-actions::before {
+					/* Позиционирование */
+					display: block;
+					position: absolute;
+					top: 17px;
+					left: 108px;
+					/* Блочная модель */
+					width: 4px;
+					height: 5px;
+					/* Типографика */
+					/* Оформление */
+					background-image: url("../img/profile-separator.png");
+					background-repeat: no-repeat;
+					background-size: 4px 5px;
+					background-position: 50% 50%;
+					/* Анимация */
+					/* Разное */
+					content:"";
+				}
+
+				.profile-actions a:hover {
+					/* Позиционирование */
+					/* Блочная модель */
+					/* Типографика */
+					color: #000;
+					/* Оформление */
+					/* Анимация */
+					/* Разное */
+				}
+
+				.profile-actions a:active {
+					/* Позиционирование */
+					/* Блочная модель */
+					/* Типографика */
+					color: rgba(50, 66, 92, 0.3);
+					/* Оформление */
+					/* Анимация */
+					/* Разное */
+				}
+
+
+			/***** end block [user-registered] for {catalog.html} *****/
+
+		/***** end block [header-account] for {catalog.html} *****/
+
+	/***** end block [header-content] for {catalog.html} *****/
+
+/***** end block [page-header-catalog] for {catalog.html} *****/
+
+/***** begin block [main.container] for {catalog.html} *****/
+
+	.catalog-title, 
+	.catalog-content {
+		font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+	}
+
+	/***** begin block [catalog-title] for {catalog.html} *****/
+
+		.catalog-title {
+			/* Позиционирование */
+			/* Блочная модель */
+			padding-bottom: 20px;
+			/* Типографика */
+			/* Оформление */
+			background-color: #ffffff;
+			/* Анимация */
+			/* Разное */
+		}
+
+		.breadcrumbs {
+			/* Позиционирование */
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			/* Блочная модель */
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+
+			padding-top: 19px;
+			padding-right: 0;
+			padding-bottom: 19px;
+			padding-left: 0;
+			/* Типографика */
+			/* Оформление */
+			list-style: none;
+			/* Анимация */
+			/* Разное */
+		}
+
+		.breadcrumbs li {
+			/* Позиционирование */
+			position: relative;
+			display: block;
+			/* Блочная модель */
+			/* Типографика */
+			/* Оформление */
+			/* Анимация */
+			/* Разное */
+		}
+
+		.breadcrumbs li:not(:last-of-type)::after {
+			/* Позиционирование */
+			position: absolute;
+			display: block;
+			top: 4px;
+			right: 15px;
+			/* Блочная модель */
+			width: 8px;
+			height: 12px;
+			/* Типографика */
+			/* Оформление */
+			background-image: url("../img/icon-right-small.svg");
+			background-position: center center;
+			background-size: 8px 12px;
+			background-repeat: no-repeat;
+			/* Анимация */
+			/* Разное */
+			content: "";
+		}
+
+		.breadcrumbs a {
+			/* Позиционирование */
+			/* Блочная модель */
+			margin: 0;
+			padding: 0;
+			margin-right: 40px;
+			/* Типографика */
+			font-family: "PT Sans", Arial, Helvetica, sans-serif;
+			font-size: 13px;
+			line-height: 18px;
+			text-decoration: none;
+			text-transform: uppercase;
+			color: #000000;
+			text-decoration: none;
+			/* Оформление */
+			/* Анимация */
+			/* Разное */
+		}
+
+		.breadcrumbs .main-page {
+			/* Позиционирование */
+			display: block;
+			width: 15px;
+			height: 21px;
+			/* Блочная модель */
+			/* Типографика */
+			vertical-align: middle;
+			font-size: 0;
+			/* Оформление */
+			background-image: url("../img/icon-home.svg");
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			background-size: 15px 12px;
+			/* Анимация */
+			/* Разное */
+		}
+
+		.catalog-title h2 {
+			/* Позиционирование */
+			/* Блочная модель */
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+
+			padding-top: 30px;
+			padding-right: 0;
+			padding-bottom: 30px;
+			padding-left: 30px;
+			/* Типографика */
+			font-size: 30px;
+			line-height: 30px;
+			text-transform: uppercase;
+			color: #32425c;
+			font-weight: normal;
+			font-family: "Cuprum", "Verdana", "Arial", sans-serif;
+			/* Оформление */
+			background-color: #f2f6f8;
+			/* Анимация */
+			/* Разное */
+		}
+
+
+
+	/***** end block [catalog-title] for {catalog.html} *****/
+
+	/***** begin block [catalog-content] for {catalog.html} *****/
+
+		.catalog-content {
+			/* Позиционирование */
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: flex-start;
+			/* Блочная модель */
+			/* Типографика */
+			/* Оформление */
+			/* Анимация */
+		}
+
+		/***** begin block [filters] for {catalog.html} *****/
+
+			.filters {
+				/* Позиционирование */
+				/* Блочная модель */
+				min-width: 220px;
+				/* Типографика */
+				/* Оформление */
+				background-color: #ffffff;
+				/* Анимация */
+			}
+
+			.filters-form {
+				/* Позиционирование */
+				display: flex;
+				flex-direction: column;
+				/* Блочная модель */
+				/* Типографика */
+				/* Оформление */
+				/* Анимация */
+				/* Разное */
+			}
+
+			.filters h3 {
+				/* Позиционирование */
+				/* Блочная модель */
+				margin-top: 0;
+				margin-right: 0;
+				margin-bottom: 10px;
+				margin-left: 0;
+
+				padding-top: 10px;
+				padding-right: 0;
+				padding-bottom: 10px;
+				padding-left: 19px;
+				/* Типографика */
+				font-size: 13px;
+				line-height: 18px;
+				text-transform: uppercase;
+				font-weight: normal;
+				font-family: "PT Sans", Arial, Helvetica, sans-serif;
+				/* Оформление */
+				background-color: #f7f3ec;
+				/* Анимация */
+			}
+
+			.filter-type {
+				/* Позиционирование */
+				/* Блочная модель */
+				margin-top: 0;
+				margin-right: 0;
+				margin-bottom: 0;
+				margin-left: 0;
+
+				padding-top: 0;
+				padding-right: 0;
+				padding-bottom: 0;
+				padding-left: 0;
+				/* Типографика */
+				/* Оформление */
+				border: none;
+				border-bottom: 1px solid #e5e5e5;
+				/* Анимация */
+				/* Разное */
+			}
+			
+			.filter-type.filter-source {
+				/* Позиционирование */
+				/* Блочная модель */
+				/* Типографика */
+				/* Оформление */
+				border-bottom: none;
+				/* Анимация */
+				/* Разное */
+			}
+
+			.filter-type legend {
+				/* Позиционирование */
+				/* Блочная модель */
+				margin-top: 0;
+				margin-right: 0;
+				margin-bottom: 13px;
+				margin-left: 0;
+
+				padding-top: 0;
+				padding-right: 0;
+				padding-bottom: 0;
+				padding-left: 0;
+				/* Типографика */
+				font-size: 17px;
+				line-height: 30px;
+				text-transform: uppercase;
+				font-family: "PT Sans", Arial, Helvetica, sans-serif;
+				font-weight: bold;
+				/* Оформление */
+				background-color: #ffffff;
+				/* Анимация */
+				/* Разное */
+			}
+
+
+
+			/***** begin block [price-slider] for {catalog.html} *****/
+
+				.filter-price-wrapper {
+					/* Позиционирование */
+					/* Блочная модель */
+					padding-bottom: 17px;
+					/* Типографика */
+					/* Оформление */
+					/* Анимация */
+					/* Разное */
+				}
+
+				.price-slider {
+					/* Позиционирование */
+					position: relative;
+					/* Блочная модель */
+					min-height: 80px;
+					margin-bottom: 9px;
+					/* Типографика */
+					/* Оформление */
+					background-color: #f7f3ec;
+					/* Анимация */
+					/* Разное */
+				}
+
+				.price-slider::before {
+					/* Позиционирование */
+					display: block;
+					position: absolute;
+					top: 39px;
+					left: 20px;
+					/* Блочная модель */
+					width: 180px;
+					height: 2px;
+					/* Типографика */
+					/* Оформление */
+					background-color: #d7dcde;
+					/* Анимация */
+					/* Разное */
+					content: "";
+				}
+
+				.price-slider::after {
+					/* Позиционирование */
+					display: block;
+					position: absolute;
+					top: 39px;
+					left: 20px;
+					/* Блочная модель */
+					width: 160px;
+					height: 2px;
+					/* Типографика */
+					/* Оформление */
+					background-color: #00ca74;
+					/* Анимация */
+					/* Разное */
+					content: "";
+				}
+
+				.price-slider button {
+					/* Позиционирование */
+					display: block;
+					position:absolute;
+					z-index: 1;
+					/* Блочная модель */
+					margin-top: 0;
+					margin-right: 0;
+					margin-bottom: 0;
+					margin-left: 0;
+
+					padding-top: 0;
+					padding-right: 0;
+					padding-bottom: 0;
+					padding-left: 0;
+					width: 20px;
+					height: 20px;
+					box-sizing: border-box;
+					/* Типографика */
+					font-size: 0;
+					background-color: #ababab;
+					/* Оформление */
+					border: 8px solid #ffffff;
+					border-radius: 50%;
+					/* Анимация */
+				}
+
+				.price-slider .left-slider {
+					/* Позиционирование */
+					top: 30px;
+					left: 20px;
+					/* Блочная модель */
+					/* Типографика */
+					/* Оформление */
+					/* Анимация */
+				}
+
+				.price-slider .right-slider {
+					/* Позиционирование */
+					top: 30px;
+					right: 40px;
+					/* Блочная модель */
+					/* Типографика */
+					/* Оформление */
+					/* Анимация */
+				}
+
+				.price-range {
+					/* Позиционирование */
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					/* Блочная модель */
+					padding-bottom: 25px;
+					/* Типографика */
+					/* Оформление */
+					/* Анимация */
+					/* Разное */
+				}
+
+				.price-range input {
+					/* Позиционирование */
+					/* Блочная модель */
+					padding-top: 10px;
+					padding-bottom: 10px;
+					width: 95px;
+					/* Типографика */
+					font-family: "PT Sans", Arial, Helvetica, sans-serif;
+					font-size: 17px;
+					line-height: 18px;
+					text-align: center;
+					/* Оформление */
+					border: 0;
+					border-radius: 3px;
+					background-color: #f7f3ec;
+					/* Анимация */
+					/* Разное */
+				}
+				
+				.seporator {
+					/* Позиционирование */
+					/* Блочная модель */
+					/* Типографика */
+					line-height: 38px;
+					vertical-align: middle;
+					/* Оформление */
+					/* Анимация */
+					/* Разное */
+
+				}
+
+
+			/***** end block [price-slider] for {catalog.html} *****/
+
+			/***** begin block [filter-brands] for {catalog.html} *****/
+
+				.filter-brands-wrapper {
+					/* Позиционирование */
+					/* Блочная модель */
+					padding-bottom: 16px;
+					/* Типографика */
+					/* Оформление */
+					/* Анимация */
+					/* Разное */
+				}
+
+				.filter-brands ul {
+					/* Позиционирование */
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-start;
+					align-items: flex-start;
+					/* Блочная модель */
+					margin-top: 0;
+					margin-right: 0;
+					margin-bottom: 0;
+					margin-left: 0;
+
+					padding-top: 0;
+					padding-right: 0;
+					padding-bottom: 4px;
+					padding-left: 0;
+					/* Типографика */
+					/* Оформление */
+					list-style: none;
+					/* Анимация */
+				}
+
+				.filter-item-checkbox {
+					/* Позиционирование */
+					display: none;
+				}
+
+				.filter-type label {
+					/* Позиционирование */
+					position: relative;
+					display: block;
+					/* Блочная модель */
+					padding-left: 35px;
+					padding-bottom: 20px;
+					/* Типографика */
+					font-size: 15px;
+					line-height: 20px;
+					text-transform: uppercase;
+					font-family: "PT Sans", Arial, Helvetica, sans-serif;
+					color: #000000;
+					/* Оформление */
+					/* Анимация */
+				}
+
+				.filter-item-checkbox + label::before {
+					/* Позиционирование */
+					position: absolute;
+					top: -1px;
+					left: 0;
+					display: block;
+					/* Блочная модель */
+					width: 23px;
+					height: 23px;
+					box-sizing: border-box;
+					/* Типографика */
+					color: red;
+					/* Оформление */
+					border: 2px solid #c5c5c5;
+					border-radius: 3px;
+					/* Анимация */
+					/* Разное */
+					content: "";
+				}
+
+				.filter-item-checkbox + label:hover::before {
+					/* Позиционирование */
+					/* Блочная модель */
+					/* Типографика */
+					/* Оформление */
+					border: 2px solid #b5b5b5;
+					/* Анимация */
+					/* Разное */
+				}
+
+				.filter-item-checkbox + label:active {
+					/* Позиционирование */
+					/* Блочная модель */
+					/* Типографика */
+					color: rgba(0, 0, 0, 0.4);
+					/* Оформление */
+					/* Анимация */
+					/* Разное */
+				}
+
+				.filter-item-checkbox + label:active::before {
+					/* Позиционирование */
+					/* Блочная модель */
+					/* Типографика */
+					/* Оформление */
+					border: 2px solid #e9e9e9;
+					/* Анимация */
+					/* Разное */
+				}
+
+				.filter-item-checkbox:checked + label::before {
+					/* Позиционирование */
+					/* Блочная модель */
+					width: 27px;
+					height: 23px;
+					/* Типографика */
+					/* Оформление */
+					border: none;
+					background-image: url("../img/checkbox-on-static.svg");
+					background-position: 0 0;
+					background-repeat: no-repeat;
+					/* Анимация */
+					/* Разное */
+				}
+
+				.filter-item-checkbox:checked + label:hover::before {
+					/* Позиционирование */
+					/* Блочная модель */
+					/* Типографика */
+					/* Оформление */
+					background-image: url("../img/checkbox-on-hover.svg");
+					/* Анимация */
+					/* Разное */
+				}
+
+				.filter-item-checkbox:checked + label:active::before {
+					/* Позиционирование */
+					/* Блочная модель */
+					/* Типографика */
+					/* Оформление */
+					background-image: url("../img/checkbox-on-active.svg");
+					/* Анимация */
+					/* Разное */
+				}
+
+			/***** end block [filter-brands] for {catalog.html} *****/
+
+			/***** begin block [filter-source] for {catalog.html} *****/
+
+				.filter-source-wrapper {
+					/* Позиционирование */
+					/* Блочная модель */
+					padding-bottom: 59px;
+					/* Типографика */
+					/* Оформление */
+					/* Анимация */
+					/* Разное */
+				}
+
+				.filter-source ul {
+					/* Позиционирование */
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-start;
+					align-items: flex-start;
+					/* Блочная модель */
+					margin-top: 0;
+					margin-right: 0;
+					margin-bottom: 0;
+					margin-left: 0;
+
+					padding-top: 0;
+					padding-right: 0;
+					padding-bottom: 0;
+					padding-left: 0;
+					/* Типографика */
+					/* Оформление */
+					list-style: none;
+					/* Анимация */
+					/* Разное */
+				}
+
+				.filter-item-radio {
+					/* Позиционирование */
+					display: none;
+					/* Блочная модель */
+					/* Типографика */
+					/* Оформление */
+					/* Анимация */
+					/* Разное */
+				}
+
+				.filter-item-radio + label {
+					/* Позиционирование */
+					position: relative;
+					/* Блочная модель */
+					/* Типографика */
+					/* Оформление */
+					/* Анимация */
+					/* Разное */
+				}
+
+				.filter-item-radio + label::before {
+					/* Позиционирование */
+					display: block;
+					position: absolute;
+					top: -2px;
+					left: 0;
+					/* Блочная модель */
+					width: 25px;
+					height: 25px;
+					/* Типографика */
+					/* Оформление */
+					border-radius: 50%;
+					background-color: #c5c5c5;/**/
+					box-shadow: inset 0 0 0 4px #c5c5c5,
+								inset 0 0 0 13px #ffffff;
+					/* Анимация */
+					/* Разное */
+					content: "";
+				}
+
+				.filter-item-radio + label:hover::before {
+					/* Позиционирование */
+					/* Блочная модель */
+					/* Типографика */
+					/* Оформление */
+					box-shadow: inset 0 0 0 4px #b5b5b5,
+								inset 0 0 0 13px #ffffff;
+					/* Анимация */
+					/* Разное */
+				}
+
+				.filter-item-radio + label:active::before {
+					/* Позиционирование */
+					/* Блочная модель */
+					/* Типографика */
+					/* Оформление */
+					box-shadow: inset 0 0 0 4px #e9e9e9,
+								inset 0 0 0 13px #ffffff;
+					/* Анимация */
+					/* Разное */
+				}
+
+				.filter-item-radio:checked + label::before {
+					/* Позиционирование */
+					/* Блочная модель */
+					/* Типографика */
+					/* Оформление */
+					box-shadow: inset 0 0 0 4px #c5c5c5,
+								inset 0 0 0 8px #ffffff;
+					/* Анимация */
+					/* Разное */
+				}
+
+				.filter-item-radio:checked + label:hover::before {
+					/* Позиционирование */
+					/* Блочная модель */
+					/* Типографика */
+					/* Оформление */
+					background-color: #b5b5b5;/**/
+					box-shadow: inset 0 0 0 4px #b5b5b5,
+								inset 0 0 0 8px #ffffff;
+					/* Анимация */
+					/* Разное */
+				}
+
+				.filter-item-radio:checked + label:active::before {
+					/* Позиционирование */
+					/* Блочная модель */
+					/* Типографика */
+					/* Оформление */
+					background-color: #e9e9e9;/**/
+					box-shadow: inset 0 0 0 4px #e9e9e9,
+								inset 0 0 0 8px #ffffff;
+					/* Анимация */
+					/* Разное */
+				}
+
+			/***** end block [filter-source] for {catalog.html} *****/
+
+			.button-filters-send {
+				/* Позиционирование */
+				display: block;
+				align-self: flex-start;
+				/* Блочная модель */
+				width: 140px;
+				padding-top: 10px;
+				padding-bottom: 7px;
+				/* Типографика */
+				font-size: 13px;
+				line-height: 18px;
+				font-family: "PT Sans", Arial, Helvetica, sans-serif;
+				text-align: center;
+				text-transform: uppercase;
+				/* Оформление */
+				border: 2px solid #e5e5e5;
+				border-radius: 3px;
+				background-color: #ffffff;
+				/* Анимация */
+			}
+
+		/***** end block [filters] for {catalog.html} *****/
+
+		/***** begin block [catalog] for {catalog.html} *****/
+
+			.catalog {
+				/* Позиционирование */
+				/* Блочная модель */
+				width: calc(100% - 240px);
+				/* Типографика */
+				/* Оформление */
+				/* Анимация */
+			}
+
+			/***** begin block [sorting] for {catalog.html} *****/
+
+				.sorting {
+					/* Позиционирование */
+					display: flex;
+					flex-direction: row;
+					justify-content: flex-start;
+					/* Блочная модель */
+					margin-top: 0;
+					margin-right: 0;
+					margin-bottom: 20px;
+					margin-left: 0;
+
+					padding-top: 9px;
+					padding-right: 0;
+					padding-bottom: 10px;
+					padding-left: 20px;
+
+					
+					/* Типографика */
+					font-size: 13px;
+					line-height: 18px;
+					text-transform: uppercase;
+					/* Оформление */
+					background-color: #f7f3ec;
+					/* Анимация */
+				}
+
+				.sorting h3 {
+					/* Позиционирование */
+					display: block;
+					/* Блочная модель */
+					margin-top: 0;
+					margin-right: 0;
+					margin-bottom: 0;
+					margin-left: 0;
+
+					padding-top: 0;
+					padding-right: 138px;
+					padding-bottom: 0;
+					padding-left: 0;
+					/* Типографика */
+					font-size: 13px;
+					line-height: 18px;
+					font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+					text-transform: uppercase;
+					font-weight: normal; 
+					color: #000000;
+					/* Оформление */
+					/* Анимация */
+				}
+
+				.sort-list {
+					/* Позиционирование */
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					/* Блочная модель */
+					width: 355px;
+					margin-top: 0;
+					margin-right: 0;
+					margin-bottom: 0;
+					margin-left: 0;
+
+					padding-top: 0;
+					padding-right: 0;
+					padding-bottom: 0;
+					padding-left: 0;
+					/* Типографика */
+					/* Оформление */
+					list-style: none;
+					/* Анимация */
+				}
+
+				.sort-criterion {
+					/* Позиционирование */
+					/* Блочная модель */
+					/* Типографика */
+					/*text-decoration-color: #ee3643;
+					text-decoration-style: dotted;/**/
+					border-bottom: 1px dotted #ee3643;
+					color: rgba(0, 0, 0, 0.3);
+					font-size: 13px;
+					line-height: 18px;
+					text-decoration: none;
+					font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+					/* Оформление */
+					/* Анимация */
+				}
+
+				.sort-criterion.active {
+					/* Позиционирование */
+					/* Блочная модель */
+					/* Типографика */
+					/*text-decoration-color: #ee3643;
+					text-decoration-style: dotted;/**/
+					border-bottom: none;
+					color: #ee3643;
+					/* Оформление */
+					/* Анимация */
+				}
+
+				.sort-criterion:hover {
+					/* Позиционирование */
+					/* Блочная модель */
+					/* Типографика */
+					color: #000000;
+					border-bottom: 1px solid #ee3643;
+					/* Оформление */
+					/* Анимация */
+					/* Разное */
+				}
+
+				.sort-direction {
+					/* Позиционирование */
+					display: block;
+					/* Блочная модель */
+					margin-top: 4px;
+					margin-right: 0;
+					margin-bottom: 0;
+					margin-left: 0;
+
+					padding-top: 0;
+					padding-right: 0;
+					padding-bottom: 0;
+					padding-left: 0;
+					width: 0px;
+					height: 0px;
+					/* Типографика */
+					font-size: 0;
+					/* Оформление */
+					border: 6px solid #c5c5c5;
+					border-top: 11px solid #c5c5c5;
+					border-bottom: 11px solid #c5c5c5;
+					/* Анимация */
+					/* Разное */
+				}
+
+				.sort-asc {
+					/* Позиционирование */
+					/* Блочная модель */
+					margin-left: auto;
+					/* Типографика */
+					/* Оформление */
+					border-top-width: 0;
+					border-left-color: transparent;
+					border-right-color: transparent;
+					/* Анимация */
+					/* Разное */
+				}
+
+				.sort-desc {
+					/* Позиционирование */
+					/* Блочная модель */
+					margin-left: 20px;
+					margin-right: 17px;
+					/* Типографика */
+					/* Оформление */
+					border-bottom-width: 0;
+					border-left-color: transparent;
+					border-right-color: transparent;
+					/* Анимация */
+					/* Разное */
+				}
+
+				.sort-direction.active {
+					/* Позиционирование */
+					/* Блочная модель */
+					/* Типографика */
+					/* Оформление */
+					border-top-color: #ee3643;
+					border-bottom-color: #ee3643;
+					/* Анимация */
+					/* Разное */
+				}
+
+				.sort-direction:hover {
+					/* Позиционирование */
+					/* Блочная модель */
+					/* Типографика */
+					/* Оформление */
+					border-top-color: #000000;
+					border-bottom-color: #000000;
+					/* Анимация */
+					/* Разное */
+				}
+
+			/***** end block [sorting] for {catalog.html} *****/
+
+			/***** begin block [catalog-list] for {catalog.html and index.html} *****/
+
+				.catalog-list-wrapper {
+					/* Позиционирование */
+					/* Блочная модель */
+					padding-bottom: 12px;
+					/* Типографика */
+					/* Оформление */
+					/* Анимация */
+					/* Разное */
+					
+				}
+
+				.catalog-list h4 {
+					/* Позиционирование */
+					order: 2;
+					/* Блочная модель */
+					margin-top: 0;
+					margin-right: 0;
+					margin-bottom: 0;
+					margin-left: 0;
+
+					padding-top: 0;
+					padding-right: 30px;
+					padding-bottom: 8px;
+					padding-left: 30px;
+					/* Типографика */
+					font-size: 18px;
+					line-height: 20px;
+					font-weight: bold;
+					color: #000000;
+					text-align: center;
+					font-family: "PT Sans", Arial, Helvetica, sans-serif;
+					/* Оформление */
+					/* Анимация */
+					/* Разное */
+				}
+
+				.page-catalog .catalog-item {
+					/* Позиционирование */
+					/* Блочная модель */
+					width: 31.43%;
+					margin-bottom: 20px;
+					/* Типографика */
+					/* Оформление */
+					/* Анимация */
+					/* Разное */
+				}
+
+			/***** end block [catalog-list] for {catalog.html and index.html} *****/
+
+			/***** begin block [pagination-list] for {catalog.html} *****/
+
+				.pagination-wrapper {
+					/* Позиционирование */
+					/* Блочная модель */
+					padding-bottom: 60px;
+					/* Типографика */
+					/* Оформление */
+					/* Анимация */
+					/* Разное */
+				}
+
+				.pagination-list {
+					/* Позиционирование */
+					display: flex;
+					flex-direction: row;
+					justify-content: flex-start;
+					/* Блочная модель */
+					margin-top: 0;
+					margin-right: 0;
+					margin-bottom: 0;
+					margin-left: 0;
+
+					padding-top: 0;
+					padding-right: 0;
+					padding-bottom: 0;
+					padding-left: 0;
+					/* Типографика */
+					/* Оформление */
+					list-style: none;
+					/* Анимация */
+					/* Разное */
+				}
+
+				.pagination-item {
+					/* Позиционирование */
+					/* Блочная модель */
+					margin-right: 10px;
+					/* Типографика */
+					/* Оформление */
+					/* Анимация */
+					/* Разное */
+				}
+
+				.pagination-item a {
+					/* Позиционирование */
+					display: block;
+					/* Блочная модель */
+					min-width: 36px;
+					padding-top: 10px;
+					padding-bottom: 8px;
+					/* Типографика */
+					color: #000000;
+					font-size: 13px;
+					line-height: 18px;
+					text-align: center;
+					text-decoration: none;
+					font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+					text-transform: uppercase;
+					/* Оформление */
+					border: 1px solid #e5e5e5;
+					border-radius: 3px;
+					/* Анимация */
+					/* Разное */
+				}
+
+				.pagination-item a:hover {
+					/* Позиционирование */
+					/* Блочная модель */
+					/* Типографика */
+					/* Оформление */
+					border-color: #bdc6ca;
+					/* Анимация */
+					/* Разное */
+				}
+
+				.pagination-item a:active {
+					/* Позиционирование */
+					/* Блочная модель */
+					/* Типографика */
+					/* Оформление */
+					border-color: #f79ba1;
+					/* Анимация */
+					/* Разное */
+				}
+
+				.pagination-current a {
+					/* Позиционирование */
+					/* Блочная модель */
+					/* Типографика */
+					color: #ffffff;
+					/* Оформление */
+					background-color: #ee3643;
+					border-color: #ee3643;
+					/* Анимация */
+					/* Разное */
+				}
+
+				.pagination-item.next a {
+					/* Позиционирование */
+					/* Блочная модель */
+					padding-right: 31px;
+					padding-left: 31px;
+					/* Типографика */
+					/* Оформление */
+					/* Анимация */
+					/* Разное */
+				}
+
+			/***** end block [pagination-list] for {catalog.html} *****/
+
+		/***** end block [catalog] for {catalog.html} *****/
+
+	/***** end block [catalog-content] for {catalog.html} *****/
+
+	/***** begin block [equipment_description] for {catalog.html} *****/
+
+		.description-container {
+			/* Позиционирование */
+			/* Блочная модель */
+			width: 100%;
+			padding-bottom: 68px;
+			/* Типографика */
+			/* Оформление */
+			background-color: #f2f6f8;
+			/* Анимация */
+			/* Разное */
+		}
+
+		.equipment_description {
+			/* Позиционирование */
+			/* Блочная модель */
+			padding-top: 65px;
+			/* Типографика */
+			/* Оформление */
+			/* Анимация */
+			/* Разное */
+		}
+
+		.equipment_description h3 {
+			/* Позиционирование */
+			/* Блочная модель */
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+
+			padding-top: 0;
+			padding-right: 0;
+			padding-bottom: 27px;
+			padding-left: 0;
+			/* Типографика */
+			color: #000000;
+			font-family: "Cuprum", "Verdana", "Arial", sans-serif;
+			font-size: 30px;
+			line-height: 30px;
+			text-transform: uppercase;
+			font-weight: normal;
+			/* Оформление */
+			/* Анимация */
+			/* Разное */
+		}
+
+		.equipment_description p {
+			/* Позиционирование */
+			/* Блочная модель */
+			/* Типографика */
+			font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+			font-size: 13px;
+			line-height: 24px;
+			color: #000000;
+			/* Оформление */
+			/* Анимация */
+			/* Разное */
+		}
+
+	/***** end block [equipment_description] for {catalog.html} *****/
+
+/***** end block [main.container] for {catalog.html} *****/
+
+/***** begin block [modal windows] for {catalog.html} *****/
+
 	/***** begin block [modal-cart_add] for {catalog.html} *****/
 
 		.modal-cart_add {
 			/* Позиционирование */
+			display: flex;
+			flex-direction: column;
 			/* Блочная модель */
-			width: 460px;
-			padding: 0;
-			margin: 0;
+			width: 620px;
 			padding-top: 48px;
-			padding-left: 80px;
-			padding-right: 80px;
-			padding-bottom: 37px;
+			padding-right: 0;
+			padding-left: 0;
+			padding-bottom: 0;
 			/* Типографика */
 			font-family: "Cuprum", "Verdana", "Arial", sans-serif;
 			/* Оформление */
 			border-top: 7px solid #ff5357;
 			box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
-			background-color: #f1f1f1;
+			background-color: #ffffff;
 			/* Анимация */
 			/* Разное */
 		}
@@ -4224,7 +5071,8 @@
 			/* Позиционирование */
 			justify-content: flex-start;
 			/* Блочная модель */
-			margin-bottom: 85px;
+			padding-left: 80px;
+			padding-bottom: 49px;
 			/* Типографика */
 			/* Оформление */
 			/* Анимация */
@@ -4233,16 +5081,14 @@
 
 		.message-succesfully b {
 			/* Позиционирование */
-			justify-content: flex-start;
 			/* Блочная модель */
 			padding-top: 20px;
-			margin-left: 32px;
+			padding-left: 32px;
 			/* Типографика */
 			color: #000000;
 			font-family: "Cuprum", "Verdana", "Arial", sans-serif;
 			font-size: 30px;
 			line-height: 30px;
-			vertical-align: middle;
 			/* Оформление */
 			/* Анимация */
 			/* Разное */
@@ -4252,8 +5098,13 @@
 			/* Позиционирование */
 			justify-content: space-between;
 			/* Блочная модель */
+			padding-top: 37px;
+			padding-right: 80px;
+			padding-bottom: 37px;
+			padding-left: 80px;
 			/* Типографика */
 			/* Оформление */
+			background-color: #f1f1f1;
 			/* Анимация */
 			/* Разное */
 		}
@@ -4263,8 +5114,6 @@
 			display: block;
 			/* Блочная модель */
 			width: 220px;
-			padding: 0;
-			margin: 0;
 			padding-top: 10px;
 			padding-bottom: 10px;
 			/* Типографика */
@@ -4318,4 +5167,4 @@
 
 	/***** end block [modal-cart_add] for {catalog.html} *****/
 
-/***** end block [modal windows] for {index.html} *****/
+/***** end block [modal windows] for {catalog.html} *****/
