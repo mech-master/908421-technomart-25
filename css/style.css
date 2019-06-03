@@ -82,6 +82,8 @@
 	}
 
 	body {
+		position: relative;
+
 		padding-top: 0;
 		padding-right: 0;
 		padding-bottom: 0;
@@ -153,14 +155,14 @@
 
 			box-sizing: border-box;
 			min-width: 32%;
+			align-self: center
 
 			margin-top: 0;
 			margin-right: 0;/*margin-right: 71px;/**/
 			margin-bottom: 0;
 			margin-left: 0;
 			
-			padding-top: 4px;
-			padding-right: 0;
+			padding-top: 0;
 			padding-bottom: 0;
 			padding-left: 52px;
 
@@ -891,6 +893,13 @@
 				background-size: 22px 40px;
 			}
 
+			.button-prev.disabled,
+			.button-prev:disabled,
+			.button-next.disabled,
+			.button-next:disabled {
+				opacity: 0.3;
+			}
+
 			.promo-slide-list {
 				position: absolute;
 				width: 30px;
@@ -940,6 +949,7 @@
 
 			.promo-slide {
 				position: relative;
+				display: none;
 				
 				width: 620px;
 				height: 266px;
@@ -951,8 +961,8 @@
 				display: block;
 			}
 
-			.promo-slide.hidden {
-				display: none;
+			.promo-slide.active {
+				display: block;
 			}/**/
 
 			.promo-slide .slide-title {
@@ -1243,8 +1253,10 @@
 			order: 1;
 		}
 
-		.catalog-item img {
+		.catalog-item>.vision>img {
 			display: block;
+			width: 218px;
+			height: 170px;
 		}
 
 		.catalog-item:hover>.vision>img {
@@ -1756,6 +1768,8 @@
 
 			.services-credit a {
 				display: block;
+
+				width: 195px;
 				
 				margin-top: 0;
 				margin-right: 0;
@@ -1824,10 +1838,11 @@
 				display: flex;
 				flex-direction: column;
 				
-				width: 60%;
+				width: 65.9574%;
 				padding-top: 1px;
 				padding-bottom: 87px;
-				
+				padding-right: 100px;
+				box-sizing: border-box;
 				
 			}
 
@@ -1953,7 +1968,7 @@
 				display: flex;
 				flex-direction: column;
 				
-				width: 38%;
+				width: 31.9149%;
 			}
 
 			.company-contacts h2 {
@@ -2383,6 +2398,26 @@
 
 
 /***** begin block [modal windows] for {index.html and catalog.html} *****/
+	.view-port {
+		display: none;
+		position:fixed;
+		z-index: 100;
+		top: 0;
+		left: 0;
+
+
+		width: 100%;
+		height: 100%;
+
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+
+	.view-port.opened {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
 
 	.modal {
 		position: relative;
