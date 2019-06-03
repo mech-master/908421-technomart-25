@@ -82,6 +82,8 @@
 	}
 
 	body {
+		position: relative;
+
 		padding-top: 0;
 		padding-right: 0;
 		padding-bottom: 0;
@@ -891,6 +893,13 @@
 				background-size: 22px 40px;
 			}
 
+			.button-prev.disabled,
+			.button-prev:disabled,
+			.button-next.disabled,
+			.button-next:disabled {
+				opacity: 0.3;
+			}
+
 			.promo-slide-list {
 				position: absolute;
 				width: 30px;
@@ -940,6 +949,7 @@
 
 			.promo-slide {
 				position: relative;
+				display: none;
 				
 				width: 620px;
 				height: 266px;
@@ -951,8 +961,8 @@
 				display: block;
 			}
 
-			.promo-slide.hidden {
-				display: none;
+			.promo-slide.active {
+				display: block;
 			}/**/
 
 			.promo-slide .slide-title {
@@ -1756,6 +1766,8 @@
 
 			.services-credit a {
 				display: block;
+
+				width: 195px;
 				
 				margin-top: 0;
 				margin-right: 0;
@@ -2383,6 +2395,26 @@
 
 
 /***** begin block [modal windows] for {index.html and catalog.html} *****/
+	.view-port {
+		display: none;
+		position:fixed;
+		z-index: 100;
+		top: 0;
+		left: 0;
+
+
+		width: 100%;
+		height: 100%;
+
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+
+	.view-port.opened {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
 
 	.modal {
 		position: relative;
