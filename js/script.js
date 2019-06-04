@@ -131,15 +131,16 @@ function setEventWriteUsFormOpen() {
 }
 
 function setEventShowMap() {
-	var buttonShowMap = document.querySelector(".location-map");
-	if (buttonShowMap) 
-		buttonShowMap.addEventListener("click", 
+	var buttonListShowMap = document.querySelectorAll(".interactive-map");
+	for (var i=0; i < buttonListShowMap.length; i++) {
+		buttonListShowMap[i].addEventListener("click", 
 			function(event){
 				var modalMap = document.querySelector(".view-port-map");
 				event.preventDefault();
 				modalMap.classList.add("opened");
 			}
 		)
+	}
 }
 
 setEventCounterIncrease("add-bookmarks", "toolbar-bookmarks", "data-bookmark-count");

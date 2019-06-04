@@ -19,7 +19,7 @@
 						</h1>
 						<div class="header-contacts">
 							<a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-							<a class="address" href="#">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</a>
+							<a class="interactive-map address" href="#">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</a>
 						</div>
 						<div class="header-account">
 							<div class="user-unregistered ">
@@ -337,7 +337,7 @@
 						<h2>Контакты</h2>
 						<p>Вы можете забрать товар сами, <br>
 						заехав в наш офис:</p>
-						<a href="map.html" class="location-map">
+						<a href="map.html" class="interactive-map location-map">
 							<img src="img/map-small.png" width="300" height="158" alt="Офис по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
 						</a>
 						<a href="contacts.html" class="button-write_us">Заблудились? Напишите нам!</a>
@@ -354,7 +354,7 @@
 							<img src="img/footer-logo.png" width="220" height="63" alt="Логотип Техномарт">
 						</a>
 						<p class="footer-contacts">
-							<a href="map.html" class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</a>
+							<a href="map.html" class="interactive-map footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</a>
 							<br>
 							<a href="tel:+78125550555" class="footer-phone">+7 (812) 555-05-55</a>
 						</p>
@@ -454,10 +454,8 @@
 
 		<div class="view-port view-port-map">
 			<section class="modal modal-map">
-				<h2 class="visually-hidden">Карта как нас найти</h2>
-				<a href="map.html" class="modal-map-image">
-					<img src="img/map-index.jpg" width="940" height="446" alt="Офис компании по адресу: город Санкт-Петербург, улица Большая Конюшенная, д. 19/8">
-				</a>
+				<h2 class="visually-hidden">Мы на карте города</h2>
+				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A89dcbb2e57c07f508ab1b4c889c5f2a9c31bcb75de2ab97956a3e1286c4dd07e&amp;source=constructor" class="interactive-map-frame" ></iframe>
 				<button class="modal-close" type="button">Закрыть</button>
 			</section>
 		</div>
@@ -479,6 +477,7 @@
 
 	<script src="js/script.js"></script>
 
+	
 
 	</body>
 </html>
