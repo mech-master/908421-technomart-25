@@ -3416,6 +3416,16 @@
 				background-color: #ffffff;
 			}
 
+			.button-filters-send:hover {
+				border-color: #bdc6ca;
+			}
+
+			.button-filters-send:active {
+				border-color: #ee3744;
+				outline: none;
+			}
+
+
 		/***** end block [filters] for {catalog.html} *****/
 
 		/***** begin block [catalog] for {catalog.html} *****/
@@ -3647,8 +3657,9 @@
 					border-color: #bdc6ca;
 				}
 
-				.pagination-item a:active {
-					border-color: #f79ba1;
+				.pagination-item a:active,
+				.pagination-item a:focus {
+					border-color: #ee3643;
 				}
 
 				.pagination-current a {
