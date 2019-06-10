@@ -2524,21 +2524,46 @@
 
 
 /***** begin block [modal windows] for {index.html and catalog.html} *****/
-	@keyframes drop-modal{
+	@-webkit-keyframes drop-modal{
 		0% {
-			transform: translateY(-2000px);
+			-webkit-transform: translateY(-2000px);
+			        transform: translateY(-2000px);
 		}
 
 		70% {
-			transform: translateY(-20px);
+			-webkit-transform: translateY(-20px);
+			        transform: translateY(-20px);
 		}
 
 		90% {
-			transform: translateY(50px);
+			-webkit-transform: translateY(50px);
+			        transform: translateY(50px);
 		}
 
 		100% {
-			transform: translateY(0);
+			-webkit-transform: translateY(0);
+			        transform: translateY(0);
+		}
+	}
+	@keyframes drop-modal{
+		0% {
+			-webkit-transform: translateY(-2000px);
+			        transform: translateY(-2000px);
+		}
+
+		70% {
+			-webkit-transform: translateY(-20px);
+			        transform: translateY(-20px);
+		}
+
+		90% {
+			-webkit-transform: translateY(50px);
+			        transform: translateY(50px);
+		}
+
+		100% {
+			-webkit-transform: translateY(0);
+			        transform: translateY(0);
 		}
 	}
 
@@ -2583,7 +2608,8 @@
 	}
 
 	.view-port.opened .modal {
-		animation: drop-modal 0.3s;
+		-webkit-animation: drop-modal 0.3s;
+		        animation: drop-modal 0.3s;
 	}
 
 	.modal-close {
@@ -2759,22 +2785,43 @@
 			background-color: #f4f4f4;
 		}
 
-		@keyframes modal-shake {
+		@-webkit-keyframes modal-shake {
 			0%, 100% {
-				transform: translateX(0);
+				-webkit-transform: translateX(0);
+				        transform: translateX(0);
 			}
 
 			10%, 30%, 50%, 70%, 90% {
-				transform: translateX(-10px);
+				-webkit-transform: translateX(-10px);
+				        transform: translateX(-10px);
 			}
 
 			20%, 40%, 60%, 80% {
-				transform: translateX(10px);
+				-webkit-transform: translateX(10px);
+				        transform: translateX(10px);
+			}
+		}
+
+		@keyframes modal-shake {
+			0%, 100% {
+				-webkit-transform: translateX(0);
+				        transform: translateX(0);
+			}
+
+			10%, 30%, 50%, 70%, 90% {
+				-webkit-transform: translateX(-10px);
+				        transform: translateX(-10px);
+			}
+
+			20%, 40%, 60%, 80% {
+				-webkit-transform: translateX(10px);
+				        transform: translateX(10px);
 			}
 		}
 
 		.view-port.opened .modal-error {
-			animation: modal-shake 0.6s;
+			-webkit-animation: modal-shake 0.6s;
+			        animation: modal-shake 0.6s;
 		}
 
 	/***** end block [modal-write-us] for {index.html} *****/

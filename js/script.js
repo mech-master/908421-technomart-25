@@ -4,33 +4,33 @@ function dataCounterIncrease(counterClass, attributeName) {
 		if (counterClass == "toolbar-cart") {
 			var modalCartAdd = document.querySelector(".view-port-cart-add");
 			modalCartAdd.classList.add("opened");
-		}
+		};
 		event.preventDefault();
 		elt.setAttribute(attributeName, parseInt(elt.getAttribute(attributeName))+1);
 	};
-}
+};
 
 
 function setEventCounterIncrease(buttonClass, counterClass, attributeName) {
 	var elementList = document.querySelectorAll("." + buttonClass);
 	for (var i=0; i < elementList.length; i++) {
 		elementList[i].addEventListener("click", dataCounterIncrease(counterClass, attributeName));
-	}
-}
+	};
+};
 
 function closeModalWindow() {
 	var modalWindow = document.querySelector(".view-port.opened");
 	modalWindow.classList.remove("opened");
 	var modalWriteUsWindow = document.querySelector(".modal-write-us");
 	modalWriteUsWindow.classList.remove("modal-error");
-}
+};
 
 function setEventCloseModal() {
 	var elementList = document.querySelectorAll(".modal-close");
 	for (var j=0; j < elementList.length; j++) {
 		elementList[j].addEventListener("click", closeModalWindow);
-	}
-}
+	};
+};
 
 function changeServiceSlide(event) {
 	var sliderControlList = this.parentElement.parentElement;
@@ -46,15 +46,15 @@ function changeServiceSlide(event) {
 			this.classList.add("active");
 			break;
 		};
-	}
-}
+	};
+};
 
 function setEventServiceSliderClick() {
 	var elementList = document.querySelectorAll(".slider-button");
 	for (var k=0; k < elementList.length; k++) {
 		elementList[k].addEventListener("click", changeServiceSlide);
-	}
-}
+	};
+};
 
 function changePromoSlide(event) {
 	var promoControlList = document.querySelector(".promo-slide-list");
@@ -80,27 +80,27 @@ function changePromoSlide(event) {
 				buttonNext.setAttribute("disabled", true);
 			};
 			break;
-		}
-	}
-}
+		};
+	};
+};
 
 
 function setEventPromoSliderClick() {
 	var elementList = document.querySelectorAll(".slider-turn");
 	for (var k=0; k < elementList.length; k++) {
 		elementList[k].addEventListener("click", changePromoSlide);
-	}
-}
+	};
+};
 
 function switchPromoPrevSlide() {
 	var activeControlButton = document.querySelector(".slider-turn.active");
 	activeControlButton.parentElement.previousElementSibling.children[0].click();
-}
+};
 
 function switchPromoNextSlide() {
 	var activeControlButton = document.querySelector(".slider-turn.active");
 	activeControlButton.parentElement.nextElementSibling.children[0].click();
-}
+};
 
 
 function setEventSwitchPromoSlide() {
@@ -108,7 +108,7 @@ function setEventSwitchPromoSlide() {
 	var buttonNext = document.querySelector(".button-next");
 	if (buttonPrev) {buttonPrev.addEventListener("click", switchPromoPrevSlide);};
 	if (buttonNext) {buttonNext.addEventListener("click", switchPromoNextSlide);};
-}
+};
 
 var isLocalStorageSupport = true;
 var storage = "";
@@ -117,7 +117,7 @@ try {
 	storage = localStorage.getItem("author-name");
 } catch(err) {
 	isLocalStorageSupport = false;
-}
+};
 
 
 function setEventWriteUsFormOpen() {
@@ -129,13 +129,13 @@ function setEventWriteUsFormOpen() {
 				event.preventDefault();
 				modalWriteUs.classList.add("opened");
 			}
-		)
+		);
 		if (storage) {
 			var authorName = document.querySelector(".message-author-name");
 			authorName.value = storage;
-		}
-	}
-}
+		};
+	};
+};
 
 function setEventShowMap() {
 	var buttonListShowMap = document.querySelectorAll(".interactive-map");
@@ -146,9 +146,9 @@ function setEventShowMap() {
 				event.preventDefault();
 				modalMap.classList.add("opened");
 			}
-		)
-	}
-}
+		);
+	};
+};
 
 setEventCounterIncrease("add-bookmarks", "toolbar-bookmarks", "data-bookmark-count");
 setEventCounterIncrease("add-cart", "toolbar-cart", "data-good-count");
@@ -164,8 +164,8 @@ window.addEventListener("keydown", function(evt) {
 	if (evt.keyCode === 27) {
 		evt.preventDefault();
 		closeModalWindow();
-	}
-})
+	};
+});
 
 
 
@@ -182,9 +182,9 @@ function writeUsDataValidation(evt) {
 		modalWriteUsWindow.classList.add("modal-error");
 	} else {
 		localStorage.setItem("author-name", authorName.value);
-	}
-}
+	};
+};
 
 var sendMessageForm = document.querySelector(".write-us-form");
 
-if (sendMessageForm) {sendMessageForm.addEventListener("submit", writeUsDataValidation);}
+if (sendMessageForm) {sendMessageForm.addEventListener("submit", writeUsDataValidation);};
