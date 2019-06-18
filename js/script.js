@@ -18,7 +18,8 @@ function setEventCounterIncrease(buttonClass, counterClass, attributeName) {
 	};
 };
 
-function closeModalWindow() {
+function closeModalWindow(event) {
+	event.preventDefault();
 	var modalWindow = document.querySelector(".view-port.opened");
 	modalWindow.classList.remove("opened");
 	var modalWriteUsWindow = document.querySelector(".modal-write-us");
@@ -30,6 +31,9 @@ function setEventCloseModal() {
 	for (var j=0; j < elementList.length; j++) {
 		elementList[j].addEventListener("click", closeModalWindow);
 	};
+
+	var messageContinue = document.querySelector(".message-continue");
+	if (messageContinue) {messageContinue.addEventListener("click", closeModalWindow);};
 };
 
 function changeServiceSlide(event) {
